@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.view.more">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/springgreen">
+    <ImageView
+        android:id="@+id/home_grid_more_btn_back"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/btn_back_normal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更多"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+</android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已显示"
+            android:textSize="20dp"
+            android:textColor="@color/springgreen"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:button="@null"
+            android:text="长按拖拽进行排序"
+            android:drawableLeft="@mipmap/icon_press"
+            android:textSize="20dp"
+
+            android:textColor="@android:color/darker_gray"/>
+    </RelativeLayout>
+
+
+    <com.example.administrator.myapplication.moduels.MyDragGridView
+        android:id="@+id/dragGridView"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+
+        android:gravity="center"
+        android:numColumns="4" >
+    </com.example.administrator.myapplication.moduels.MyDragGridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展"
+            android:textSize="20dp"
+            android:textColor="@color/springgreen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+            android:text="点击添加到“已显示"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/drag_grid_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+
+        android:numColumns="4">
+    </GridView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#ff2dc667</color>
+    <color name="springgreen">#ff2dc667</color>
+    <color name="colorPrimary">#ff2dc667</color>
+    <color name="colorPrimaryDark">#ff2dc667</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mediumaquamarine">#66cdaa</color>
+    <color name="organge">#FF7F00</color>
+     <!--春绿色 -->
+</resources>
