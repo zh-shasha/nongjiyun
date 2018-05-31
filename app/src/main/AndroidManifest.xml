@@ -2,8 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:uses-permissionandroid="http://schemas.android.com/apk/res-auto"
-    package="com.example.administrator.myapplication">
 
+    package="com.example.administrator.myapplication">
+    <!-- 视频录制的权限star -->
+    <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 音频即声音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- sd卡写入权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 硬件支持 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 视频录制的权限end -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -20,7 +37,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <!-- 蓝牙分享所需的权�?-->
+    <!-- 蓝牙分享所需的权�? -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -32,6 +49,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.AdvertisingPage"></activity>
         <activity android:name=".activity.RegisterInfoActivity" />
         <activity android:name=".activity.ReisterActivity" />
         <activity android:name=".fragment.HomeFragment_notice" />
@@ -110,9 +128,7 @@
         <activity android:name=".activity.Setting_AboutActivity" />
         <activity android:name=".activity.MyDataNickname" />
         <activity android:name=".activity.MyDataCompany" />
- 
-        <activity android:name=".activity.ResetPassword"></activity>
- 
+        <activity android:name=".activity.ResetPassword" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -124,8 +140,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".activity.My_FeedBackActivity"></activity>
- 
+        <activity android:name=".activity.My_FeedBackActivity" />
+        <activity android:name=".activity.HomeSearchResultTab"></activity>
     </application>
 
 </manifest>

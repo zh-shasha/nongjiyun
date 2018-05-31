@@ -16,7 +16,7 @@
             android:background="@color/springgreen"
             android:orientation="horizontal">
             <ImageView
-                android:id="@+id/agricultural_expert_back_iv"
+                android:id="@+id/btn_headline_back"
                 android:layout_width="18dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"

@@ -6,26 +6,26 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.Activity_login;
 import com.example.administrator.myapplication.activity.Home_HeadLine;
 import com.example.administrator.myapplication.activity.Home_MediaPlayer;
-
 import com.example.administrator.myapplication.activity.Home_Trends;
 import com.example.administrator.myapplication.activity.Home_video;
-
 import com.example.administrator.myapplication.adapter.HomeNewAdapter;
-
 import com.example.administrator.myapplication.adapter.HomeVideoAdapter;
 import com.example.administrator.myapplication.adapter.MyGridAdapter;
 import com.example.administrator.myapplication.adapter.SampleAdapter03;
@@ -34,6 +34,7 @@ import com.example.administrator.myapplication.moduels.HomeNewMenu;
 import com.example.administrator.myapplication.moduels.HomeVideoMenu;
 import com.example.administrator.myapplication.moduels.Model01;
 import com.example.administrator.myapplication.moduels.Weather;
+import com.example.administrator.myapplication.utils.WeatherBean;
 import com.example.administrator.myapplication.view.Agricultural_of_technology;
 import com.example.administrator.myapplication.view.Agricultural_policy;
 import com.example.administrator.myapplication.view.GrideViewScroll;
@@ -43,7 +44,7 @@ import com.example.administrator.myapplication.view.Professional_cooperation;
 import com.example.administrator.myapplication.view.Science_and_technology_special;
 import com.example.administrator.myapplication.view.agricultural_expert;
 import com.example.administrator.myapplication.view.timeof_farming;
-import com.example.administrator.myapplication.R;
+import com.google.gson.Gson;
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
 import com.jude.rollviewpager.hintview.ColorPointHintView;
@@ -51,10 +52,16 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.taobao.library.VerticalBannerView;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xutils.common.Callback;
+import org.xutils.http.RequestParams;
+import org.xutils.x;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.graphics.Color.*;
+import static android.graphics.Color.GRAY;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -74,7 +81,7 @@ public class HomeFragment extends Fragment {
     private RadioButton rb;
     private HomeVideoAdapter adapter3;
     private GrideViewScroll grid_video;
-    private EditText home_et;
+    private TextView home_et;
     private ImageView notice;
     private ImageView person;
     private GridView gridView;
@@ -83,7 +90,12 @@ public class HomeFragment extends Fragment {
     private TextView trends;
     private TextView video_tv;
    // private FirstWeatherListAdapter weatherListAdapter;
-
+   private TextView tv_date;
+    private TextView tv_fengxiang;
+    private TextView tv_city;
+    private TextView tv_temperature;
+    private TextView tv_weather;
+    private LinearLayout ly_weather;
 
 
 
@@ -92,6 +104,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        x.view().inject(getActivity());
         initView(view);
         initEvent();
         initMenus();
@@ -202,15 +215,83 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        home_et.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        home_et.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                //获取焦点
-                if (hasFocus){
-                    Intent intent=new Intent(getActivity(),HomeFragment_notice.class);
-                    startActivity(intent);
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),Home_Edit_Search.class);
+                startActivity(intent);
+            }
+        });
+        ly_weather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String city="南京";
+                String url = "https://free-api.heweather.com/v5/weather?city="+city+"&key=fd5d4d77225e4592a6b9ef00def5ebca";
+                JSONObject js_request = new JSONObject();
 
-                }
+                //下面开始请求后台地址
+                RequestParams params = new RequestParams(url);
+                params.setAsJsonContent(true);
+                params.setBodyContent(js_request.toString());
+                x.http().get(params, new Callback.CommonCallback<String>() {
+                    @Override
+                    public void onCancelled(CancelledException arg0) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable arg0, boolean arg1) {
+                        // TODO Auto-generated method stub
+                        Log.e("错误", arg0.toString());
+                    }
+
+                    @Override
+                    public void onFinished() {
+                        // TODO Auto-generated method stub
+
+                    }
+
+                    @Override
+                    public void onSuccess(String arg0) {
+                        System.out.println(arg0);
+                        Toast.makeText(getActivity(), arg0, Toast.LENGTH_SHORT).show();
+                        try {
+                            //服务器返回的是一个json封装的字符串，将其转换为json对象
+                            JSONObject jsonObject = new JSONObject(arg0);
+                            Gson gson =new Gson();
+                            WeatherBean weatherBean = gson.fromJson(jsonObject.toString(), WeatherBean.class);
+                            String cityName = weatherBean.getHeWeather5().get(0).getBasic().getCity();
+                            String date = weatherBean.getHeWeather5().get(0).getDaily_forecast().get(0).getDate();
+                            String temp = weatherBean.getHeWeather5().get(0).getNow().getTmp();
+                            String cond = weatherBean.getHeWeather5().get(0).getNow().getCond().getTxt();
+                            String dir = weatherBean.getHeWeather5().get(0).getNow().getWind().getDir();
+                            String qlty = weatherBean.getHeWeather5().get(0).getAqi().getCity().getQlty();
+
+                            tv_city.setText(cityName);
+                            tv_date.setText(date);
+                            tv_temperature.setText(temp+"c");
+                            tv_weather.setText(cond);
+                            tv_fengxiang.setText(dir);
+                            // tv_temperature.setText("空气质量："+qlty);
+
+
+
+
+
+                            //       final  String data=jsonObject.getString("data");
+                            //   JSONObject object =  jsonObject.getJSONObject("agr0");
+//                            MessageTest msg = new Gson().fromJson(jsonObject.toString(), MessageTest.class);
+//                            SharedPreferences.Editor editor = getSharedPreferences("message", MODE_PRIVATE).edit();
+//                            editor.putString("msg", msg.getMsg());
+//                            editor.putString("data", msg.getData());
+//                            editor.putString("status", msg.getStatus());
+//                            editor.apply();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
             }
         });
 
@@ -243,13 +324,19 @@ public class HomeFragment extends Fragment {
         grid_main = (GrideViewScroll) view.findViewById(R.id.grid_main);
         home_news_lv=(ListView)view.findViewById(R.id.home_news_lv);
         grid_video=(GrideViewScroll)view.findViewById(R.id.grid_video);
-        home_et=(EditText)view.findViewById(R.id.home_et);
+        home_et=(TextView) view.findViewById(R.id.home_et);
         notice=(ImageView)view.findViewById(R.id.home_iv_notice);
         person=(ImageView)view.findViewById(R.id.home_iv_person);
         home_iv_person=(ImageView)view.findViewById(R.id.home_iv_person);
         headline=(TextView)view.findViewById(R.id.home_headline_tv);
         trends=(TextView)view.findViewById(R.id.home_trends_tv);
         video_tv=(TextView)view.findViewById(R.id.home_video_tv);
+        tv_fengxiang=(TextView)view.findViewById(R.id.tv_fengxiang);
+        tv_city=(TextView)view.findViewById(R.id.tv_city);
+        tv_date=(TextView)view.findViewById(R.id.tv_date);
+        tv_temperature=(TextView)view.findViewById(R.id.tv_temperature);
+        tv_weather=(TextView)view.findViewById(R.id.tv_weather);
+        ly_weather=(LinearLayout)view.findViewById(R.id.ly_weather);
     }
 
 
@@ -285,8 +372,6 @@ public class HomeFragment extends Fragment {
                     R.mipmap.photo2,
                     R.mipmap.photo3,
                     R.mipmap.photo4,
-
-
             };
             @Override
             public int getCount() {

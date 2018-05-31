@@ -5,12 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +21,7 @@ import com.example.administrator.myapplication.activity.MyDataActivity;
 import com.example.administrator.myapplication.activity.MyShareActivity;
 import com.example.administrator.myapplication.activity.My_FeedBackActivity;
 import com.example.administrator.myapplication.activity.My_SettingActivity;
-import com.example.administrator.myapplication.utils.ScreenUtil;
-import com.example.administrator.myapplication.utils.UserMessage;
 import com.example.administrator.myapplication.view.CustomToastView;
-import com.google.gson.Gson;
-
-import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -72,7 +63,7 @@ public class MyFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-           View view=inflater.inflate(R.layout.fragment_my, container, false);
+        View view = inflater.inflate(R.layout.fragment_my, container, false);
         initQD(view);//签到
         initJF(view);//积分
         initShop(view);//积分商城
@@ -90,38 +81,41 @@ public class MyFragment extends Fragment {
         initEwm(view);//我的二维码
 
 
-
-        linearLayout =(LinearLayout)view.findViewById(R.id.line_me);//登录
-        tv_phone = (TextView)view.findViewById(R.id.tv_phone);
-        tv_type=(TextView)view.findViewById(R.id.tv_type);
-        tv_nickname=(TextView)view.findViewById(R.id.mydata_login_tv);
-
-
-        SharedPreferences sp=getActivity().getSharedPreferences("admin",Context.MODE_PRIVATE);
-
-        tv_nickname.setText(sp.getString("nickname",""));
-        tv_type.setText(sp.getString("role",""));
-
-
-
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            String name = tv_nickname.getText().toString();
-            @Override
-            public void onClick(View v) {
-                if (name.length()<=0){
-                    Intent intent = new Intent(getActivity(),Activity_login.class);
-                    startActivity(intent);
-//                    startActivityForResult(intent,12);
-                }else {
-                    Intent intent = new Intent(getActivity(),MyDataActivity.class);
-                    startActivity(intent);
-                }
-
-            }
-        });
-           return view;
-
+        linearLayout = (LinearLayout) view.findViewById(R.id.line_me);//登录
+        tv_phone = (TextView) view.findViewById(R.id.tv_phone);
+        tv_type = (TextView) view.findViewById(R.id.tv_type);
+        tv_nickname = (TextView) view.findViewById(R.id.mydata_login_tv);
+        return view;
     }
+        @Override
+        public void onResume() {
+
+            SharedPreferences sp=getActivity().getSharedPreferences("admin",Context.MODE_PRIVATE);
+            tv_nickname.setText(sp.getString("nickname",""));
+            tv_type.setText(sp.getString("role",""));
+
+//        mydata_head_iv.setImageURI(Uri.parse("http://p8pi81ujr.bkt.clouddn.com/timg.jpeg"));
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+                String name = tv_nickname.getText().toString();
+                @Override
+                public void onClick(View v) {
+                    if (name.length()<=0){
+                        Intent intent = new Intent(getActivity(),Activity_login.class);
+                        startActivity(intent);
+                    }else {
+                        Intent intent = new Intent(getActivity(),MyDataActivity.class);
+                        startActivity(intent);
+                    }
+
+                }
+            });
+            super.onResume();
+        }
+
+
+
+
 
 
 

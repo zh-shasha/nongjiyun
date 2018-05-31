@@ -3,9 +3,7 @@ package com.example.administrator.myapplication.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Window;
 
-import com.example.administrator.myapplication.MainActivity;
 import com.example.administrator.myapplication.R;
 
 import java.util.Timer;
@@ -27,13 +25,13 @@ public class Boot_page extends AppCompatActivity {
           task=new TimerTask() {
             @Override
             public void run() {
-                Intent intent=new Intent(Boot_page.this, MainActivity.class);
+                Intent intent=new Intent(Boot_page.this, AdvertisingPage.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         };
         //启动定时器
-        timer.schedule(task,2000);
+        timer.schedule(task,1500);
     }
 
 }

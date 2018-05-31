@@ -16,7 +16,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.ViewUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -30,8 +29,6 @@ import android.widget.Toast;
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.utils.PhotoUtils;
 import com.example.administrator.myapplication.utils.ToastUtils;
-import com.example.administrator.myapplication.utils.UserMessage;
-import com.google.gson.Gson;
 import com.scwang.smartrefresh.header.material.CircleImageView;
 
 import org.json.JSONException;
@@ -105,6 +102,18 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
         tv_adress.setText(sp.getString("city",""));
         tv_phone.setText(sp.getString("account",""));
         tv_company.setText(sp.getString("organization_name",""));
+        // int option= Integer.parseInt(sp.getString("sex",""));
+        String ss =sp.getString("sex","");
+        try {
+            float option = Float.parseFloat(ss);
+            if (option==1.0){
+                tv_sex.setText("男");
+            }else if (option==2.0){
+                tv_sex.setText("女");
+            }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
         tv_type.setOnClickListener(this);
         line_mydata_id.setOnClickListener(this);
         mydata_save_tv.setOnClickListener(this);
@@ -371,7 +380,14 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
                 String tv1=tv_01.getText().toString();
                 String company=tv_company.getText().toString();
                 String education=tv_education.getText().toString();
+
                 String sex=tv_sex.getText().toString();
+                int log=0;
+                if (sex.equals("男")){
+                    log = 1;
+                }else if (sex.equals("女")){
+                    log = 2;
+                }
                 String email=tv_email.getText().toString();
                 String adress=tv_adress.getText().toString();
                 SharedPreferences sp=getSharedPreferences("admin",MODE_PRIVATE);
@@ -393,7 +409,7 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
                     js_request.put("organization_name",company);
                    //根据实际需求添加相应键值对
                     js_request.put("education",education);
-                    js_request.put("sex",sex );
+                    js_request.put("sex",log);
                     js_request.put("email",email);
                     js_request.put("city",adress);
                     js_request.put("district",sp.getString("district",""));

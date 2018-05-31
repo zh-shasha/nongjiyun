@@ -29,6 +29,7 @@
                 android:layout_height="40dp"
                 android:layout_weight="5"
                 android:clickable="true"
+                android:layout_marginRight="20dp"
                 android:hint="请输入搜索内容"
                 android:textSize="20dp"
                 android:layout_gravity="center_vertical"
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="大家热搜"
             android:textSize="20dp"
+            android:paddingLeft="15dp"
             android:layout_gravity="center_vertical"
             android:textColor="@color/springgreen"
             />
@@ -55,6 +57,7 @@
           android:layout_height="wrap_content"
           android:orientation="horizontal">
         <TextView
+            android:id="@+id/home_search_rice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -72,19 +75,34 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:textSize="20dp"
-              android:text="挂线成果推广应用140例"
+              android:text="专家发布"
+              android:layout_marginLeft="20dp"
+              android:background="#fff"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="葡萄"
+              android:layout_marginLeft="20dp"
+              android:background="#fff"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="植保信息"
               android:layout_marginLeft="20dp"
               android:background="#fff"/>
       </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="专家发布"
+            android:text="赤霉病"
             android:layout_marginLeft="20dp"
             android:background="#fff"/>
         <TextView
@@ -99,26 +117,8 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:layout_marginLeft="20dp"
-            android:text="葡萄"
+            android:text="育秧"
             android:background="#fff"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="致富典型100例"
-            android:layout_marginLeft="20dp"
-            android:background="#fff"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="植保信息"
-            android:layout_marginLeft="20dp"
-            android:background="#fff"/>
-    </LinearLayout>
+
 </LinearLayout>

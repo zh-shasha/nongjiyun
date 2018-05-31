@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
     tools:context="com.example.administrator.myapplication.fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -21,7 +19,7 @@
         android:padding="5dp"
         android:orientation="horizontal">
 
-        <EditText
+        <TextView
             android:id="@+id/home_et"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -29,8 +27,15 @@
             android:layout_weight="6"
             android:background="@drawable/corners_bg"
             android:drawableLeft="@mipmap/icon_search_black"
-            android:hint="请输入搜索内容"
-            android:paddingLeft="10dp" />
+            android:text="请输入搜索内容                  "
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
         <ImageView
             android:id="@+id/home_iv_notice"
             android:layout_width="0dp"
@@ -73,27 +78,59 @@
         app:rollviewpager_play_delay="3000">
     </com.jude.rollviewpager.RollPagerView>
         <LinearLayout
+            android:id="@+id/ly_weather"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/green">
             <TextView
+                android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:text="2018-05-25"
+                />
             <TextView
+                android:id="@+id/tv_fengxiang"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:text="西风"
+                />
+
             <TextView
+                android:id="@+id/tv_city"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:text="南京"/>
             <TextView
+                android:id="@+id/tv_temperature"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:text="18度"/>
             <TextView
+                android:id="@+id/tv_weather"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="阴"/>
+
         </LinearLayout>
 
-            <com.example.administrator.myapplication.view.GrideViewScroll
+
+        <com.example.administrator.myapplication.view.GrideViewScroll
                 android:id="@+id/grid_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

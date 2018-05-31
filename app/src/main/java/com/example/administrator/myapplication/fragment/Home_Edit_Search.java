@@ -1,20 +1,29 @@
 package com.example.administrator.myapplication.fragment;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.HomeSearchResultTab;
 
-public class Home_Edit_Search extends AppCompatActivity {
-
+public class Home_Edit_Search extends AppCompatActivity implements View.OnClickListener{
+    private TextView home_search_rice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_home__edit__search);
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().hide();
-//        }
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.home_search_rice:
+                Intent intent=new Intent(Home_Edit_Search.this, HomeSearchResultTab.class);
+                startActivity(intent);
+        }
     }
 }
