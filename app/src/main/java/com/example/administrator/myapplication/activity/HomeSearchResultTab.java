@@ -36,8 +36,8 @@ public class HomeSearchResultTab extends FragmentActivity {
         viewPager_shouye.setAdapter(new TabFragmentShouYeAdapter(fragments,strings,
                 getSupportFragmentManager(),this));
         tabLayout_shouye.setupWithViewPager(viewPager_shouye);
-        tabLayout_shouye.setTabTextColors(getResources().getColor(R.color.green)
-                ,getResources().getColor(R.color.bar_grey));
+        tabLayout_shouye.setTabTextColors(getResources().getColor(R.color.bar_grey_90)
+                ,getResources().getColor(R.color.green));
     }
 
     private void initdate(){

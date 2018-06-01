@@ -4,33 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.administrator.myapplication.fragment.AskFragment">
+
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/springgreen">
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/springgreen"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="150dp"
                 android:text="快速提问"
                 android:textColor="#FFF"
                 android:textSize="20dp" />
-        </RelativeLayout>
+        </LinearLayout>
     </android.support.v7.widget.Toolbar>
-    <com.scwang.smartrefresh.layout.SmartRefreshLayout
-        android:id="@+id/refreshLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,11 +39,11 @@
                     android:id="@+id/quick_ask_bt"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center"
                     android:background="@color/green"
                     android:layout_marginTop="10dp"
                     android:text="？快速提问"
-                    android:textColor="#FFF" />
+                    android:textColor="#EBEBEB" />
             </LinearLayout>
             <!--<LinearLayout-->
             <!--android:layout_width="match_parent"-->
@@ -57,6 +57,6 @@
             </com.example.administrator.myapplication.utils.PullListView>
             <!--</LinearLayout>-->
         </LinearLayout>
-    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
-</LinearLayout>
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
 

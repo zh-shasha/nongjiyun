@@ -38,7 +38,7 @@ public class Home_Notice_System_Fragment extends Fragment {
 
     private void initDate() {
         noticeMenus=new ArrayList<>();
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-12-05" ,Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=789d5ae2-fd9d-4c7e-8f0f-ae530c51b693"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-12-05" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
         noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-12-1",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=789d5ae2-fd9d-4c7e-8f0f-ae530c51b693"));
         noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-12-1",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=789d5ae2-fd9d-4c7e-8f0f-ae530c51b693"));
         noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-12-1",Home_Details.class,"https://blog.csdn.net/gengkunpeng/article/details/6307865"));

@@ -1,19 +1,15 @@
 package com.example.administrator.myapplication.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
 
-import com.example.administrator.myapplication.adapter.HomeNoticeAdapter;
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.TabAdapter;
-import com.example.administrator.myapplication.moduels.HomeNoticeMenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +53,7 @@ public class HomeFragment_notice extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_iv_notice_back:
-            Intent intent = new Intent(HomeFragment_notice.this, HomeFragment.class);
-            startActivity(intent);
+             finish();
             break;
         }
     }

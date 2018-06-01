@@ -7,10 +7,38 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     tools:context="com.example.administrator.myapplication.activity.HomeSearchResultTab">
-    <ImageView
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:background="@color/springgreen"/>
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/springgreen">
+            <ImageView
+                android:id="@+id/home_edit_search_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:src="@mipmap/btn_back_normal"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/home_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:clickable="true"
+                android:layout_marginRight="20dp"
+                android:hint="请输入搜索内容"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/icon_search_black"
+                android:background="@drawable/corners_bg"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"

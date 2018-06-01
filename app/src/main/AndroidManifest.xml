@@ -49,6 +49,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.QuickQuestionSubmission"></activity>
+        <activity android:name=".activity.QuickQuestionRecordVideo"></activity>
+        <activity android:name=".activity.QuickQuestionChooseType"></activity>
         <activity android:name=".activity.AdvertisingPage"></activity>
         <activity android:name=".activity.RegisterInfoActivity" />
         <activity android:name=".activity.ReisterActivity" />
@@ -69,7 +73,6 @@
         <activity android:name=".fragment.Home_System_notification" />
         <activity android:name=".fragment.Home_Personal_information" />
         <activity android:name=".fragment.Home_notice_system_notice_item1" />
-        <activity android:name=".fragment.HomeEditSearch" />
         <activity android:name=".fragment.Home_Details" />
         <activity android:name=".view.Life_service" />
         <activity android:name=".view.Cloud_intelligence" />

@@ -1,15 +1,20 @@
 package com.example.administrator.myapplication.fragment;
 
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -126,6 +131,33 @@ public class MyFragment extends Fragment {
     //签到
     private void initQD(View view) {
         rbqd = (RadioButton)view.findViewById(R.id.qiandao_my_rb);
+        rbqd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog dialog = new Dialog(MyFragment.this.getContext());
+                dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
+                View contentView = LayoutInflater.from(MyFragment.this.getContext()).inflate(R.layout.dialog_sign, null);
+                dialog.setContentView(contentView);
+                Button cancel = contentView.findViewById(R.id.submit_bt);
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+                //背景透明
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                dialog.show();
+                Window window = dialog.getWindow();
+                WindowManager.LayoutParams lp = window.getAttributes();
+                lp.gravity = Gravity.CENTER; //
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+                window.setAttributes(lp);
+                window.setWindowAnimations(R.style.mystyle);  //添加动画
+                dialog.setCanceledOnTouchOutside(true);
+            }
+        });
     }
 
     //积分

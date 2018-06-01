@@ -1,6 +1,5 @@
 package com.example.administrator.myapplication.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -11,17 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.fragment.HomeEditSearch;
-import com.example.administrator.myapplication.fragment.HomeFragment;
-import com.example.administrator.myapplication.fragment.Home_Details;
-import com.example.administrator.myapplication.fragment.MyFragment;
 import com.example.administrator.myapplication.utils.TelNumMatch;
 import com.example.administrator.myapplication.utils.UserMessage;
 import com.example.administrator.myapplication.view.CustomToastView;

@@ -152,6 +152,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_marginLeft="15dp"
+                  android:drawablePadding="5dp"
                   android:layout_gravity="center_vertical"
                   android:text="头条"
                   android:button="@null"
@@ -163,10 +164,7 @@
                   android:layout_height="wrap_content"
                   android:layout_gravity="center_vertical"
                   android:layout_marginLeft="230dp"
-                  android:paddingLeft="50dp"
-                  android:text="更多>>"
-
-                  />
+                  android:text="更多>>" />
           </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -176,7 +174,6 @@
                android:id="@+id/home_news_lv"
                android:layout_width="match_parent"
                android:layout_height="380dp"
-               android:dividerHeight="8dp"
                >
            </ListView>
 
@@ -190,6 +187,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:text="动态"
+                android:drawablePadding="5dp"
                 android:button="@null"
                 android:layout_gravity="center_vertical"
                 android:drawableLeft="@mipmap/icon_dynamic"/>
@@ -198,7 +196,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="更多>>"
-                android:paddingLeft="50dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="230dp"
 
@@ -256,6 +253,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
+                android:drawablePadding="5dp"
                 android:text="视频"
                 android:button="@null"
                 android:layout_gravity="center_vertical"
@@ -277,6 +275,8 @@
             android:id="@+id/grid_video"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
             android:numColumns="2">
         </com.example.administrator.myapplication.view.GrideViewScroll>
         <View
