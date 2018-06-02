@@ -9,10 +9,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.RadioButton;
 
-import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.moduels.HomeMenu;
 import com.example.administrator.myapplication.utils.ScreenUtil;
-import com.example.administrator.myapplication.view.agricultural_expert;
 
 import java.util.List;
 
@@ -53,7 +51,7 @@ public class HomeAgriculturalExpertAdapter extends BaseAdapter {
         rb.setButtonDrawable(null);
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, expertMenus.getImage(), 0, 0);
-        rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+        rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 10));
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

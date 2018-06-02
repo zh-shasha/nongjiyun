@@ -64,7 +64,8 @@ public class HomeVideoAdapter extends BaseAdapter {
         rb.setButtonDrawable(null);
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, videoMenus.get(position).getIv_video(), 0, 0);
-        rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+        rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 10));
+
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

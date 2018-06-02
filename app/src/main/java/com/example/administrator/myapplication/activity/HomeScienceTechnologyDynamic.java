@@ -1,33 +1,29 @@
-package com.example.administrator.myapplication.view;
+package com.example.administrator.myapplication.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.activity.HomeScienceTechnologyDynamic;
-import com.example.administrator.myapplication.adapter.ScienceTechnologyAdapter;
+import com.example.administrator.myapplication.adapter.HomeScienceTechnologyDyAdapter;
 import com.example.administrator.myapplication.fragment.Home_Details;
 import com.example.administrator.myapplication.moduels.HomeScienceTechnologyHemu;
+import com.example.administrator.myapplication.utils.ListViewForScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Science_and_technology_special extends AppCompatActivity {
-    private ScienceTechnologyAdapter adapter;
+public class HomeScienceTechnologyDynamic extends AppCompatActivity {
+    private ListViewForScrollView listview;
     private List<HomeScienceTechnologyHemu> list;
-    private ListView science_technology_lv;
-    private ListView science_technology_pic_lv;
-    private TextView home_science_technology_more;
-
+    private HomeScienceTechnologyDyAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_science_and_technology_special);
+        setContentView(R.layout.activity_home_science_technology_dynamic);
+
         init();
         initData();
     }
@@ -35,8 +31,7 @@ public class Science_and_technology_special extends AppCompatActivity {
 
 
     private void init() {
-        science_technology_lv=(ListView)findViewById(R.id.science_technology_lv);
-        home_science_technology_more=(TextView)findViewById(R.id.home_science_technology_more);
+        listview=(ListViewForScrollView)findViewById(R.id.home_science_technology_dynamic_lv);
 
     }
     private void initData() {
@@ -49,23 +44,17 @@ public class Science_and_technology_special extends AppCompatActivity {
         list.add(new HomeScienceTechnologyHemu(R.mipmap.icon_circle_red,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
         list.add(new HomeScienceTechnologyHemu(R.mipmap.icon_circle_red,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
         list.add(new HomeScienceTechnologyHemu(R.mipmap.icon_circle_red,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
-        adapter=new ScienceTechnologyAdapter(this,list);
-        science_technology_lv.setAdapter(adapter);
+        adapter=new HomeScienceTechnologyDyAdapter(this,list);
+        listview.setAdapter(adapter);
 
-        science_technology_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final Intent intent=new Intent(Science_and_technology_special.this,list.get(position).getUrl());
+                Intent intent=new Intent(HomeScienceTechnologyDynamic.this,list.get(position).getUrl());
                 intent.putExtra("view",list.get(position).getNeturl());
                 startActivity(intent);
-                home_science_technology_more.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent1=new Intent(Science_and_technology_special.this, HomeScienceTechnologyDynamic.class);
-                        startActivity(intent1);
-                    }
-                });
             }
         });
     }
-}
+    }
+

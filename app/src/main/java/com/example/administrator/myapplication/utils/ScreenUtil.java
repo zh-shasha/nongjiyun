@@ -9,6 +9,7 @@ import android.content.Context;
 public class ScreenUtil {
 
     public static int dip2px(Context context, int i) {
+
         return i;
     }
 }

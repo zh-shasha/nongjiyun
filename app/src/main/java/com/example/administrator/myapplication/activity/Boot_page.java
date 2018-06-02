@@ -27,7 +27,7 @@ public class Boot_page extends AppCompatActivity {
             public void run() {
                 Intent intent=new Intent(Boot_page.this, AdvertisingPage.class);
                 startActivity(intent);
-                //finish();
+                finish();
             }
         };
         //启动定时器

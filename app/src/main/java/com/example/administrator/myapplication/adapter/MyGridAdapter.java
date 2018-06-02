@@ -73,6 +73,7 @@ public class MyGridAdapter extends BaseAdapter {
             rb.setBackgroundColor(Color.WHITE);
             rb.setCompoundDrawablesWithIntrinsicBounds(0, dates.get(position).getImage(), 0, 0);
             rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+            rb.setPadding(20,20,20,20);
             rb.setGravity(Gravity.CENTER);
             rb.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -87,6 +88,7 @@ public class MyGridAdapter extends BaseAdapter {
             rb.setBackgroundColor(Color.WHITE);
             rb.setCompoundDrawablesWithIntrinsicBounds(0, dates.get(position).getImage(), 0, 0);
             rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+            rb.setPadding(20,20,20,20);
             rb.setGravity(Gravity.CENTER);
             rb.setOnClickListener(new View.OnClickListener() {
                 @Override

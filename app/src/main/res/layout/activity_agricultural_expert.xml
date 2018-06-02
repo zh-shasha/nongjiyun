@@ -36,7 +36,8 @@
     <LinearLayout
         android:id="@+id/home_agricultural_of_expert_layout_top"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:background="#FFA500"
          >
@@ -58,8 +59,14 @@
             android:drawablePadding="10dp"
             android:layout_gravity="center_vertical"
             android:drawableRight="@mipmap/btn_into_normal"
+            android:textColor="#FFF"
             android:text="详情" />
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </View>
     <GridView
         android:id="@+id/home_agricultural_of_expert_gridview"
         android:layout_width="match_parent"

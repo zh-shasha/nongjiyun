@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.Activity_login;
+import com.example.administrator.myapplication.activity.HomeTemp;
 import com.example.administrator.myapplication.activity.Home_HeadLine;
 import com.example.administrator.myapplication.activity.Home_MediaPlayer;
 import com.example.administrator.myapplication.activity.Home_Trends;
@@ -147,10 +148,10 @@ public class HomeFragment extends Fragment {
         grid_main.setAdapter(adapter);
 
         newMenus = new ArrayList<>();
-        HomeNewMenu news1 = new HomeNewMenu(R.mipmap.home_lv_iv1, "聪明人", "2017-1-1", "2017人",Home_Details.class);
-        HomeNewMenu news2 = new HomeNewMenu(R.mipmap.home_lv_iv2, "聪明人", "2017-1-1", "2017人",Home_Details.class);
-        HomeNewMenu news3 = new HomeNewMenu(R.mipmap.home_lv_iv3, "聪明人", "2017-1-1", "2017人",Home_Details.class);
-        HomeNewMenu news4 = new HomeNewMenu(R.mipmap.home_lv_iv3, "聪明人", "2017-1-1", "2017人",Home_Details.class);
+        HomeNewMenu news1 = new HomeNewMenu(R.mipmap.home_lv_iv1, "集成推广水稻绿色水稻高品质高效技术模式", "2018-01-15", "阅读数：207",Home_Details.class);
+        HomeNewMenu news2 = new HomeNewMenu(R.mipmap.home_lv_iv2, "集成推广水稻绿色水稻高品质高效技术模式", "2018-04-19", "阅读数：17人",Home_Details.class);
+        HomeNewMenu news3 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-06-14", "阅读数：217人",Home_Details.class);
+        HomeNewMenu news4 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-05-22", "阅读数：517人",Home_Details.class);
         newMenus.add(news1);
         newMenus.add(news2);
         newMenus.add(news3);
@@ -225,6 +226,8 @@ public class HomeFragment extends Fragment {
         ly_weather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),HomeTemp.class);
+                startActivity(intent);
                 String city="南京";
                 String url = "https://free-api.heweather.com/v5/weather?city="+city+"&key=fd5d4d77225e4592a6b9ef00def5ebca";
                 JSONObject js_request = new JSONObject();
