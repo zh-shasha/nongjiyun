@@ -1,16 +1,15 @@
 package com.example.administrator.myapplication.view;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
-import com.example.administrator.myapplication.adapter.GridViewAdapter;
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.moduels.HomeMenu;
+import com.example.administrator.myapplication.activity.HomeBrandFarmCapital;
+import com.example.administrator.myapplication.adapter.GridViewAdapter;
 import com.example.administrator.myapplication.moduels.HomeMoreMenu;
 import com.example.administrator.myapplication.moduels.MyDragGridView;
 
@@ -120,7 +119,7 @@ public class more extends AppCompatActivity {
         strList.add(new HomeMoreMenu(R.mipmap.nongyeqixiang, "农业气象", null));
         strList.add(new HomeMoreMenu(R.mipmap.xiangcunluxing, "乡村旅游", null));
         strList.add(new HomeMoreMenu(R.mipmap.yunshangzhineng, "云上智能", null));
-        strList.add(new HomeMoreMenu(R.mipmap.pinpainongzi, "品牌农资", null));
+        strList.add(new HomeMoreMenu(R.mipmap.pinpainongzi, "品牌农资", HomeBrandFarmCapital.class));
         strList.add(new HomeMoreMenu(R.mipmap.shilidianfan, "示例典范", null));
         adapter = new GridViewAdapter(more.this, strList);
 

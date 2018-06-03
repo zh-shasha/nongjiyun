@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     android:orientation="vertical">
 
     <ImageView
@@ -23,17 +24,16 @@
         android:layout_marginStart="26dp"
         android:layout_toEndOf="@+id/home_iv_system_notice"
         android:layout_toRightOf="@+id/home_iv_system_notice"
-        android:text="TextView" />
+        android:text="农技耘" />
 
     <TextView
         android:id="@+id/home_tv2_system_notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_iv_system_notice"
         android:layout_alignLeft="@+id/home_tv1_system_notice"
         android:layout_alignStart="@+id/home_tv1_system_notice"
-        android:layout_below="@+id/home_tv1_system_notice"
-        android:layout_marginTop="11dp"
-        android:text="TextView" />
+        android:text="农业专家来访" />
 
     <TextView
         android:id="@+id/home_tv3_system_notice"
@@ -44,7 +44,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:text="TextView" />
+        android:text="2018-06-02" />
 </RelativeLayout>
 
 

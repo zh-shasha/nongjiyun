@@ -1,0 +1,48 @@
+package com.example.administrator.myapplication.fragment;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.HomeFarmCapitalSelect;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class HomeBrandFarmCapitalPesticides extends Fragment {
+
+    private ImageView image_nongyao;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view= inflater.inflate(R.layout.fragment_home_brand_pesticides, container, false);
+        initView(view);
+        init();
+        return view;
+    }
+
+    private void init() {
+        image_nongyao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), HomeFarmCapitalSelect.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    private void initView(View view) {
+        image_nongyao=(ImageView)view.findViewById(R.id.image_nongyao);
+
+
+    }
+
+}

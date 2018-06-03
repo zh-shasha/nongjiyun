@@ -6,10 +6,10 @@
     tools:context="com.example.administrator.myapplication.fragment.HomeSearchinformationFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/lv_search_information"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:text="资讯"/>
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp">
+    </ListView>
 </LinearLayout>

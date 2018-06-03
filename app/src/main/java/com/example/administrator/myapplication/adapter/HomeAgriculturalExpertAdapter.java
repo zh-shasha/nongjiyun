@@ -52,6 +52,7 @@ public class HomeAgriculturalExpertAdapter extends BaseAdapter {
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, expertMenus.getImage(), 0, 0);
         rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 10));
+        rb.setPadding(10,10,10,10);
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

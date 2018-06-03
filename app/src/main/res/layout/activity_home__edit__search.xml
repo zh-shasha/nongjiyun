@@ -19,15 +19,16 @@
                 android:id="@+id/home_edit_search_back"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="5dp"
-                android:src="@mipmap/btn_back_normal"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:paddingRight="40dp"
+                android:src="@mipmap/btn_back_normal1"
                 android:layout_gravity="center_vertical"/>
             <EditText
                 android:id="@+id/home_et"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:layout_weight="5"
+                android:layout_weight="7"
                 android:clickable="true"
                 android:layout_marginRight="20dp"
                 android:hint="请输入搜索内容"
@@ -40,94 +41,104 @@
     </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#fff"
-        android:orientation="horizontal">
-        <TextView
+        android:layout_height="match_parent"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="大家热搜"
+                android:textSize="20dp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/springgreen"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="大家热搜"
-            android:textSize="20dp"
-            android:paddingLeft="15dp"
-            android:layout_gravity="center_vertical"
-            android:textColor="@color/springgreen"
-            />
-    </LinearLayout>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-          android:orientation="horizontal">
-        <TextView
-            android:id="@+id/home_search_rice"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="#EBEBEB"
+            >
+            <TextView
+                android:id="@+id/home_search_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="稻"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/home_search_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="麦"
+                android:layout_marginLeft="30dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/home_search_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="专家发布"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/home_search_Grape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="葡萄"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/home_search_protection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="植保信息"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="稻"
-            android:layout_marginLeft="20dp"
-            android:background="#fff"/>
-          <TextView
-              android:id="@+id/home_search_wheat"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textSize="20dp"
-              android:text="麦"
-              android:layout_marginLeft="30dp"
-              android:background="#fff"/>
-          <TextView
-              android:id="@+id/home_search_expert"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textSize="20dp"
-              android:text="专家发布"
-              android:layout_marginLeft="20dp"
-              android:background="#fff"/>
-          <TextView
-              android:id="@+id/home_search_Grape"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textSize="20dp"
-              android:text="葡萄"
-              android:layout_marginLeft="20dp"
-              android:background="#fff"/>
-          <TextView
-              android:id="@+id/home_search_protection"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textSize="20dp"
-              android:text="植保信息"
-              android:layout_marginLeft="20dp"
-              android:background="#fff"/>
-      </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:id="@+id/home_search_Scab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="赤霉病"
-            android:layout_marginLeft="20dp"
-            android:background="#fff"/>
-        <TextView
+            android:orientation="horizontal"
+            android:background="#EBEBEB"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/home_search_Scab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="赤霉病"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+            <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="西瓜"
-            android:layout_marginLeft="20dp"
-            android:background="#fff"/>
-        <TextView
-            android:id="@+id/home_search_yuyang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="育秧"
-            android:background="#fff"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="西瓜"
+                android:layout_marginLeft="20dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/home_search_yuyang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="育秧"
+                android:background="#fff"/>
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+ </LinearLayout>
+

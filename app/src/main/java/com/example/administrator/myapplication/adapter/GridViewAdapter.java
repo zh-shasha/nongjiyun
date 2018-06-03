@@ -6,11 +6,9 @@ import android.graphics.Color;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.RadioButton;
 
-import com.example.administrator.myapplication.moduels.HomeMenu;
 import com.example.administrator.myapplication.moduels.HomeMoreMenu;
 import com.example.administrator.myapplication.utils.ScreenUtil;
 
@@ -55,6 +53,7 @@ public class GridViewAdapter extends BaseAdapter {
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, strList.get(position).getImage(), 0, 0);
         rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+        rb.setPadding(20,20,20,20);
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

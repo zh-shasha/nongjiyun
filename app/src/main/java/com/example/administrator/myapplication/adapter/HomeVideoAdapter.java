@@ -45,27 +45,12 @@ public class HomeVideoAdapter extends BaseAdapter {
        // GrideViewScroll grid_video=(GrideViewScroll)convertView.findViewById(R.id.grid_video);
         final HomeVideoMenu homeVideoMenu = videoMenus.get(position);
         RadioButton rb=new RadioButton(context);
-//        if (convertView == null) {
-//            convertView = LayoutInflater.from(context).inflate(R.layout.grid_item2,null, false);
-//            TextView grid_item2_tv=(TextView)convertView.findViewById(R.id.grid_item2_tv);
-//            ImageView grid_item2_iv=(ImageView)convertView.findViewById(R.id.grid_item2_iv);
-//
-//            grid_item2_iv.setImageResource(videoMenus.get(position).getIv_video());
-//            grid_item2_tv.setText(videoMenus.get(position).getTv_video());
-//        }
-////        grid_video.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View v) {
-////                Intent intent=new Intent(context,videoMenus.get(position).getVideo_url());
-////                context.startActivity(intent);
-////            }
-////        });
         rb.setText(videoMenus.get(position).getTv_video());
         rb.setButtonDrawable(null);
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, videoMenus.get(position).getIv_video(), 0, 0);
         rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 10));
-
+        rb.setPadding(20,20,20,20);
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

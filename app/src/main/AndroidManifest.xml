@@ -50,6 +50,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.HomeBrandFarmCapital"></activity>
         <activity android:name=".activity.QuickQuestionSubmission" />
         <activity android:name=".activity.QuickQuestionRecordVideo" />
         <activity android:name=".activity.QuickQuestionChooseType" />
@@ -147,7 +148,8 @@
         <activity android:name=".activity.HomeSearchResultTab" />
         <activity android:name=".activity.HomeScienceTechnologyDynamic" />
         <activity android:name=".activity.HomeExpertDetailedInformation" />
-        <activity android:name=".activity.HomeTemp"></activity>
+        <activity android:name=".activity.HomeTemp" />
+        <activity android:name=".activity.HomeFarmCapitalSelect"></activity>
     </application>
 
 </manifest>

@@ -6,11 +6,13 @@
     tools:context="com.example.administrator.myapplication.fragment.HomeSearchCommunicationFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.example.administrator.myapplication.view.GrideViewScroll
+        android:id="@+id/grid_video"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:text="视频" />
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:numColumns="2">
+    </com.example.administrator.myapplication.view.GrideViewScroll>
 
 </LinearLayout>

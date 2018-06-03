@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@mipmap/icon_default_head" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image1"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_toRightOf="@+id/image1"
+        android:text="标题" />
+
+    <TextView
+        android:id="@+id/textcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texttitle"
+        android:layout_alignStart="@+id/texttitle"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="10dp"
+        android:text="内容" />
+
+    <ImageView
+        android:id="@+id/imageadress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_alignStart="@+id/image1"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/btn_me_selected" />
+
+    <TextView
+        android:id="@+id/textadress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageadress"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_toRightOf="@+id/image1"
+        android:text="显示地点" />
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textadress"
+        android:layout_alignBottom="@+id/textadress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="2018-05-17" />
+
+    <TextView
+        android:id="@+id/texttip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textcontent"
+        android:layout_alignLeft="@+id/textdate"
+        android:layout_alignStart="@+id/textdate"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:background="@color/organge"
+        android:text="已过期" />
+</RelativeLayout>

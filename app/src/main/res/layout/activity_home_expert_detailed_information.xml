@@ -28,17 +28,18 @@
     </android.support.v7.widget.Toolbar>
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="0dp"
+    android:padding="10dp"
+    android:layout_weight="10">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
+             android:padding="5dp"
             android:layout_height="50dp">
-
-            <android.support.v4.widget.CircleImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/circleImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +47,6 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:src="@mipmap/icon_default_head" />
-
             <TextView
                 android:id="@+id/textname"
                 android:layout_width="wrap_content"
@@ -83,8 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/textname"
                 android:layout_alignBottom="@+id/textname"
-                android:layout_marginLeft="30dp"
-                android:layout_marginStart="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="60dp"
                 android:textColor="@android:color/holo_blue_bright"
                 android:layout_toEndOf="@+id/textaccount"
                 android:layout_toRightOf="@+id/textaccount"
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/textprovince"
                 android:layout_alignBottom="@+id/textprovince"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginStart="20dp"
                 android:background="@color/green"
                 android:textColor="#FFF"
@@ -108,11 +108,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="vertical">
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:drawablePadding="8dp"
                 android:drawableLeft="@mipmap/icon_expert_01"
                 android:button="@null"
                 android:text="专家介绍" />
@@ -153,11 +155,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:padding="5dp"
                 android:orientation="horizontal">
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_weight="4"
+                    android:drawablePadding="8dp"
                     android:button="@null"
                     android:layout_gravity="center"
                     android:drawableLeft="@mipmap/icon_expert_02"
@@ -179,12 +183,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:padding="5dp"
                 android:orientation="horizontal">
                 <RadioButton
                     android:drawableLeft="@mipmap/icon_expert_03"
                     android:button="@null"
                     android:layout_width="0dp"
-                    android:layout_weight="3"
+                    android:layout_weight="4"
+                    android:drawablePadding="8dp"
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"
                     android:text="专家答疑"/>
@@ -208,6 +214,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
@@ -224,6 +231,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -242,6 +250,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -260,6 +269,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -278,6 +288,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -296,6 +307,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -308,20 +320,29 @@
                 android:layout_height="wrap_content"
                 android:text="2018-06-02"/>
         </LinearLayout>
-    </LinearLayout>
-</ScrollView>
 
+    </LinearLayout>
+
+</ScrollView>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="5dp"
         android:background="#EBEBEB">
     </View>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="咨询专家"
-        android:layout_gravity="center"
-        android:background="@color/springgreen"
-        android:textColor="#FFF"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+          android:gravity="center"
+         android:layout_weight="1.5"
+         android:orientation="vertical">
+
+         <Button
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:text="咨询专家"
+             android:layout_gravity="center"
+             android:background="@color/springgreen"
+             android:textColor="#FFF"/>
+     </LinearLayout>
 
 </LinearLayout>
