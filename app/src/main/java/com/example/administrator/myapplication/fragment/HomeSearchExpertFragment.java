@@ -38,7 +38,7 @@ public class HomeSearchExpertFragment extends Fragment {
 
     private void init() {
         provincialMenu=new ArrayList<>();
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.icon_default_head,"谢成玲","扬州市农业","39","省级专家","水稻", HomeExpertDetailedInformation.class));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","扬州市农业","39","省级专家","水稻", HomeExpertDetailedInformation.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.icon_default_head,"谢成玲","扬州市农业","39","省级专家","水稻",Home_Details.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.icon_default_head,"谢成玲","扬州市农业","39","省级专家","水稻",HomeExpertDetailedInformation.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.icon_default_head,"谢成玲","扬州市农业","39","省级专家","水稻",null));

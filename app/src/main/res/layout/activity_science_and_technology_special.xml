@@ -32,7 +32,8 @@
          >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,14 +60,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#EBEBEB"
-
                 >
-
             </View>
             <com.example.administrator.myapplication.utils.ListViewForScrollView
                 android:id="@+id/science_technology_lv"
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
+                android:layout_height="wrap_content">
             </com.example.administrator.myapplication.utils.ListViewForScrollView>
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,9 +80,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#EBEBEB"
-                >
-
+                android:background="#EBEBEB">
             </View>
             <com.example.administrator.myapplication.utils.ListViewForScrollView
                 android:id="@+id/science_technology_pic_lv"

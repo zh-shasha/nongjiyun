@@ -27,7 +27,7 @@ public class HomeVideoAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 2;
+        return videoMenus.size();
     }
 
     @Override

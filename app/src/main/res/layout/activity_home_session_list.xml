@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.activity.HomeSessionList">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <ImageView
+            android:id="@+id/home_session_list_back_iv"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="100dp"
+                android:text="会话列表"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/home_session_mail_iv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/btn_mail_normal" />
+
+            <ImageView
+                android:id="@+id/home_session_add_iv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/btn_add_normal" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#FFF"
+            >
+
+            <ImageView
+                android:id="@+id/image_head1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icon_default_head" />
+
+            <TextView
+                android:id="@+id/text_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/image_head1"
+                android:layout_toRightOf="@+id/image_head1"
+                android:text="张正国" />
+
+            <TextView
+                android:id="@+id/text_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name1"
+                android:layout_alignStart="@+id/text_name1"
+                android:layout_below="@+id/text_name1"
+                android:layout_marginTop="6dp"
+                android:text="[分享]" />
+
+            <TextView
+                android:id="@+id/text_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_name1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="上午9:33" />
+
+            <ImageView
+                android:id="@+id/image_account1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/text_time1"
+                android:layout_alignRight="@+id/text_time1"
+                android:layout_alignTop="@+id/text_content1"
+                android:src="@mipmap/icon_circle_red" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#FFF"
+            >
+            <ImageView
+                android:id="@+id/image_head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icon_default_head" />
+
+            <TextView
+                android:id="@+id/text_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/image_head2"
+                android:layout_toRightOf="@+id/image_head2"
+                android:text="嗯" />
+
+            <TextView
+                android:id="@+id/text_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name2"
+                android:layout_alignStart="@+id/text_name2"
+                android:layout_below="@+id/text_name2"
+                android:layout_marginTop="6dp"
+                android:text="我想你了" />
+
+            <TextView
+                android:id="@+id/text_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_name2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="昨天" />
+
+            <ImageView
+                android:id="@+id/image_account2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/text_time2"
+                android:layout_alignRight="@+id/text_time2"
+                android:layout_alignTop="@+id/text_content2"
+                android:src="@mipmap/icon_circle_red" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#FFF"
+            >
+            <ImageView
+                android:id="@+id/image_head3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icon_default_head" />
+
+            <TextView
+                android:id="@+id/text_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/image_head3"
+                android:layout_toRightOf="@+id/image_head3"
+                android:text="凌成功 " />
+
+            <TextView
+                android:id="@+id/text_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name3"
+                android:layout_alignStart="@+id/text_name3"
+                android:layout_below="@+id/text_name3"
+                android:layout_marginTop="6dp"
+                android:text="good " />
+
+            <TextView
+                android:id="@+id/text_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_name3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="昨天" />
+
+            <ImageView
+                android:id="@+id/image_account3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/text_time3"
+                android:layout_alignRight="@+id/text_time3"
+                android:layout_alignTop="@+id/text_content3"
+                android:src="@mipmap/icon_circle_red" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

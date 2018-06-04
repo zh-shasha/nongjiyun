@@ -56,7 +56,7 @@
             android:paddingTop="10dp"
             android:textColor="#99CC99"
             android:textColorHint="#fff"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <View
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
             android:background="@null"
-            android:drawableLeft="@mipmap/icon_user"
+            android:drawableLeft="@mipmap/icon_password"
             android:drawablePadding="10dp"
             android:hint="密码"
             android:inputType="textPassword"
@@ -80,7 +80,7 @@
             android:paddingTop="10dp"
             android:textColor="#99CC99"
             android:textColorHint="#fff"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <View
             android:layout_width="match_parent"
@@ -104,7 +104,7 @@
                 android:layout_marginTop="5dp"
                 android:text="点击“登录”即表示您同意《农技耘APP免责申明》"
                 android:textColor="#FFC1E9BA"
-                android:textSize="18dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <Button
@@ -113,11 +113,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/selector_btn_yzm"
             android:text="登录"
             android:textColor="#fff"
-            android:textSize="30dp" />
+            android:textSize="18dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -134,31 +134,30 @@
 
                 <TextView
                     android:id="@+id/tv_fpassward"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                    android:layout_marginLeft="30dp"
-                    android:padding="2dp"
                     android:paddingBottom="2dp"
                     android:paddingTop="5dp"
                     android:text="忘记密码?"
                     android:textColor="#FFC1E9BA"
-                    android:textSize="18dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_marginLeft="20sp"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingBottom="2dp"
                     android:paddingTop="2dp"
                     android:text="还没有账号?"
                     android:textColor="#FFC1E9BA"
-                    android:textSize="18dp" />
+                    android:textSize="15dp" />
 
                 <Button
                     android:id="@+id/reister"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
@@ -168,7 +167,7 @@
                     android:padding="0dp"
                     android:text="现在注册"
                     android:textColor="#FF0E6938"
-                    android:textSize="18dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -180,7 +179,7 @@
         android:layout_width="match_parent"
         android:orientation="vertical">
         <LinearLayout
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal">
@@ -200,6 +199,7 @@
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 android:text="快捷登录"
+                android:textSize="15dp"
                  />
             <View
                 android:layout_marginRight="30dp"

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="5dp">
 
     <ImageView
@@ -18,12 +18,12 @@
         android:id="@+id/home_farming_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
+        android:layout_alignTop="@+id/home_farming_item_iv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/home_farming_item_iv"
         android:layout_toRightOf="@+id/home_farming_item_iv"
-        android:text="TextView" />
+        android:text="标题" />
 
     <TextView
         android:id="@+id/home_farming_item_date"
@@ -32,7 +32,7 @@
         android:layout_alignBottom="@+id/home_farming_item_iv"
         android:layout_alignEnd="@+id/home_farming_item_title"
         android:layout_alignRight="@+id/home_farming_item_title"
-        android:text="TextView" />
+        android:text="日期" />
 
     <TextView
         android:id="@+id/home_farming_item_reader"
@@ -43,5 +43,5 @@
         android:layout_alignTop="@+id/home_farming_item_date"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
-        android:text="TextView" />
+        android:text="阅读数" />
 </RelativeLayout>

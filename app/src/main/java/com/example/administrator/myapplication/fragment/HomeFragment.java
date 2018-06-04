@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.activity.Activity_login;
+import com.example.administrator.myapplication.activity.HomeSessionList;
 import com.example.administrator.myapplication.activity.HomeTemp;
 import com.example.administrator.myapplication.activity.Home_HeadLine;
 import com.example.administrator.myapplication.activity.Home_MediaPlayer;
@@ -204,7 +204,7 @@ public class HomeFragment extends Fragment {
         home_iv_person.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), Activity_login.class);
+                Intent intent=new Intent(getActivity(), HomeSessionList.class);
                 startActivity(intent);
             }
         });
