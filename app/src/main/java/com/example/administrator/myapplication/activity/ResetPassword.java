@@ -1,18 +1,15 @@
 package com.example.administrator.myapplication.activity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.utils.MessageTest;
-import com.google.gson.Gson;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,7 +21,7 @@ public class ResetPassword extends AppCompatActivity {
     private EditText et_phone;
     private EditText et_password;
     private EditText et_password_ok;
-    private ImageView reset_pass_iv_next;
+    private TextView reset_pass_iv_next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +29,7 @@ public class ResetPassword extends AppCompatActivity {
         et_password=(EditText)findViewById(R.id.et_password);
         et_password_ok=(EditText)findViewById(R.id.et_password_ok);
         et_phone=(EditText)findViewById(R.id.et_phone);
-        reset_pass_iv_next=(ImageView)findViewById(R.id.reset_pass_iv_next);
+        reset_pass_iv_next=(TextView)findViewById(R.id.reset_pass_iv_next);
         Intent intent=getIntent();
         String phonenumber=intent.getStringExtra("phonenumber");
         et_phone.setText(phonenumber);

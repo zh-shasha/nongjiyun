@@ -5,26 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.myapplication.view.agricultural_expert">
+    tools:context="com.example.administrator.myapplication.activity.MyCollection">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/springgreen">
-            <ImageView
-                android:id="@+id/agricultural_expert_back_iv"
-                android:layout_width="18dp"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:src="@mipmap/btn_back_normal" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="农业视频"
-                android:textColor="#FFF"
-                android:textSize="20dp" />
+        android:background="#ff2dc667">
+
+        <ImageView
+            android:id="@+id/reister_back_bt"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="我的回答"
+            android:textColor="#FFF" />
     </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,15 +47,11 @@
         </android.support.design.widget.TabLayout>
 
     </LinearLayout>
-    <!--<View-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="#EBEBEB">-->
-    <!--</View>-->
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager_ShouYe"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
     </android.support.v4.view.ViewPager>
+
 </LinearLayout>

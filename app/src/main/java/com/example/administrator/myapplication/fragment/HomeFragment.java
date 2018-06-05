@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.HomeSessionList;
@@ -256,8 +255,8 @@ public class HomeFragment extends Fragment {
 
                     @Override
                     public void onSuccess(String arg0) {
-                        System.out.println(arg0);
-                        Toast.makeText(getActivity(), arg0, Toast.LENGTH_SHORT).show();
+//                        System.out.println(arg0);
+//                        Toast.makeText(getActivity(), arg0, Toast.LENGTH_SHORT).show();
                         try {
                             //服务器返回的是一个json封装的字符串，将其转换为json对象
                             JSONObject jsonObject = new JSONObject(arg0);

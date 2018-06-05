@@ -32,6 +32,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_vertical"
                 android:text="忘记密码"
+                android:textSize="20dp"
                 android:textColor="#FFF"
                 />
         </RelativeLayout>
@@ -48,7 +49,7 @@
         <EditText
             android:maxLength="11"
             android:padding="10dp"
-            android:id="@+id/reister_et_phone"
+            android:id="@+id/forgetpass_et_phone"
             android:background="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +60,7 @@
         <Button
 
             android:background="@drawable/selector_btn_yzm"
-            android:id="@+id/reister_bt_yzm"
+            android:id="@+id/forgetpass_bt_yzm"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_marginRight="10dp"
@@ -83,7 +84,7 @@
         android:orientation="horizontal">
         <EditText
             android:inputType="phone"
-            android:id="@+id/reister_et_yzm"
+            android:id="@+id/forgetpass_et_yzm"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +95,7 @@
 
 
     <TextView
-        android:id="@+id/reister_iv_next"
+        android:id="@+id/forgetpass_iv_next"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="200dp"

@@ -11,12 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff2dc667">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ff2dc067"
-            android:orientation="horizontal">
-
             <ImageView
                 android:id="@+id/mydata_back_bt"
                 android:layout_width="18dp"
@@ -25,27 +19,33 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:src="@mipmap/btn_back_normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
                 android:text="我的资料"
+                android:paddingLeft="110dp"
                 android:textColor="#FFF"
-                android:textSize="25sp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/mydata_save_tv"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
                 android:layout_height="wrap_content"
-               android:layout_marginLeft="300dp"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="center_vertical"
                 android:text="保存"
+                android:gravity="center"
                 android:textColor="#FFF"
                 android:textSize="20sp" />
-        </RelativeLayout>
+        </LinearLayout>
+
+
     </android.support.v7.widget.Toolbar>
     <View
         android:layout_width="match_parent"
@@ -59,28 +59,29 @@
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
         <TextView
-
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  行业类别    "/>
+            android:text="行业类别"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_01"
-            android:layout_weight="4"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="可多选（点击课删除）"/>
 
         <ImageView
-
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/selector_btn_into" />
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
 
+            android:src="@drawable/selector_btn_into" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -96,24 +97,28 @@
         <TextView
             android:layout_weight="2"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  头像    "/>
+            android:text="头像"/>
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:id="@+id/iv_photo"
             android:src="@mipmap/icon_default_head"
             android:textSize="15dp"
             android:background="#fff"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
-        <ImageView
-            android:src="@mipmap/btn_into_normal"
-            android:layout_gravity="center"
-            android:background="#fff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:src="@mipmap/btn_into_normal" />
 
     </LinearLayout>
     <View
@@ -129,25 +134,29 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="  姓名    "/>
+            android:text="姓名"/>
 
         <TextView
-            android:gravity="right"
             android:id="@+id/tv_nickname"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_weight="7"
             android:background="#fff"
-            android:hint=""
+            android:hint="巩鹏飞"
             android:textSize="15dp" />
         <ImageView
             android:src="@mipmap/btn_into_normal"
-            android:layout_gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
@@ -164,25 +173,29 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="  单位名称    "/>
+            android:paddingLeft="10dp"
+            android:text="单位名称"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_company"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:textSize="15dp"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint=""/>
+            android:hint="南京工业职业技术学院"/>
 
         <ImageView
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
@@ -199,24 +212,28 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  身份    "/>
+            android:text="身份"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_type"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:textSize="15dp"
             android:background="#fff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="农技人员"
              />
         <ImageView
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
@@ -233,25 +250,28 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  学历    "/>
+            android:text="学历"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_education"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:textSize="15dp"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint=""/>
+            android:hint="博士生"/>
 
         <ImageView
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <View
@@ -267,27 +287,28 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="  地址    "/>
+            android:text="地址"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_adress"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:textSize="15dp"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="基础行政管理人员"/>
         <ImageView
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
-
-
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -302,13 +323,15 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  性别    "/>
+            android:text="性别"/>
         <TextView
             android:gravity="right"
             android:id="@+id/tv_sex"
-            android:layout_weight="1"
+            android:layout_weight="7"
             android:layout_gravity="center"
             android:textSize="15dp"
             android:background="#fff"
@@ -319,7 +342,8 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
 
@@ -338,20 +362,23 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="  手机号码    " />
+            android:text="手机号码" />
 
         <TextView
             android:id="@+id/tv_phone"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#fff"
-            android:gravity="right"
-            android:textSize="15dp" />
+             android:paddingLeft="132dp"
+            android:textSize="15dp"
+            android:text="18851825671"/>
 
     </LinearLayout>
     <View
@@ -367,15 +394,17 @@
         android:orientation="horizontal">
         <TextView
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="  邮箱    "/>
+            android:text="邮箱"/>
 
         <TextView
             android:gravity="right"
             android:id="@+id/tv_email"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_weight="7"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#fff"
@@ -385,7 +414,8 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
     </LinearLayout>
 <LinearLayout

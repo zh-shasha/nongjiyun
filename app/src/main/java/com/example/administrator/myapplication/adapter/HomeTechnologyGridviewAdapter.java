@@ -50,6 +50,7 @@ public class HomeTechnologyGridviewAdapter extends BaseAdapter {
         rb.setBackgroundColor(Color.WHITE);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, technology_gridview.getImage(), 0, 0);
         rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 5));
+        rb.setPadding(10,10,10,10);
         rb.setGravity(Gravity.CENTER);
         rb.setOnClickListener(new View.OnClickListener() {
             @Override

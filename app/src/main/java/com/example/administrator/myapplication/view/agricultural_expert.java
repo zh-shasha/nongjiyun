@@ -58,7 +58,7 @@ public class agricultural_expert extends AppCompatActivity implements View.OnCli
         expertMenu.add(new HomeMenu(R.mipmap.nongjing,"农经",null));
         expertMenu.add(new HomeMenu(R.mipmap.nongyexinxihua,"农业信息化",null));
         expertMenu.add(new HomeMenu(R.mipmap.nongchanpinzhiliang,"农产品质量",null));
-        expertMenu.add(new HomeMenu(R.mipmap.nongyebaoxian,"农业保险",null));
+        expertMenu.add(new HomeMenu(R.mipmap.nongchanpinjiagong,"农业保险",null));
         adapter=new HomeAgriculturalExpertAdapter(agricultural_expert.this,expertMenu);
         expert_grid.setAdapter(adapter);
     }

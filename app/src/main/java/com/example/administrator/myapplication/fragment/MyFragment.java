@@ -21,8 +21,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.activity.Activity_login;
 import com.example.administrator.myapplication.activity.MyDataActivity;
+import com.example.administrator.myapplication.activity.MyQrCode;
+import com.example.administrator.myapplication.activity.MyQuestion;
+import com.example.administrator.myapplication.activity.MyRespone;
 import com.example.administrator.myapplication.activity.MyShareActivity;
 import com.example.administrator.myapplication.activity.My_FeedBackActivity;
 import com.example.administrator.myapplication.activity.My_SettingActivity;
@@ -31,7 +33,7 @@ import com.example.administrator.myapplication.view.CustomToastView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyFragment extends Fragment {
+public class MyFragment extends Fragment{
     private RadioButton rbqd;
     private RadioButton rbshop;
     private RadioButton rbjf;
@@ -90,6 +92,8 @@ public class MyFragment extends Fragment {
         tv_phone = (TextView) view.findViewById(R.id.tv_phone);
         tv_type = (TextView) view.findViewById(R.id.tv_type);
         tv_nickname = (TextView) view.findViewById(R.id.mydata_login_tv);
+
+
         return view;
     }
         @Override
@@ -105,15 +109,15 @@ public class MyFragment extends Fragment {
                 String name = tv_nickname.getText().toString();
                 @Override
                 public void onClick(View v) {
-                    if (name.length()<=0){
-                        Intent intent = new Intent(getActivity(),Activity_login.class);
-                        startActivity(intent);
-                    }else {
+//                    if (name.length()<=0){
+//                        Intent intent = new Intent(getActivity(),Activity_login.class);
+//                        startActivity(intent);
+//                    }else {
                         Intent intent = new Intent(getActivity(),MyDataActivity.class);
                         startActivity(intent);
                     }
 
-                }
+ //              }
             });
             super.onResume();
         }
@@ -192,10 +196,27 @@ public class MyFragment extends Fragment {
     }
     //我的提问
     private void initAsk(View view) {
+        rbask=(RadioButton)view.findViewById(R.id.ask_my_rb);
+        rbask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), MyQuestion.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //我的回答
     private void initAnswer(View view) {
+        rbanswer=(RadioButton)view.findViewById(R.id.answer_my_rb);
+        rbanswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), MyRespone.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     //交流
@@ -262,14 +283,14 @@ public class MyFragment extends Fragment {
 
     //我的二维码
     private void initEwm(View view) {
+        rbewm=(RadioButton)view.findViewById(R.id.ewm_my_rb);
+        rbewm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(), MyQrCode.class);
+                startActivity(intent);
+            }
+        });
     }
 
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if (requestCode==12 && resultCode==21){
-//            String name=data.getStringExtra("name");
-//            Toast.makeText(getActivity(),name,Toast.LENGTH_SHORT).show();
-//        }
-//    }
 }

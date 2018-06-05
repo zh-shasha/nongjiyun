@@ -5,27 +5,27 @@ public class BecomeRich {
     private String title;
     private String num;
     private String type;
-    private String top;
+//    private String top;
 
     public BecomeRich() {
     }
 
     public BecomeRich(int image, String title,
-                      String num, String type, String top) {
+                      String num, String type) {
         this.image = image;
         this.title = title;
         this.num = num;
         this.type = type;
-        this.top = top;
+//        this.top = top;
     }
 
-    public String getTop() {
-        return top;
-    }
-
-    public void setTop(String top) {
-        this.top = top;
-    }
+//    public String getTop() {
+//        return top;
+//    }
+//
+//    public void setTop(String top) {
+//        this.top = top;
+//    }
 
     public int getImage() {
         return image;

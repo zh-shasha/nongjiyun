@@ -3,14 +3,13 @@ package com.example.administrator.myapplication.activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,14 +30,14 @@ public class ForgetPassActivity extends AppCompatActivity {
     private EditText et_num;//验证码
     private Button bt_num;//获取验证码
     private Button bt_next;//下一步
-    private ImageView forgetpass_iv_next;
+    private TextView forgetpass_iv_next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_pass);
         x.view().inject(this);
-        forgetpass_iv_next=(ImageView)findViewById(R.id.forgetpass_iv_next);
+        forgetpass_iv_next=(TextView) findViewById(R.id.forgetpass_iv_next);
         et_phone=(EditText)findViewById(R.id.forgetpass_et_phone);
         bt_num = (Button)findViewById(R.id.forgetpass_bt_yzm);
         et_num=(EditText)findViewById(R.id.forgetpass_et_yzm);

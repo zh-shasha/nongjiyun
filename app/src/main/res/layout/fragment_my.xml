@@ -6,21 +6,18 @@
     tools:context="com.example.administrator.myapplication.fragment.MyFragment"
     android:background="#EBEBEB">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="#ff2dc667"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
-
+        android:background="@color/green">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="我的"
-            android:textColor="#F0F8FF"
-            android:textSize="25sp" />
-    </LinearLayout>
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#FFF"/>
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:id="@+id/line_me"
@@ -44,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:text="点击头像登录" />
+            android:hint="点击头像登录" />
         <TextView
             android:id="@+id/tv_type"
             android:layout_width="wrap_content"

@@ -50,7 +50,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.HomeAddFriendsList"></activity>
+        <activity android:name=".activity.HomeAddFriendsList" />
         <activity android:name=".activity.HomeBrandFarmCapital" />
         <activity android:name=".activity.QuickQuestionSubmission" />
         <activity android:name=".activity.QuickQuestionRecordVideo" />
@@ -152,7 +152,15 @@
         <activity android:name=".activity.HomeTemp" />
         <activity android:name=".activity.HomeFarmCapitalSelect" />
         <activity android:name=".activity.HomeSessionList" />
-        <activity android:name=".activity.HomeGoodFriendsList"></activity>
+        <activity android:name=".activity.HomeGoodFriendsList" />
+        <activity android:name=".activity.MyDateIndustryTypeChoose" />
+        <activity android:name=".activity.MyDateCityChoose" />
+        <activity android:name=".activity.MyQrCode" />
+        <activity android:name=".activity.MyRespone" />
+        <activity android:name=".activity.MyCollection" />
+        <activity android:name=".activity.MyQuestion" />
+        <activity android:name=".activity.MyExtensionLog" />
+        <activity android:name=".activity.MyFillInTheLog"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.fragment.MyQuickQuestionFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="1dp"
+            android:textColor="#FFF"
+            android:background="@drawable/corners_bg3"
+            android:text="粮经" />
+
+        <TextView
+            android:id="@+id/text_quetion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_tip"
+            android:layout_alignBottom="@+id/text_tip"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@+id/text_tip"
+            android:layout_toRightOf="@+id/text_tip"
+            android:text="看看我的丝瓜怎嘛了" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_tip"
+            android:layout_alignStart="@+id/text_tip"
+            android:layout_below="@+id/text_tip"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/ic_launcher" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="80dp"
+            android:background="#EBEBEB">
+        </View>
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:text="2018-06-05 15:11" />
+
+        <TextView
+            android:id="@+id/text_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_time"
+            android:layout_alignBottom="@+id/text_time"
+            android:layout_alignEnd="@+id/text_quetion"
+            android:layout_alignRight="@+id/text_quetion"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/text_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_delete"
+            android:layout_alignBottom="@+id/text_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="回复数：7" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -19,8 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home_farming_item_iv"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/home_farming_item_iv"
         android:layout_toRightOf="@+id/home_farming_item_iv"
         android:text="标题" />

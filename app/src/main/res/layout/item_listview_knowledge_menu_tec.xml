@@ -14,7 +14,8 @@
         android:layout_alignParentTop="true"
         android:textSize="17sp"
         android:layout_toEndOf="@+id/tec_news_img"
-        android:text="标题" />
+        android:text="标题"
+        android:layout_toRightOf="@+id/tec_news_img" />
 
     <TextView
         android:id="@+id/tec_tv_news_date"
@@ -24,7 +25,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="11dp"
         android:layout_marginTop="42dp"
-        android:text="时间" />
+        android:text="时间"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp" />
 
     <TextView
         android:id="@+id/tec_tv_news_readnum"
@@ -33,7 +36,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/tec_tv_news_date"
         android:layout_marginEnd="39dp"
-        android:text="阅读数：" />
+        android:text="阅读数："
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="39dp" />
 
     <ImageView
         android:layout_marginLeft="5dp"
@@ -44,6 +49,7 @@
         android:layout_height="10dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:srcCompat="@android:drawable/btn_radio" />
+        app:srcCompat="@android:drawable/btn_radio"
+        android:layout_alignParentLeft="true" />
 
 </RelativeLayout>

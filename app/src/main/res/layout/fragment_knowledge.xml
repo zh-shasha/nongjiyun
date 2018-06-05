@@ -8,21 +8,19 @@
     android:background="#EBEBEB">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="#ff2dc667"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
-
+        android:background="@color/green">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="知识库"
-            android:textColor="#F0F8FF"
-            android:textSize="25sp" />
-    </LinearLayout>
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#FFF"/>
+    </android.support.v7.widget.Toolbar>
+
 
     <GridView
         android:id="@+id/knowledge_gv"

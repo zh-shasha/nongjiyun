@@ -71,6 +71,8 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
     private LinearLayout line_mydata_name;
     private LinearLayout line_mydata_head;
     private LinearLayout line_mydata_sex;
+    private LinearLayout line_mydata_kind;
+    private LinearLayout line_mydata_address;
 
 
     @Override
@@ -95,6 +97,8 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
         line_mydata_name=(LinearLayout)findViewById(R.id.line_mydata_name);
         line_mydata_head =(LinearLayout)findViewById(R.id.line_mydata_head);
         line_mydata_sex =(LinearLayout)findViewById(R.id.line_mydata_sex);
+        line_mydata_kind=(LinearLayout)findViewById(R.id.line_mydata_kind);
+        line_mydata_address=(LinearLayout)findViewById(R.id.line_mydata_address);
 
         SharedPreferences sp=getSharedPreferences("admin", MODE_PRIVATE);
         tv_nickname.setText(sp.getString("nickname",""));
@@ -123,6 +127,8 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
         line_mydata_head.setOnClickListener(this);
         tv_nickname.setOnClickListener(this);
         line_mydata_sex.setOnClickListener(this);
+        line_mydata_kind.setOnClickListener(this);
+        line_mydata_address.setOnClickListener(this);
 
 
 //        line_mydata_id.setOnClickListener(new View.OnClickListener() {
@@ -369,8 +375,10 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
                 dialog.setCanceledOnTouchOutside(true);
                 break;
 
-
-
+            case R.id.line_mydata_kind:
+                Intent intent6=new Intent(MyDataActivity.this,MyDateIndustryTypeChoose.class);
+                startActivity(intent6);
+                break;
             case R.id.mydata_save_tv:
 
               //  String phone=tv_phone.getText().toString();
@@ -497,6 +505,10 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_company:
                 Intent intent2=new Intent(MyDataActivity.this,MyDataCompany.class);
                 startActivityForResult(intent2,5);
+                break;
+            case R.id.line_mydata_address:
+                Intent intent7=new Intent(MyDataActivity.this,MyDateCityChoose.class);
+                startActivity(intent7);
                 break;
         }
     }
