@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.Knowledge_Menu_Pro_Rice_DirAdapter;
@@ -22,7 +21,7 @@ import java.util.List;
 
 public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     //首席专家
-    private Button button;
+
     private List<Knowledge_Menu_Pro_Rice_Main> list;
     private Knowledge_Menu_Pro_Rice_MainAdapter adapter;
     private MyListView listView;
@@ -46,13 +45,6 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
         initFirst();
         initSecond();
         initThird();
-        button=findViewById(R.id.knowledge_menu_pro_rice_bt);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
     }
 
 
@@ -60,10 +52,8 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     private void initFirst() {
         listView = (MyListView) findViewById(R.id.knowledge_menu_pro_main_rice_lv);
         listView.setBackgroundColor(Color.WHITE);
-        list = new ArrayList<Knowledge_Menu_Pro_Rice_Main>();
-        Knowledge_Menu_Pro_Rice_Main h1 = new Knowledge_Menu_Pro_Rice_Main(R.mipmap.ic_launcher, "张洪程", "江苏现代农业（水稻）产业技术体系集成创新中心", "首席专家","集成创新", Knowledge_Menu_Animal_Pig_DetailActivity.class);
-
-
+        list = new ArrayList<>();
+        Knowledge_Menu_Pro_Rice_Main h1 = new Knowledge_Menu_Pro_Rice_Main(R.mipmap.icon_default_head, "张洪程", "江苏现代农业（水稻）产业技术体系集成创新中心", "首席专家","集成创新", Knowledge_Menu_Animal_Pig_DetailActivity.class);
         list.add(h1);
         adapter = new Knowledge_Menu_Pro_Rice_MainAdapter(list, getApplicationContext());
         listView.setAdapter(adapter);
@@ -73,8 +63,6 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getApplicationContext(), list.get(position).getaClass());
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
                 startActivity(intent);
             }
         });
@@ -82,14 +70,13 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     }
     private void initSecond() {
         lv= (MyListView)findViewById(R.id.knowledge_menu_pro_normal_rice_lv);
-        lv.setBackgroundColor(Color.WHITE);
-        lt=new ArrayList<Knowledge_Menu_Pro_Rice_Normal>();
-        Knowledge_Menu_Pro_Rice_Normal h1 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","旱杂粮",null);
-        Knowledge_Menu_Pro_Rice_Normal h2 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"杨洪建","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","豆类",null);
-        Knowledge_Menu_Pro_Rice_Normal h3 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"徐晓杰","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
-        Knowledge_Menu_Pro_Rice_Normal h4 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"谢成林","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","花生",null);
-        Knowledge_Menu_Pro_Rice_Normal h5 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"李刚华","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
-        Knowledge_Menu_Pro_Rice_Normal h6 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.ic_launcher,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
+        lt=new ArrayList<>();
+        Knowledge_Menu_Pro_Rice_Normal h1 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","旱杂粮",null);
+        Knowledge_Menu_Pro_Rice_Normal h2 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"杨洪建","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","豆类",null);
+        Knowledge_Menu_Pro_Rice_Normal h3 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"徐晓杰","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
+        Knowledge_Menu_Pro_Rice_Normal h4 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"谢成林","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","花生",null);
+        Knowledge_Menu_Pro_Rice_Normal h5 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"李刚华","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
+        Knowledge_Menu_Pro_Rice_Normal h6 = new Knowledge_Menu_Pro_Rice_Normal(R.mipmap.icon_default_head,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","岗位专家","集成创新",null);
 
         lt.add(h1);
         lt.add(h2);
@@ -106,7 +93,6 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getApplicationContext(), list.get(position).getaClass());
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                 startActivity(intent);
             }
@@ -114,8 +100,8 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     }
     private void initThird() {
         myListView= (MyListView)findViewById(R.id.knowledge_menu_pro_dir_rice_lv);
-        myListView.setBackgroundColor(Color.WHITE);
-        ls=new ArrayList<Knowledge_Menu_Pro_Rice_Dir>();
+
+        ls=new ArrayList<>();
         Knowledge_Menu_Pro_Rice_Dir h1 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
         Knowledge_Menu_Pro_Rice_Dir h2 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"杨洪建","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","花生",null);
         Knowledge_Menu_Pro_Rice_Dir h3 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"徐晓杰","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","中药材",null);

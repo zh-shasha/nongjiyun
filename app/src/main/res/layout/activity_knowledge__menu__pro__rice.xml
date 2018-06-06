@@ -4,9 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#EBEBEB"
     tools:context=".activity.Knowledge_Menu_Pro_RiceActivity">
-
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <ImageView
+            android:id="@+id/agricultural_expert_back_iv"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="水稻产业技术体系"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,26 +32,6 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:background="#ff2dc667"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp">
-
-                <Button
-                    android:id="@+id/knowledge_menu_pro_rice_bt"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:background="@mipmap/nim_actionbar_white_back_icon" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:gravity="center"
-                    android:text="水稻产业技术体系"
-                    android:textColor="#F0F8FF"
-                    android:textSize="25sp" />
-            </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -48,7 +46,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="#EBEBEB"/>
                 <com.example.administrator.myapplication.view.MyListView
                     android:id="@+id/knowledge_menu_pro_main_rice_lv"
                     android:layout_width="match_parent"
@@ -57,7 +55,8 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp" />
+                android:layout_height="5dp"
+                android:background="#EBEBEB"/>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -72,7 +71,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="#EBEBEB"/>
                 <com.example.administrator.myapplication.view.MyListView
                     android:dividerHeight="4dp"
                     android:id="@+id/knowledge_menu_pro_normal_rice_lv"
@@ -82,7 +81,8 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp" />
+                android:layout_height="5dp"
+                android:background="#EBEBEB"/>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="#EBEBEB"/>
                 <com.example.administrator.myapplication.view.MyListView
                     android:dividerHeight="4dp"
                     android:id="@+id/knowledge_menu_pro_dir_rice_lv"

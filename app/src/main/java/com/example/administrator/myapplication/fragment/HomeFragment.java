@@ -297,22 +297,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-//        grid_main.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                // TODO Auto-generated method stub
-//                if (position==1){
-//                    Intent intent=new Intent(getActivity(),AskFragment.class);
-//                     startActivity(intent);
-//                }
-//                ConsoleItemClick(position);
-//            }
-//
-//            private void ConsoleItemClick(int position) {
-//
-//            }
-//        });
         refreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {

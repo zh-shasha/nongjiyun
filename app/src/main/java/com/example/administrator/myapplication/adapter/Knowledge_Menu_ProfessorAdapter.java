@@ -29,12 +29,13 @@ public class Knowledge_Menu_ProfessorAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+
+        return list.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
@@ -51,8 +52,6 @@ public class Knowledge_Menu_ProfessorAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(context,list.get(position).getaClass());
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
                     context.startActivity(intent);
                 }
             });

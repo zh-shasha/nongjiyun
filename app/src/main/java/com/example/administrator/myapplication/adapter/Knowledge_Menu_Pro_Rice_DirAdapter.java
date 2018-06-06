@@ -27,7 +27,7 @@ public class Knowledge_Menu_Pro_Rice_DirAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return position;
+        return list.get(position);
     }
 
     @Override
@@ -37,14 +37,13 @@ public class Knowledge_Menu_Pro_Rice_DirAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        final Knowledge_Menu_Pro_Rice_Dir knowledge_menu_pro_rice_dir= list.get(position);
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_listview_knowledge_menu_pro_dir_rice, null, false);
-            ImageView img = convertView.findViewById(R.id.knowledge_menu_pro_dir_rice_iv);
-            TextView name = convertView.findViewById(R.id.knowledge_menu_pro_dir_rice_name);
-            TextView sum = convertView.findViewById(R.id.knowledge_menu_pro_dir_rice_sum);
-            TextView main = convertView.findViewById(R.id.knowledge_menu_pro_dir_rice_main);
-            TextView inn = convertView.findViewById(R.id.knowledge_menu_pro_dir_rice_inn);
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_listview_knowledge_menu_pro_mainrice, null, false);
+            ImageView img = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_iv);
+            TextView name = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_name);
+            TextView sum = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_sum);
+            TextView main = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_main);
+            TextView inn = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_inn);
             name.setText(list.get(position).getName());
             sum.setText(list.get(position).getSum());
             main.setText(list.get(position).getMain());

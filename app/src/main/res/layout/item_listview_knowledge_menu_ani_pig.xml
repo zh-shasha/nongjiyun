@@ -2,24 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/knowledge_menu_animal_pig_iv"
-        android:layout_width="92dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="16dp"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/knowledge_menu_animal_pig_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/knowledge_menu_animal_pig_iv"
-        android:layout_marginStart="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/knowledge_menu_animal_pig_iv"
+        android:layout_toRightOf="@+id/knowledge_menu_animal_pig_iv"
         android:text="标题" />
 
     <TextView
@@ -28,14 +32,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/knowledge_menu_animal_pig_iv"
         android:layout_alignStart="@+id/knowledge_menu_animal_pig_title"
-        android:text="时间" />
+        android:text="时间"
+        android:layout_alignLeft="@+id/knowledge_menu_animal_pig_title" />
 
     <TextView
         android:id="@+id/knowledge_menu_animal_pig_readnum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/knowledge_menu_animal_pig_iv"
+        android:layout_alignBaseline="@+id/knowledge_menu_animal_pig_date"
+        android:layout_alignBottom="@+id/knowledge_menu_animal_pig_date"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
         android:text="阅读数：" />
 </RelativeLayout>

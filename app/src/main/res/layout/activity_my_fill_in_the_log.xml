@@ -44,17 +44,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
       <TextView
           android:layout_width="0dp"
           android:layout_weight="1.5"
           android:layout_height="wrap_content"
-          android:text="标         题"
-          android:textSize="20dp"/>
+          android:text="标        题"
+          android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:background="@null"
             android:hint="请输入标题"/>
     </LinearLayout>
     <View
@@ -65,17 +72,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="上  报  人"
-            android:textSize="20dp"/>
+            android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
+            android:textSize="15dp"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:hint="请输入名字"
             />
     </LinearLayout>
@@ -87,18 +97,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
-            android:text="类         型"
-            android:textSize="20dp"/>
+            android:text="类        型"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="5"
+            android:textSize="15dp"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
             android:layout_height="wrap_content"
-            android:hint="请输入标题"/>
+            android:hint="请选择上报类型"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:padding="10dp"
+            android:src="@mipmap/btn_into_normal"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -108,17 +129,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="拜访农民"
-            android:textSize="20dp"
+            android:textSize="15dp"
             />
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
+            android:textSize="15dp"
+            android:background="@null"
             android:layout_height="wrap_content"
             android:hint="请输入拜访农民"/>
     </LinearLayout>
@@ -130,16 +154,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="识  别  码"
-            android:textSize="20dp"/>
+            android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
+            android:textSize="15dp"
+            android:background="@null"
             android:layout_height="wrap_content"
             android:hint="请输入识别码"/>
     </LinearLayout>
@@ -151,16 +178,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="上报地址"
-            android:textSize="20dp"/>
+            android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
+            android:textSize="15dp"
+            android:background="@null"
             android:layout_height="wrap_content"
             android:hint="请输入上报地址"/>
     </LinearLayout>
@@ -171,26 +201,37 @@
     </View>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1.5"
+            android:textSize="15dp"
             android:layout_height="wrap_content"
-            android:text="备         注"
-            android:textSize="20dp"/>
+            android:text="备        注"
+            />
         <EditText
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
+            android:textSize="15dp"
+            android:background="@null"
             android:layout_height="wrap_content"
             android:hint="请输入文本说明"/>
     </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EBEBEB">
 
+</View>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:button="@null"
         android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
         android:drawableBottom="@mipmap/btn_photo_pressed"
         android:text="添加图片" />
+    </LinearLayout>
 </LinearLayout>

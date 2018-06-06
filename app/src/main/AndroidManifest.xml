@@ -160,7 +160,8 @@
         <activity android:name=".activity.MyCollection" />
         <activity android:name=".activity.MyQuestion" />
         <activity android:name=".activity.MyExtensionLog" />
-        <activity android:name=".activity.MyFillInTheLog"></activity>
+        <activity android:name=".activity.MyFillInTheLog" />
+        <activity android:name=".activity.ExchangePush"></activity>
     </application>
 
 </manifest>

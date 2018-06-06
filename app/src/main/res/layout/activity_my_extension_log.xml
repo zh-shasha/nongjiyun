@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="#ff2dc667">
         <ImageView
-            android:id="@+id/reister_back_bt"
+            android:id="@+id/log_back_bt"
             android:layout_width="18dp"
             android:layout_height="20dp"
             android:layout_alignParentLeft="true"
@@ -33,6 +33,7 @@
                 android:text="推广日志"
                 android:textColor="#FFF" />
             <TextView
+                android:id="@+id/log_push_tv"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

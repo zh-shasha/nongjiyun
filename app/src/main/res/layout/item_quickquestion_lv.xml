@@ -10,8 +10,10 @@
         android:id="@+id/item_exchange_iv"
         android:layout_width="46dp"
         android:layout_height="46dp"
-        android:src="@mipmap/icon_default_head"
-        android:layout_alignBottom="@+id/item_exchange_tv_local"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/icon_default_head" />
 
     <TextView
         android:id="@+id/item_exchange_tv_name"
@@ -27,30 +29,32 @@
         android:id="@+id/item_exchange_tv_local"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="62dp"
-        android:text="江苏省南京市"/>
+        android:layout_above="@+id/item_exchange_tv_article"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/item_exchange_iv"
+        android:layout_toRightOf="@+id/item_exchange_iv"
+        android:text="江苏省南京市" />
 
     <TextView
         android:id="@+id/item_exchange_tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/item_exchange_tv_name"
         android:layout_alignEnd="@+id/item_exchange_tv_article"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/item_exchange_tv_article"
         android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
         android:text="普通农户"
-        android:textSize="12sp"
-        android:layout_alignRight="@+id/item_exchange_tv_article" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/item_exchange_tv_article"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/item_exchange_iv"
-        android:layout_margin="8dp"
+        android:layout_marginTop="12dp"
         android:text="正文"
         android:textColor="#000000"
         android:textSize="18sp" />
@@ -118,19 +122,17 @@
         android:id="@+id/item_exchange_iv_zan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/exchange_tv_content_address"
-        android:layout_marginEnd="49dp"
-        android:src="@mipmap/icon_good"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="49dp" />
+        android:layout_below="@+id/fragment_coll_ask_view"
+        android:layout_toLeftOf="@+id/item_exchange_tv_id"
+        android:layout_toStartOf="@+id/item_exchange_tv_id"
+        android:src="@mipmap/icon_good" />
 
     <ImageView
         android:id="@+id/item_exchange_iv_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_exchange_tv_date"
         android:layout_alignEnd="@+id/fragment_coll_ask_view"
-        android:layout_below="@+id/fragment_coll_ask_view"
-        android:src="@mipmap/icon_comment"
-        android:layout_alignRight="@+id/fragment_coll_ask_view" />
+        android:layout_alignRight="@+id/fragment_coll_ask_view"
+        android:src="@mipmap/icon_comment" />
 </RelativeLayout>

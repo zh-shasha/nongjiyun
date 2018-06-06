@@ -29,13 +29,7 @@ public class Knowledge_Menu_AnimalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge_menu__animal);
 
-        button=findViewById(R.id.knowledge_menu_animal_bt);//返回上一个activity
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
         initData();
 
     }
@@ -43,7 +37,7 @@ public class Knowledge_Menu_AnimalActivity extends AppCompatActivity {
     private void initData() {
 
         gridView =(GridView)findViewById(R.id.knowledge_menu_animal_gv);
-        list=new ArrayList<Knowledge_Menu_Animal>();
+        list=new ArrayList<>();
 
         Knowledge_Menu_Animal h1=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"猪",Knowledge_Menu_Animal_PigActivity.class);
         Knowledge_Menu_Animal h2=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"羊",Knowledge_Menu_Animal_SheepActivity.class);
@@ -68,15 +62,13 @@ public class Knowledge_Menu_AnimalActivity extends AppCompatActivity {
         list.add(h10);
 
 
-        adapter = new Knowledge_Menu_AnimalAdapter(getApplicationContext(),list);
+        adapter = new Knowledge_Menu_AnimalAdapter(this,list);
         gridView.setAdapter(adapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
                 startActivity(intent);
             }
         });

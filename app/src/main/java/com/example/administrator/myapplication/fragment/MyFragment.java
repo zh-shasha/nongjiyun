@@ -21,7 +21,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.MyCollection;
 import com.example.administrator.myapplication.activity.MyDataActivity;
+import com.example.administrator.myapplication.activity.MyExtensionLog;
 import com.example.administrator.myapplication.activity.MyQrCode;
 import com.example.administrator.myapplication.activity.MyQuestion;
 import com.example.administrator.myapplication.activity.MyRespone;
@@ -225,8 +227,15 @@ public class MyFragment extends Fragment{
 
     //收藏
     private void initCollection(View view) {
+        rbcollection=(RadioButton)view.findViewById(R.id.collection_my_rb);
+        rbcollection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(),MyCollection.class);
+                startActivity(intent);
+            }
+        });
     }
-
     //关注
     private void initFocus(View view) {
     }
@@ -242,6 +251,13 @@ public class MyFragment extends Fragment{
     //推广
     private void initTG(View view) {
         rbpush = (RadioButton)view.findViewById(R.id.push_my_rb);
+        rbpush.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(),MyExtensionLog.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //系统设置

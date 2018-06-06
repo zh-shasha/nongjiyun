@@ -43,7 +43,7 @@ private String str_location;
             convertView = LayoutInflater.from(context).inflate(R.layout.item_quickquestion_lv, null, false);
             ImageView head_img = (ImageView) convertView.findViewById(R.id.item_exchange_iv);
             TextView name = convertView.findViewById(R.id.item_exchange_tv_name);
-            final TextView local = convertView.findViewById(R.id.item_exchange_tv_name);
+            final TextView local = convertView.findViewById(R.id.item_exchange_tv_local);
             TextView identity = convertView.findViewById(R.id.item_exchange_tv_id);
             TextView article = convertView.findViewById(R.id.item_exchange_tv_article);
             ImageView article_img = convertView.findViewById(R.id.item_exchange_iv_picture);

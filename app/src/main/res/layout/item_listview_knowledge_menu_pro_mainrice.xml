@@ -2,62 +2,72 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:padding="10dp"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/knowledge_menu_pro_main_rice_iv"
-        android:layout_width="67dp"
-        android:layout_height="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
         app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
     <TextView
         android:id="@+id/knowledge_menu_pro_main_rice_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/knowledge_menu_pro_main_rice_iv"
+        android:layout_toRightOf="@+id/knowledge_menu_pro_main_rice_iv"
+        android:textColor="@color/bar_grey"
         android:text="姓名" />
 
     <TextView
-        android:textColor="@android:color/darker_gray"
-        android:gravity="center"
-        android:textSize="12dp"
         android:id="@+id/knowledge_menu_pro_main_rice_sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/knowledge_menu_pro_main_rice_name"
         android:layout_alignStart="@+id/knowledge_menu_pro_main_rice_name"
-        android:layout_marginTop="40dp"
-        android:text="简介" />
+        android:layout_below="@+id/knowledge_menu_pro_main_rice_name"
+        android:gravity="center"
+        android:text="简介"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp" />
 
     <TextView
-        android:textColor="@android:color/darker_gray"
-        android:gravity="center"
-        android:textSize="12dp"
-        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
         android:id="@+id/knowledge_menu_pro_main_rice_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/knowledge_menu_pro_main_rice_name"
-        android:layout_marginEnd="80dp"
-        android:text="首席专家" />
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/knowledge_menu_pro_main_rice_inn"
+        android:layout_toStartOf="@+id/knowledge_menu_pro_main_rice_inn"
+        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:gravity="center"
+        android:text="首席专家"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp" />
 
     <TextView
-        android:textColor="@android:color/darker_gray"
-        android:gravity="center"
-        android:textSize="12dp"
-        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
         android:id="@+id/knowledge_menu_pro_main_rice_inn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/knowledge_menu_pro_main_rice_main"
+        android:layout_alignBottom="@+id/knowledge_menu_pro_main_rice_main"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/knowledge_menu_pro_main_rice_name"
-        android:layout_marginEnd="13dp"
-        android:text="集成创新" />
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:gravity="center"
+        android:text="集成创新"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp" />
 </RelativeLayout>

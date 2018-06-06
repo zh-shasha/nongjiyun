@@ -6,27 +6,26 @@
     android:orientation="vertical"
     android:background="#EBEBEB"
     tools:context=".activity.Knowledge_Menu_AnimalActivity">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="#ff2dc667"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
-
-        <Button
-            android:id="@+id/knowledge_menu_animal_bt"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:background="@mipmap/nim_actionbar_white_back_icon" />
-
+        android:background="@color/springgreen">
+        <ImageView
+            android:id="@+id/agricultural_expert_back_iv"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_normal" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="畜禽品种库"
-            android:textColor="#F0F8FF"
-            android:textSize="25sp" />
-    </LinearLayout>
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
 
     <GridView
         android:id="@+id/knowledge_menu_animal_gv"

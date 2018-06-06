@@ -32,13 +32,7 @@ public class Knowledge_Menu_ProfessorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge_menu__professor);
         refreshLayout = findViewById(R.id.refreshLayout);
-        button=findViewById(R.id.knowledge_menu_professor_bt);//返回上一个activity
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
         initData();
         initEvent();
 
@@ -64,7 +58,7 @@ public class Knowledge_Menu_ProfessorActivity extends AppCompatActivity {
     private void initData() {
 
         gridView =(HomeMenuGridView) findViewById(R.id.knowledge_menu_professor_gv);
-        list=new ArrayList<Knowledge_Menu_Professor>();
+        list=new ArrayList<>();
 
         Knowledge_Menu_Professor h1=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"水稻产业技术体系",Knowledge_Menu_Pro_RiceActivity.class);
         Knowledge_Menu_Professor h2=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"小麦产业技术体系",Knowledge_Menu_Pro_WheatActivity.class);
@@ -99,14 +93,14 @@ public class Knowledge_Menu_ProfessorActivity extends AppCompatActivity {
         list.add(h15);
 
 
-        adapter = new Knowledge_Menu_ProfessorAdapter(getApplicationContext(),list);
+        adapter = new Knowledge_Menu_ProfessorAdapter(this,list);
         gridView.setAdapter(adapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
 
                 startActivity(intent);
             }

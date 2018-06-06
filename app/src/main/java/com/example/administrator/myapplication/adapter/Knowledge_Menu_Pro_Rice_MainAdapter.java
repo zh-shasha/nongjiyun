@@ -27,7 +27,7 @@ public class Knowledge_Menu_Pro_Rice_MainAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return position;
+        return list.get(position);
     }
 
     @Override
@@ -37,7 +37,6 @@ public class Knowledge_Menu_Pro_Rice_MainAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        final Knowledge_Menu_Pro_Rice_Main knowledge_menu_pro_rice_main= list.get(position);
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_listview_knowledge_menu_pro_mainrice, null, false);
             ImageView img = convertView.findViewById(R.id.knowledge_menu_pro_main_rice_iv);

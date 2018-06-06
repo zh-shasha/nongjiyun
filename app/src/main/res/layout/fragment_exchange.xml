@@ -4,34 +4,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.administrator.myapplication.fragment.ExchangeFragment"
-    android:background="#EBEBEB">
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="#ff2dc667"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
-
+        android:background="@color/springgreen">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="交流"
-            android:textColor="#F0F8FF"
-            android:textSize="25sp" />
-
+            android:textColor="#FFF"
+            android:textSize="20dp" />
         <TextView
             android:id="@+id/exchange_tv_push"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:layout_gravity="right"
             android:text="发布"
-            android:textSize="15sp"
-            android:textColor="#F0F8FF" />
-    </LinearLayout>
+            android:paddingRight="20dp"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+    </android.support.v7.widget.Toolbar>
 
     <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
         <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
