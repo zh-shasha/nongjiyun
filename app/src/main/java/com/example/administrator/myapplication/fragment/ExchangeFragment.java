@@ -13,9 +13,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.administrator.myapplication.MainActivity;
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.activity.QuickQuestionSubmission;
+import com.example.administrator.myapplication.activity.ExchangeDetail;
+import com.example.administrator.myapplication.activity.ExchangePush;
 import com.example.administrator.myapplication.adapter.Exchange_itemAdapter;
 import com.example.administrator.myapplication.moduels.Exchange_item;
 
@@ -51,7 +51,7 @@ public class ExchangeFragment extends Fragment {
         push.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getActivity(),QuickQuestionSubmission.class);
+                Intent intent= new Intent(getActivity(),ExchangePush.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class ExchangeFragment extends Fragment {
 
         listView = (ListView) view.findViewById(R.id.exchange_lv);
         lists = new ArrayList<>();
-        Exchange_item h1 = new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"2018-05-28",R.mipmap.icon_good,R.mipmap.icon_comment,null);
+        Exchange_item h1 = new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"2018-05-28",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class);
         Exchange_item h2 = new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.img3,"2018-05-28",R.mipmap.icon_good,R.mipmap.icon_comment,null);
         Exchange_item h3 = new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-05-28",R.mipmap.icon_good,R.mipmap.icon_comment,null);
         Exchange_item h4 = new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.img3,"2018-05-28",R.mipmap.icon_good,R.mipmap.icon_comment,null);
@@ -92,7 +92,7 @@ public class ExchangeFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), lists.get(position).getaClass());
                 startActivity(intent);
             }
         });

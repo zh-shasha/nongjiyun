@@ -9,6 +9,7 @@ import android.widget.SimpleAdapter;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.HomeBrandFarmCapital;
+import com.example.administrator.myapplication.activity.HomeSupplyAndDemand;
 import com.example.administrator.myapplication.adapter.GridViewAdapter;
 import com.example.administrator.myapplication.moduels.HomeMoreMenu;
 import com.example.administrator.myapplication.moduels.MyDragGridView;
@@ -114,7 +115,7 @@ public class more extends AppCompatActivity {
 //        MyDragGridView.setAdapter(adapter);
 
         strList = new ArrayList<>();
-        strList.add(new HomeMoreMenu(R.mipmap.gongqiuxinxi, "供求信息",null));
+        strList.add(new HomeMoreMenu(R.mipmap.gongqiuxinxi, "供求信息", HomeSupplyAndDemand.class));
         strList.add(new HomeMoreMenu(R.mipmap.chuangyezhifu, "创业致富", null));
         strList.add(new HomeMoreMenu(R.mipmap.nongyeqixiang, "农业气象", null));
         strList.add(new HomeMoreMenu(R.mipmap.xiangcunluxing, "乡村旅游", null));

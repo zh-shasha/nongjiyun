@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.activity.ExchangeDetail">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+
+        <ImageView
+            android:id="@+id/agricultural_expert_back_iv"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_back_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="详情"
+
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_exchange_iv"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head" />
+
+        <TextView
+            android:id="@+id/item_exchange_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_exchange_tv_local"
+            android:layout_alignStart="@+id/item_exchange_tv_local"
+            android:text="用户名"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_exchange_tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_exchange_tv_article"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/item_exchange_iv"
+            android:layout_toRightOf="@+id/item_exchange_iv"
+            android:text="江苏省南京市" />
+
+        <TextView
+            android:id="@+id/item_exchange_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/item_exchange_tv_article"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/item_exchange_tv_article"
+            android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+            android:text="粮经"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_exchange_tv_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/item_exchange_iv"
+            android:layout_marginTop="12dp"
+            android:text="正文"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/exchange_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_exchange_tv_article">
+
+            <ImageView
+                android:id="@+id/item_exchange_iv_picture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/home_lv_iv1"/>
+
+            <ImageView
+                android:id="@+id/item_exchange_iv_picture2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/item_exchange_iv_picture3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/exchange_tv_content_address"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/exchange_iv_pic"
+            android:drawableLeft="@mipmap/icon_address"
+            android:drawablePadding="5dp"
+            android:text="江苏省南京市栖霞区羊山北路1号" />
+
+        <View
+            android:id="@+id/fragment_coll_ask_view"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@id/exchange_tv_content_address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dfe1e1" />
+
+        <TextView
+            android:id="@+id/item_exchange_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/item_exchange_iv"
+            android:layout_alignStart="@+id/item_exchange_iv"
+            android:layout_below="@+id/exchange_tv_content_address"
+            android:layout_marginTop="2dp"
+            android:text="2018-0504-12：07"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_exchange_tv_id"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@+id/exchange_tv_content_address"
+            android:layout_toRightOf="@+id/exchange_tv_content_address"
+            android:textSize="12dp"
+            android:text="农技推广人员" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#EBEBEB">
+    </View>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <RadioButton
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@mipmap/icon_comment"
+           android:button="@null"
+           android:drawablePadding="10dp"
+           android:padding="10dp"
+           android:text="全部回复" />
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#EBEBEB">
+       </View>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp">
+           <ImageView
+               android:id="@+id/image_respose_head1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="7dp"
+               android:layout_marginStart="7dp"
+               app:srcCompat="@mipmap/icon_default_head" />
+
+           <TextView
+               android:id="@+id/text_name1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_toEndOf="@+id/image_respose_head1"
+               android:layout_toRightOf="@+id/image_respose_head1"
+               android:text="舒敏" />
+
+           <TextView
+               android:id="@+id/text_city1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text_name1"
+               android:layout_toEndOf="@+id/image_respose_head1"
+               android:layout_toRightOf="@+id/image_respose_head1"
+               android:text="扬州市 镇江区 蒋王街道" />
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text_city1"
+               android:layout_toEndOf="@+id/image_respose_head1"
+               android:layout_toRightOf="@+id/image_respose_head1"
+               android:text="好" />
+
+           <TextView
+               android:id="@+id/text_time1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textView3"
+               android:layout_alignStart="@+id/textView3"
+               android:layout_below="@+id/textView3"
+               android:text="2018-05-28 13:26" />
+
+           <TextView
+               android:id="@+id/text_type1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               android:text="农业工作人员" />
+
+           <RadioButton
+               android:id="@+id/radioButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/text_time1"
+               android:layout_alignBottom="@+id/text_time1"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:button="@null"
+               android:drawablePadding="10dp"
+               android:drawableLeft="@mipmap/icon_good"
+               android:text="0" />
+       </RelativeLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#EBEBEB">
+       </View>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp">
+           <ImageView
+               android:id="@+id/image_respose_head2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="7dp"
+               android:layout_marginStart="7dp"
+               app:srcCompat="@mipmap/icon_default_head" />
+
+           <TextView
+               android:id="@+id/text_name2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_toEndOf="@+id/image_respose_head2"
+               android:layout_toRightOf="@+id/image_respose_head2"
+               android:text="舒敏" />
+
+           <TextView
+               android:id="@+id/text_city2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text_name2"
+               android:layout_toEndOf="@+id/image_respose_head2"
+               android:layout_toRightOf="@+id/image_respose_head2"
+               android:text="扬州市 镇江区 蒋王街道" />
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text_city2"
+               android:layout_toEndOf="@+id/image_respose_head2"
+               android:layout_toRightOf="@+id/image_respose_head2"
+               android:text="好" />
+
+           <TextView
+               android:id="@+id/text_time2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textView4"
+               android:layout_alignStart="@+id/textView4"
+               android:layout_below="@+id/textView4"
+               android:text="2018-05-28 13:26" />
+
+           <TextView
+               android:id="@+id/text_type2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               android:text="农业工作人员" />
+
+           <RadioButton
+               android:id="@+id/radioButton3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/text_time2"
+               android:layout_alignBottom="@+id/text_time2"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:button="@null"
+               android:drawableLeft="@mipmap/icon_good"
+               android:drawablePadding="10dp"
+               android:text="0" />
+       </RelativeLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#EBEBEB">
+       </View>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#EBEBEB">
+       </View>
+   </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@mipmap/icon_collection"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text=" 收藏0" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@null"
+            android:drawableLeft="@mipmap/btn_like_normal"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="关注0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=" 回答"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

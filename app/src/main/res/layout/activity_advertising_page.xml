@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:scaleType="fitXY"
-        android:src="@mipmap/bg_welcome" />
+        android:src="@mipmap/advitise" />
 
     <TextView
         android:id="@+id/adtextview"

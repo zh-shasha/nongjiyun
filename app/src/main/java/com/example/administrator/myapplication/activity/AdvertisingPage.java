@@ -40,7 +40,6 @@ public class AdvertisingPage extends AppCompatActivity implements Animation.Anim
                 case 4:
                     textView.setText("跳过 0s");
                     break;
-
             }
             super.handleMessage(msg);//发送消息指令
         }

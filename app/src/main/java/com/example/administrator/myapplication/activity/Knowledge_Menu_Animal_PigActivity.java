@@ -31,10 +31,10 @@ public class Knowledge_Menu_Animal_PigActivity extends AppCompatActivity {
     private void initData() {
         listView = (ListViewForScrollView) findViewById(R.id.knowledge_menu_animal_pig_lv);
         list = new ArrayList<>();
-        Knowledge_Menu_Animal_Pig h1 = new Knowledge_Menu_Animal_Pig(R.mipmap.ic_launcher, "苏钟猪", "2018-05-01", "阅读数：248", Knowledge_Menu_Animal_Pig_DetailActivity.class);
-        Knowledge_Menu_Animal_Pig h2 = new Knowledge_Menu_Animal_Pig(R.mipmap.ic_launcher, "苏山猪", "2017-03-30", "阅读数：4263", Knowledge_Menu_Animal_Pig_DetailActivity.class);
-        Knowledge_Menu_Animal_Pig h3 = new Knowledge_Menu_Animal_Pig(R.mipmap.ic_launcher, "新准猪", "2018-05-01", "阅读数：248", Knowledge_Menu_Animal_Pig_DetailActivity.class);
-        Knowledge_Menu_Animal_Pig h4 = new Knowledge_Menu_Animal_Pig(R.mipmap.ic_launcher, "老准猪", "2017-03-30", "阅读数：4263", Knowledge_Menu_Animal_Pig_DetailActivity.class);
+        Knowledge_Menu_Animal_Pig h1 = new Knowledge_Menu_Animal_Pig(R.mipmap.suzhongzhu , "苏钟猪", "2018-05-01", "阅读数：248", Knowledge_Menu_Animal_Pig_DetailActivity.class);
+        Knowledge_Menu_Animal_Pig h2 = new Knowledge_Menu_Animal_Pig(R.mipmap.sushanzhu, "苏山猪", "2017-03-30", "阅读数：4263", Knowledge_Menu_Animal_Pig_DetailActivity.class);
+        Knowledge_Menu_Animal_Pig h3 = new Knowledge_Menu_Animal_Pig(R.mipmap.xinhuaizhu, "新淮猪", "2018-05-01", "阅读数：248", Knowledge_Menu_Animal_Pig_DetailActivity.class);
+        Knowledge_Menu_Animal_Pig h4 = new Knowledge_Menu_Animal_Pig(R.mipmap.laohuaizhu, "老淮猪", "2017-03-30", "阅读数：4263", Knowledge_Menu_Animal_Pig_DetailActivity.class);
 
 
         list.add(h1);
