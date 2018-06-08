@@ -27,13 +27,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:padding="10dp"
         android:gravity="center_vertical"
         android:background="#FFF">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="已显示"
-            android:textSize="20dp"
 
             android:textColor="@color/springgreen"/>
         <RadioButton
@@ -42,12 +42,12 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginRight="8dp"
+            android:drawablePadding="10dp"
             android:button="@null"
             android:text="长按拖拽进行排序"
 
             android:drawableLeft="@mipmap/icon_press"
-            android:textSize="20dp"
+
             android:textColor="@android:color/darker_gray"/>
     </RelativeLayout>
     <View
@@ -68,18 +68,20 @@
     </com.example.administrator.myapplication.moduels.MyDragGridView>
     <View
     android:layout_width="match_parent"
-    android:layout_height="5dp">
+    android:layout_height="5dp"
+    android:background="#EBEBEB">
    </View>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:padding="10dp"
         android:gravity="center_vertical"
         android:background="#FFF">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="扩展"
-            android:textSize="20dp"
+
             android:textColor="@color/springgreen"/>
 
         <TextView
@@ -90,8 +92,7 @@
             android:layout_marginRight="8dp"
             android:layout_alignParentTop="true"
             android:text="点击添加到“已显示"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="20dp" />
+            android:textColor="@android:color/darker_gray" />
     </RelativeLayout>
     <View
         android:layout_width="match_parent"

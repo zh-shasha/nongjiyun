@@ -162,8 +162,11 @@
         <activity android:name=".activity.MyExtensionLog" />
         <activity android:name=".activity.MyFillInTheLog" />
         <activity android:name=".activity.ExchangePush" />
-        <activity android:name=".activity.ExchangeDetail"></activity>
-        <activity android:name=".activity.HomeSupplyAndDemand"></activity>
+        <activity android:name=".activity.ExchangeDetail" />
+        <activity android:name=".activity.HomeSupplyAndDemand" />
+        <activity android:name=".activity.HomeSupplyDetail" />
+        <activity android:name=".activity.HomeSupplyPush" />
+        <activity android:name=".activity.HomeAddFriendsDetail"></activity>
     </application>
 
 </manifest>

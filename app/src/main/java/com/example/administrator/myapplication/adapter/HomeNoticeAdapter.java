@@ -56,8 +56,9 @@ public class HomeNoticeAdapter extends BaseAdapter{
             TextView read = convertView.findViewById(R.id.home_tv3_system_notice);
             pic.setImageResource(noticeMenus.get(position).getNotice_image());
             title.setText(noticeMenus.get(position).getNotice_title());
-            date.setText(noticeMenus.get(position).getNotice_time());
             read.setText(noticeMenus.get(position).getNotice_content());
+            date.setText(noticeMenus.get(position).getNotice_time());
+
         }
 
         return convertView;

@@ -38,20 +38,20 @@ public class Home_Notice_System_Fragment extends Fragment {
 
     private void initDate() {
         noticeMenus=new ArrayList<>();
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://www.niit.edu.cn/46/64/c2086a18020/page.htm"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://www.niit.edu.cn/46/64/c2086a18020/page.htm"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
-        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","2018-5-26","农业农村部部长韩长赋来" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://www.niit.edu.cn/46/64/c2086a18020/page.htm"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://www.niit.edu.cn/46/64/c2086a18020/page.htm"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
+        noticeMenus.add(new HomeNoticeMenu(R.mipmap.icon_notice,"农技耘","农业农村部部长韩长赋来","2018-06-08" ,Home_Details.class,"http://new.qq.com/omn/20180601/20180601A0AMRP.html"));
 
         adapter=new HomeNoticeAdapter(getActivity(),noticeMenus);
         system_lv.setAdapter(adapter);

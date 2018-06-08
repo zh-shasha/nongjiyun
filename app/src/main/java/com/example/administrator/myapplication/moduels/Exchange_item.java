@@ -9,12 +9,14 @@ public class Exchange_item {
     private int article_img;
     private int article_img2;
     private int article_img3;
+
+    private String tv_adress;
     private String date;
     private int zan_img;
     private int review_img;
     private Class aClass;
     public Exchange_item(int head_img, String name, String local, String identity,
-                         String article, int article_img, int article_img2, int article_img3, String date, int zan_img, int review_img, Class aClass){
+                         String article, int article_img, int article_img2, int article_img3,String tv_adress, String date, int zan_img, int review_img, Class aClass){
         this.head_img=head_img;
         this.name=name;
         this.local=local;
@@ -23,6 +25,7 @@ public class Exchange_item {
         this.article_img=article_img;
         this.article_img2=article_img2;
         this.article_img3=article_img3;
+        this.tv_adress=tv_adress;
         this.date=date;
         this.zan_img=zan_img;
         this.review_img=review_img;
@@ -93,6 +96,15 @@ public class Exchange_item {
         this.article_img3 = article_img3;
     }
 
+
+    public String getTv_adress() {
+        return tv_adress;
+    }
+
+    public void setTv_adress(String tv_adress) {
+        this.tv_adress = tv_adress;
+    }
+
     public String getDate() {
         return date;
     }
@@ -124,6 +136,7 @@ public class Exchange_item {
     public void setaClass(Class aClass) {
         this.aClass = aClass;
     }
+
 
 
 }

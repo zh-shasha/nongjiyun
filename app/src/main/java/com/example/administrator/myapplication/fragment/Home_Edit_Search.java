@@ -36,6 +36,7 @@ public class Home_Edit_Search extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.home_search_rice:
                 Intent intent=new Intent(Home_Edit_Search.this, HomeSearchResultTab.class);
+                intent.putExtra("view","稻");
                 startActivity(intent);
                 finish();
                 break;

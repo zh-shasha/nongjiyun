@@ -358,6 +358,8 @@ public class HomeFragment extends Fragment {
                     R.mipmap.photo2,
                     R.mipmap.photo3,
                     R.mipmap.photo4,
+                    R.mipmap.photo5,
+                    R.mipmap.photo6
             };
             @Override
             public int getCount() {

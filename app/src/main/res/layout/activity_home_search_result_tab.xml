@@ -11,29 +11,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/springgreen">
+
+        <ImageView
+            android:id="@+id/home_edit_tab_back"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_weight="2"
+            android:src="@mipmap/btn_back_normal1"
+            android:layout_gravity="center_vertical"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/springgreen">
-            <ImageView
-                android:id="@+id/home_edit_search_back"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:paddingTop="3dp"
-                android:paddingRight="40dp"
-                android:src="@mipmap/btn_back_normal1"
-                android:layout_gravity="center_vertical"/>
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
             <EditText
                 android:id="@+id/home_et"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
                 android:layout_weight="7"
                 android:clickable="true"
-                android:layout_marginRight="20dp"
                 android:hint="请输入搜索内容"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:drawablePadding="5dp"
                 android:layout_gravity="center_vertical"
                 android:drawableLeft="@mipmap/icon_search_black"
                 android:background="@drawable/corners_bg"

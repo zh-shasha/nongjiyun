@@ -49,6 +49,7 @@ private String str_location;
             ImageView article_img = convertView.findViewById(R.id.item_exchange_iv_picture);
             ImageView article_img2 = convertView.findViewById(R.id.item_exchange_iv_picture2);
             ImageView article_img3 =convertView.findViewById(R.id.item_exchange_iv_picture3);
+            TextView tv_adress=convertView.findViewById(R.id.exchange_tv_content_address);
             TextView date = convertView.findViewById(R.id.item_exchange_tv_date);
             ImageView zan_img = convertView.findViewById(R.id.item_exchange_iv_zan);
             ImageView review_img = convertView.findViewById(R.id.item_exchange_iv_review);
@@ -64,6 +65,7 @@ private String str_location;
             article_img2.setImageResource(list.get(position).getArticle_img());
             article_img3.setImageResource(list.get(position).getArticle_img());
             date.setText(list.get(position).getDate());
+            tv_adress.setText(list.get(position).getTv_adress());
             zan_img.setImageResource(list.get(position).getZan_img());
             review_img.setImageResource(list.get(position).getReview_img());
 

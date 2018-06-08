@@ -8,16 +8,17 @@ public class HomeNoticeMenu {
     private String notice_title;
 
     private int notice_image;
-    private String notice_content;
+
     private String notice_time;
+    private String notice_content;
     private Class notice_url;
     private String neturl;
-    public HomeNoticeMenu(int notice_image,String notice_title,String notice_time,String notice_content,Class notice_url,String neturl){
+    public HomeNoticeMenu(int notice_image,String notice_title,String notice_content,String notice_time,Class notice_url,String neturl){
         this.notice_image=notice_image;
         this.notice_title=notice_title;
-
-        this.notice_time=notice_time;
         this.notice_content=notice_content;
+        this.notice_time=notice_time;
+
         this.notice_url=notice_url;
         this.neturl=neturl;
 

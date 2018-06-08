@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.HomeSupplyDetail;
 import com.example.administrator.myapplication.adapter.HomeSearchSupplyAdapter;
 import com.example.administrator.myapplication.moduels.HomeSearchSupplyMenu;
 import com.example.administrator.myapplication.utils.ListViewForScrollView;
@@ -34,7 +35,7 @@ public class HomeSupplyFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_home_supply, container, false);
         home_supply_lv=(ListViewForScrollView) view.findViewById(R.id.home_supply_lv);
         list=new ArrayList<>();
-        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv1,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv1,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",HomeSupplyDetail.class));
         list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv2,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
         list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv3,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
         list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));

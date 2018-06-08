@@ -1,7 +1,10 @@
 package com.example.administrator.myapplication.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.administrator.myapplication.R;
@@ -23,7 +26,7 @@ public class HomeAddFriendsList extends AppCompatActivity {
         setContentView(R.layout.activity_home_add_friends_list);
         home_add_friends_lv=(ListView)findViewById(R.id.home_add_friends_lv);
         list=new ArrayList<>();
-        list.add(new HomeAddFriendsListMenu(R.mipmap.icon_default_head,"张金龙","农技推广人员",R.mipmap.btn_into_normal, Home_Details.class));
+        list.add(new HomeAddFriendsListMenu(R.mipmap.icon_default_head,"张金龙","农技推广人员",R.mipmap.btn_into_normal, HomeAddFriendsDetail.class));
         list.add(new HomeAddFriendsListMenu(R.mipmap.icon_default_head,"张金龙","农技推广人员",R.mipmap.btn_into_normal, Home_Details.class));
         list.add(new HomeAddFriendsListMenu(R.mipmap.icon_default_head,"张金龙","农技推广人员",R.mipmap.btn_into_normal, Home_Details.class));
         list.add(new HomeAddFriendsListMenu(R.mipmap.icon_default_head,"张金龙","农技推广人员",R.mipmap.btn_into_normal, Home_Details.class));
@@ -34,5 +37,12 @@ public class HomeAddFriendsList extends AppCompatActivity {
 
         adapter=new HomeAddFriendsListAdapter(this,list);
         home_add_friends_lv.setAdapter(adapter);
+        home_add_friends_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(HomeAddFriendsList.this,list.get(position).getUrl());
+                startActivity(intent);
+            }
+        });
     }
 }

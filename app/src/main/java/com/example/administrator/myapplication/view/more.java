@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.SimpleAdapter;
 
 import com.example.administrator.myapplication.R;
@@ -24,6 +25,7 @@ public class more extends AppCompatActivity {
     private GridViewAdapter adapter;
     private GridView gridView2;
     private List<HomeMoreMenu> strList;
+    private ImageView home_grid_more_btn_back;
 
 
     @Override
@@ -88,6 +90,12 @@ public class more extends AppCompatActivity {
 
             }
         });
+        home_grid_more_btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 
@@ -128,7 +136,7 @@ public class more extends AppCompatActivity {
     }
     private void initView() {
 
-
+        home_grid_more_btn_back=(ImageView)findViewById(R.id.home_grid_more_btn_back);
        gridView2 = (GridView)findViewById(R.id.drag_grid_view2);
     }
 }
