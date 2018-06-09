@@ -14,11 +14,12 @@
 
         <ImageView
             android:id="@+id/home_edit_tab_back"
-            android:layout_width="18dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
             android:layout_weight="2"
             android:src="@mipmap/btn_back_normal1"
-            android:layout_gravity="center_vertical"/>
+             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
                 android:hint="请输入搜索内容"
                 android:textSize="15dp"
                 android:drawablePadding="5dp"
+                android:paddingLeft="5dp"
                 android:layout_gravity="center_vertical"
                 android:drawableLeft="@mipmap/icon_search_black"
                 android:background="@drawable/corners_bg"
@@ -68,6 +70,7 @@
         android:id="@+id/viewpager_ShouYe"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></android.support.v4.view.ViewPager>
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

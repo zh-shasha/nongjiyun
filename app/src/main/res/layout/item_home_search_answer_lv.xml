@@ -5,7 +5,6 @@
     android:padding="10dp"
     android:background="#fff"
     android:orientation="vertical">
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/item_exchange_iv"
         android:layout_width="wrap_content"
@@ -23,7 +22,7 @@
         android:layout_alignLeft="@+id/item_exchange_tv_local"
         android:layout_alignStart="@+id/item_exchange_tv_local"
         android:text="用户名"
-        />
+         />
 
     <TextView
         android:id="@+id/item_exchange_tv_local"
@@ -125,23 +124,30 @@
         android:textSize="12dp"
         android:layout_alignLeft="@+id/item_exchange_iv" />
 
-    <ImageView
-        android:id="@+id/item_exchange_iv_zan"
-        android:layout_width="13dp"
-        android:layout_height="13dp"
-
-        android:layout_alignBottom="@+id/item_exchange_tv_date"
+    <TextView
+        android:id="@+id/text_home_detali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_exchange_tv_id"
+        android:layout_alignBottom="@+id/item_exchange_tv_id"
         android:layout_toLeftOf="@+id/item_exchange_tv_id"
         android:layout_toStartOf="@+id/item_exchange_tv_id"
+        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
 
-        android:src="@mipmap/icon_good" />
+        android:textSize="12sp"
+        android:text="家庭农场" />
 
-    <ImageView
-        android:id="@+id/item_exchange_iv_review"
-        android:layout_width="13dp"
-        android:layout_height="13dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/item_exchange_iv_zan"
-        android:src="@mipmap/icon_comment" />
+    <TextView
+        android:id="@+id/text_already_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_exchange_tv_date"
+        android:layout_alignEnd="@+id/fragment_coll_ask_view"
+        android:layout_alignRight="@+id/fragment_coll_ask_view"
+        android:textSize="12dp"
+        android:text="已回答：3" />
+
+
 </RelativeLayout>

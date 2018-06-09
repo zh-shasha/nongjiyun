@@ -34,14 +34,14 @@ public class HomeSearchSupplyFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_home_search_supply, container, false);
         home_search_supply_lv=(ListView)view.findViewById(R.id.home_search_supply_lv);
         list=new ArrayList<>();
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
-        list.add(new HomeSearchSupplyMenu(R.mipmap.ic_launcher,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
+        list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv4,"水稻育秧无纺布","防老化水稻育秧专用无纺布，李如山 13655456963","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));
         adapter=new HomeSearchSupplyAdapter(getActivity(),list);
         home_search_supply_lv.setAdapter(adapter);
         home_search_supply_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

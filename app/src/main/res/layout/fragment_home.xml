@@ -23,7 +23,7 @@
             android:id="@+id/home_et"
             android:layout_width="0dp"
             android:layout_height="35dp"
-
+            android:paddingLeft="5dp"
             android:layout_weight="7"
             android:background="@drawable/corners_bg"
             android:drawableLeft="@mipmap/icon_search_black"

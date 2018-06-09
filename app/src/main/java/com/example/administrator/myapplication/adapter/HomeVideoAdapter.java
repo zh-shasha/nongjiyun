@@ -48,6 +48,7 @@ public class HomeVideoAdapter extends BaseAdapter {
         rb.setText(videoMenus.get(position).getTv_video());
         rb.setButtonDrawable(null);
         rb.setBackgroundColor(Color.WHITE);
+        rb.setTextSize(12);
         rb.setCompoundDrawablesWithIntrinsicBounds(0, videoMenus.get(position).getIv_video(), 0, 0);
         rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context, 10));
         rb.setPadding(20,20,20,20);

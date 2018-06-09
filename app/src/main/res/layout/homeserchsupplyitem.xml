@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/image1"
@@ -12,18 +12,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="14dp"
-        app:srcCompat="@mipmap/icon_default_head" />
+        app:srcCompat="@mipmap/home_lv_iv1" />
 
     <TextView
         android:id="@+id/texttitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/image1"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
         android:layout_toEndOf="@+id/image1"
         android:layout_toRightOf="@+id/image1"
         android:text="标题" />
@@ -36,6 +33,7 @@
         android:layout_alignStart="@+id/texttitle"
         android:layout_below="@+id/texttitle"
         android:layout_marginTop="10dp"
+        android:textSize="12dp"
         android:text="内容" />
 
     <ImageView
@@ -45,16 +43,20 @@
         android:layout_alignLeft="@+id/image1"
         android:layout_alignStart="@+id/image1"
         android:layout_below="@+id/image1"
-        android:layout_marginTop="14dp"
-        app:srcCompat="@drawable/btn_me_selected" />
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@mipmap/icon_address" />
 
     <TextView
         android:id="@+id/textadress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageadress"
-        android:layout_toEndOf="@+id/image1"
-        android:layout_toRightOf="@+id/image1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/imageadress"
+        android:layout_toRightOf="@+id/imageadress"
         android:text="显示地点" />
 
     <TextView
@@ -65,19 +67,19 @@
         android:layout_alignBottom="@+id/textadress"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="12dp"
         android:text="2018-05-17" />
 
     <TextView
         android:id="@+id/texttip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textcontent"
-        android:layout_alignLeft="@+id/textdate"
-        android:layout_alignStart="@+id/textdate"
+        android:layout_alignEnd="@+id/textdate"
+        android:layout_alignRight="@+id/textdate"
+        android:layout_alignTop="@+id/texttitle"
+        android:background="@drawable/corners_bg4"
         android:padding="5dp"
-        android:textColor="#FFF"
-        android:background="@color/organge"
-        android:text="已过期" />
+        android:text="已过期"
+        android:textColor="#FFF" />
 </RelativeLayout>

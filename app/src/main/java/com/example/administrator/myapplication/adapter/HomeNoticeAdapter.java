@@ -52,8 +52,8 @@ public class HomeNoticeAdapter extends BaseAdapter{
             convertView = LayoutInflater.from(context).inflate(R.layout.home_notice_item1,null, false);
             ImageView pic = convertView.findViewById(R.id.home_iv_system_notice);
             TextView title = convertView.findViewById(R.id.home_tv1_system_notice);
-            TextView date = convertView.findViewById(R.id.home_tv2_system_notice);
-            TextView read = convertView.findViewById(R.id.home_tv3_system_notice);
+            TextView date = convertView.findViewById(R.id.home_tv3_system_notice);
+            TextView read = convertView.findViewById(R.id.home_tv2_system_notice);
             pic.setImageResource(noticeMenus.get(position).getNotice_image());
             title.setText(noticeMenus.get(position).getNotice_title());
             read.setText(noticeMenus.get(position).getNotice_content());

@@ -13,8 +13,8 @@ import android.widget.ListView;
 import com.example.administrator.myapplication.MainActivity;
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.ExchangeDetail;
-import com.example.administrator.myapplication.adapter.HomeSearchCommAdapter;
-import com.example.administrator.myapplication.moduels.Exchange_item;
+import com.example.administrator.myapplication.adapter.HomeSearchAnswerAdapter;
+import com.example.administrator.myapplication.moduels.HomeSearchTabAnswerMenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +23,9 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class HomeSearchAnswerFragment extends Fragment {
-    private List<Exchange_item> lists;
+    private List<HomeSearchTabAnswerMenu> lists;
     private ListView listView;
-    private HomeSearchCommAdapter adapter;
+    private HomeSearchAnswerAdapter adapter;
 
 
 
@@ -40,10 +40,10 @@ public class HomeSearchAnswerFragment extends Fragment {
         lists = new ArrayList<>();
 
 
-        lists.add(new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"江苏省南京市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class));
+        lists.add(new HomeSearchTabAnswerMenu(R.mipmap.icon_default_head, "阿狸","南京","推广人员","zzzzz",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"江苏省南京市","2018-06-12","家庭农场","已回答：3", ExchangeDetail.class));
 
 
-        adapter = new HomeSearchCommAdapter(getActivity(), lists);
+        adapter = new HomeSearchAnswerAdapter(getActivity(), lists);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

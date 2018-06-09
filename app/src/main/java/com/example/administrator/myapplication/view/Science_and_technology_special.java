@@ -47,7 +47,7 @@ public class Science_and_technology_special extends AppCompatActivity {
     }
     private void initData() {
         list=new ArrayList<>();
-        list.add(new HomeScienceTechnologyHemu(R.mipmap.shengzhu,"早就听说绿壳鸡蛋","2018-05-30","阅读数：13256", Home_Details.class,"https://view.inews.qq.com/q/WXN20180602000567061?refer=mobileqq&rg=3&_wv=1&_rp=1&cur_pos=3&bkt=11002&qq=1968844105&rs=0&pid=2018060214&gid=0&tbkt=F"));
+        list.add(new HomeScienceTechnologyHemu(R.mipmap.icon_circle_red,"早就听说绿壳鸡蛋","2018-05-30","阅读数：13256", Home_Details.class,"https://view.inews.qq.com/q/WXN20180602000567061?refer=mobileqq&rg=3&_wv=1&_rp=1&cur_pos=3&bkt=11002&qq=1968844105&rs=0&pid=2018060214&gid=0&tbkt=F"));
         list.add(new HomeScienceTechnologyHemu(R.mipmap.shengzhu,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
         list.add(new HomeScienceTechnologyHemu(R.mipmap.shengzhu,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
         list.add(new HomeScienceTechnologyHemu(R.mipmap.shengzhu,"早就听说绿壳鸡蛋，但一直不知在哪儿买，没想到在电商找着了","2018-05-30","阅读数：13256", Home_Details.class,"http://www.agronet.com.cn/News/1219221.html"));
@@ -74,14 +74,14 @@ public class Science_and_technology_special extends AppCompatActivity {
         });
 
         piclist=new ArrayList<>();
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
-        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.ic_launcher,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science1,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science2,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science3,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science4,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science5,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science6,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science3,Home_Details.class));
+        piclist.add(new HomeScienceTechnologyItemHenu(R.mipmap.science4,Home_Details.class));
 
         adapter2=new HomeScienceTechnologyItemAdapter(this,piclist);
         science_technology_pic_lv.setAdapter(adapter2);

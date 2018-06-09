@@ -41,16 +41,16 @@ public class Home_Rice_ProvincialExpertFragment extends Fragment {
 
     private void init() {
         provincialMenu=new ArrayList<>();
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻", HomeExpertDetailedInformation.class));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",Home_Details.class));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",HomeExpertDetailedInformation.class));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.ic_launcher,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻", HomeExpertDetailedInformation.class));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",Home_Details.class));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",HomeExpertDetailedInformation.class));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
 
         adapter=new Home_Agricultural_Provincial_Rice_ExpertAdapter(getActivity(),provincialMenu);
         provincial_expert_lv.setAdapter(adapter);
