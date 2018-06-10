@@ -30,6 +30,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
         android:background="#FFF">
         <ImageView
             android:id="@+id/imageView8"
@@ -38,9 +40,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="8dp"
+
+
+
             app:srcCompat="@mipmap/icon_default_head" />
 
         <TextView
@@ -52,6 +54,7 @@
             android:layout_marginStart="12dp"
             android:layout_toEndOf="@+id/imageView8"
             android:layout_toRightOf="@+id/imageView8"
+            android:textSize="15dp"
             android:text="朱金梅" />
 
         <TextView
@@ -61,6 +64,7 @@
             android:layout_alignLeft="@+id/text_name"
             android:layout_alignStart="@+id/text_name"
             android:layout_below="@+id/text_name"
+            android:textSize="12dp"
             android:text="农技推广人员" />
     </RelativeLayout>
     <View
@@ -77,11 +81,13 @@
         android:layout_width="0dp"
             android:layout_weight="1"
         android:layout_height="wrap_content"
+            android:textSize="15dp"
         android:text="地区"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="6"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
             android:text="盐城市 大丰区 县(市 区)辖"/>
     </LinearLayout>
     <LinearLayout
@@ -97,6 +103,7 @@
             android:gravity="center"
             android:background="@drawable/corners_bg3"
             android:textColor="#FFF"
+            android:textSize="15dp"
             android:text="添加"/>
     </LinearLayout>
 

@@ -160,8 +160,8 @@ public class HomeFragment extends Fragment {
 
 
         List<HomeVideoMenu>  videoMenus=new ArrayList<>();
-        videoMenus.add(new HomeVideoMenu(R.mipmap.grid_item2_iv1,"球根花卉种类及生产技术要点",Home_MediaPlayer.class));
-        videoMenus.add(new HomeVideoMenu(R.mipmap.grid_item2_iv2,"农村电商发展及案例解析",Home_MediaPlayer.class));
+        videoMenus.add(new HomeVideoMenu(R.mipmap.iv_video1,"球根花卉种类及生产技术要点",Home_MediaPlayer.class));
+        videoMenus.add(new HomeVideoMenu(R.mipmap.iv_video2,"农村电商发展及案例解析",Home_MediaPlayer.class));
         adapter3=new HomeVideoAdapter(getActivity(),videoMenus);
         grid_video.setAdapter(adapter3);
 

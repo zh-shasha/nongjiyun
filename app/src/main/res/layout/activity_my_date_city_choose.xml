@@ -24,6 +24,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
+                android:textSize="20dp"
                 android:text="选择居住地"
                 android:textColor="#FFF"
                 />
@@ -38,9 +39,9 @@
             android:background="#FFF">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:text="省辖"/>
             <View
                 android:layout_width="match_parent"
@@ -49,9 +50,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="南京市"/>
             <View
                 android:layout_width="match_parent"
@@ -60,9 +62,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="无锡市"/>
             <View
                 android:layout_width="match_parent"
@@ -71,9 +74,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="徐州市"/>
             <View
                 android:layout_width="match_parent"
@@ -82,9 +86,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="常州市"/>
             <View
                 android:layout_width="match_parent"
@@ -93,9 +98,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="苏州市"/>
             <View
                 android:layout_width="match_parent"
@@ -104,9 +110,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="南通市"/>
             <View
                 android:layout_width="match_parent"
@@ -115,9 +122,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="连云港市"/>
             <View
                 android:layout_width="match_parent"
@@ -126,9 +134,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="淮安市"/>
             <View
                 android:layout_width="match_parent"
@@ -137,9 +146,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="盐城市"/>
             <View
                 android:layout_width="match_parent"
@@ -148,9 +158,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="扬州市"/>
             <View
                 android:layout_width="match_parent"
@@ -159,9 +170,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="镇江市"/>
             <View
                 android:layout_width="match_parent"
@@ -170,9 +182,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="泰州市"/>
             <View
                 android:layout_width="match_parent"
@@ -181,9 +194,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="宿迁市"/>
             <View
                 android:layout_width="match_parent"

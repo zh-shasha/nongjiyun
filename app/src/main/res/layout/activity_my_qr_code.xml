@@ -24,13 +24,15 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
+            android:textSize="20dp"
             android:text="我的二维码"
             android:textColor="#FFF"
             />
     </android.support.v7.widget.Toolbar>
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         android:padding="80dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+         android:layout_gravity="center"
+        android:src="@mipmap/icon_512"/>
 </LinearLayout>

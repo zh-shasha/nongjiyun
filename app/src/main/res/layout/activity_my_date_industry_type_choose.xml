@@ -25,6 +25,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
+                android:textSize="20dp"
                 android:text="选择行业类别"
                 android:textColor="#FFF"
                 />
@@ -33,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+
         android:background="#EBEBEB">
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,9 +43,9 @@
             android:background="#FFF">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
                 android:text="粮经"/>
             <View
                 android:layout_width="match_parent"
@@ -52,9 +54,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="园艺"/>
             <View
                 android:layout_width="match_parent"
@@ -63,9 +66,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="畜牧"/>
             <View
                 android:layout_width="match_parent"
@@ -74,9 +78,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="水产"/>
             <View
                 android:layout_width="match_parent"
@@ -85,9 +90,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="综合"/>
             <View
                 android:layout_width="match_parent"
@@ -96,9 +102,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="农机"/>
             <View
                 android:layout_width="match_parent"
@@ -107,9 +114,10 @@
             </View>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:gravity="center_vertical"
-                android:paddingLeft="15dp"
+
                 android:text="其他"/>
             <View
                 android:layout_width="match_parent"

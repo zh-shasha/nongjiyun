@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="150dp"
             android:text="详情"
             android:textColor="#FFF"
             android:textSize="20dp" />
@@ -30,6 +30,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:orientation="horizontal">
             <TextView
                 android:layout_width="0dp"
@@ -38,21 +39,22 @@
                 android:text="分享"
                 android:gravity="right"
                 android:textColor="#FFF"
-                android:textSize="20dp"/>
+                android:textSize="15dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="举报"
-                 android:paddingLeft="20dp"
+                 android:paddingLeft="30dp"
                 android:textColor="#FFF"
-                android:textSize="20dp"/>
+                android:textSize="15dp"/>
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+        android:background="@mipmap/longxia" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -197,7 +199,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:background="@color/green"
         android:orientation="horizontal">
         <TextView
@@ -209,6 +210,11 @@
             android:padding="10dp"
             android:gravity="center"
             android:textColor="#FFF"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB">
+        </View>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"

@@ -50,6 +50,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.AskDetail"></activity>
+        <activity android:name=".activity.HomeFarmCompanySelect"></activity>
+        <activity android:name=".activity.HomeDemandPush"></activity>
         <activity android:name=".activity.HomeAddFriendsList" />
         <activity android:name=".activity.HomeBrandFarmCapital" />
         <activity android:name=".activity.QuickQuestionSubmission" />

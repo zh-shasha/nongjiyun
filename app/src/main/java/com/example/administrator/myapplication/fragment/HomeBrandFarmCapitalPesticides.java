@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.HomeFarmCapitalSelect;
+import com.example.administrator.myapplication.activity.HomeFarmCompanySelect;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,6 +19,7 @@ import com.example.administrator.myapplication.activity.HomeFarmCapitalSelect;
 public class HomeBrandFarmCapitalPesticides extends Fragment {
 
     private ImageView image_nongyao;
+    private ImageView home_brand_company_select1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,11 +39,18 @@ public class HomeBrandFarmCapitalPesticides extends Fragment {
                 startActivity(intent);
             }
         });
+        home_brand_company_select1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), HomeFarmCompanySelect.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private void initView(View view) {
         image_nongyao=(ImageView)view.findViewById(R.id.image_nongyao);
-
+        home_brand_company_select1=(ImageView)view.findViewById(R.id.home_brand_company_select1);
 
     }
 

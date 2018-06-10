@@ -62,8 +62,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:gravity="center"
+            android:layout_height="60dp"
+             android:gravity="center_vertical"
             android:padding="10dp"
             android:background="#FFF"
             >
@@ -83,6 +83,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/image_head1"
                 android:layout_toRightOf="@+id/image_head1"
+                android:textSize="15dp"
                 android:text="张正国" />
 
             <TextView
@@ -92,7 +93,7 @@
                 android:layout_alignLeft="@+id/text_name1"
                 android:layout_alignStart="@+id/text_name1"
                 android:layout_below="@+id/text_name1"
-                android:layout_marginTop="6dp"
+                android:textSize="12dp"
                 android:text="[分享]" />
 
             <TextView
@@ -104,12 +105,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:textSize="12dp"
                 android:text="上午9:33" />
 
             <ImageView
                 android:id="@+id/image_account1"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:layout_alignEnd="@+id/text_time1"
                 android:layout_alignRight="@+id/text_time1"
                 android:layout_alignTop="@+id/text_content1"
@@ -122,9 +124,10 @@
         </View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
             android:padding="10dp"
-            android:gravity="center"
+
             android:background="#FFF"
             >
             <ImageView
@@ -142,6 +145,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/image_head2"
                 android:layout_toRightOf="@+id/image_head2"
+                android:textSize="15dp"
                 android:text="嗯" />
 
             <TextView
@@ -151,7 +155,7 @@
                 android:layout_alignLeft="@+id/text_name2"
                 android:layout_alignStart="@+id/text_name2"
                 android:layout_below="@+id/text_name2"
-                android:layout_marginTop="6dp"
+                android:textSize="12dp"
                 android:text="我想你了" />
 
             <TextView
@@ -163,12 +167,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:text="昨天" />
+                android:text="昨天"
+                android:textSize="12dp"/>
 
             <ImageView
                 android:id="@+id/image_account2"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:layout_alignEnd="@+id/text_time2"
                 android:layout_alignRight="@+id/text_time2"
                 android:layout_alignTop="@+id/text_content2"
@@ -181,9 +186,9 @@
         </View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
             android:padding="10dp"
-            android:gravity="center"
             android:background="#FFF"
             >
             <ImageView
@@ -201,6 +206,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/image_head3"
                 android:layout_toRightOf="@+id/image_head3"
+                android:textSize="15dp"
                 android:text="凌成功 " />
 
             <TextView
@@ -210,7 +216,7 @@
                 android:layout_alignLeft="@+id/text_name3"
                 android:layout_alignStart="@+id/text_name3"
                 android:layout_below="@+id/text_name3"
-                android:layout_marginTop="6dp"
+                android:textSize="12dp"
                 android:text="good " />
 
             <TextView
@@ -222,12 +228,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:textSize="12dp"
                 android:text="昨天" />
 
             <ImageView
                 android:id="@+id/image_account3"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:layout_alignEnd="@+id/text_time3"
                 android:layout_alignRight="@+id/text_time3"
                 android:layout_alignTop="@+id/text_content3"

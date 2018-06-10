@@ -26,12 +26,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
+                android:layout_gravity="center"
+                android:textSize="15dp"
                 android:text="农资精选"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:gravity="right"
+                android:textSize="15dp"
                 android:text="更多>>"/>
         </LinearLayout>
         <View
@@ -58,7 +61,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="蜱虫林"/>
+                    android:text="蜱虫林                               "/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -78,11 +81,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="蜱虫林"/>
+                    android:text="苯磺.异丙隆                    "/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="来源：0514-86739571"/>
+                    android:paddingLeft="14dp"
+                    android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -103,11 +107,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="蜱虫林"/>
+                    android:text="烯啶虫胺                          "/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="来源：0514-86739571"/>
+                    android:paddingLeft="14dp"
+                    android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -123,11 +128,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="蜱虫林"/>
+                    android:text="醚菌酯                              "/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="来源：0514-86739571"/>
+                    android:paddingLeft="14dp"
+                    android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
         </LinearLayout>
         <View
@@ -137,38 +143,41 @@
         </View>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textSize="25dp"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
                 android:text="企业推荐"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:gravity="right"
                 android:text="更多>>"/>
         </LinearLayout>
         <ImageView
+            android:id="@+id/home_brand_company_select1"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:src="@drawable/qiye1"/>
+            android:layout_height="wrap_content"
+            android:background="@mipmap/science1"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:src="@drawable/qiye2"/>
+            android:layout_height="wrap_content"
+            android:background="@mipmap/science2"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:src="@drawable/qiye3"/>
+            android:layout_height="wrap_content"
+            android:background="@mipmap/science3"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:src="@drawable/qiye1"/>
+            android:layout_height="wrap_content"
+            android:background="@mipmap/science4"/>
     </LinearLayout>
 </ScrollView>
 

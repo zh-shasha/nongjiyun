@@ -33,7 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="10dp"
+        android:gravity="left"
         android:background="#FFF"
+        android:textSize="15dp"
         android:hint="请详细描述您遇到的问题。例如：植物类型？生长期？发病部位等信息，以方便专家解答"/>
     <View
         android:layout_width="match_parent"
@@ -97,13 +99,23 @@
             </RadioGroup>
 
         </LinearLayout>
-        <Button
-            android:layout_width="300dp"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:text="提交"
-            android:textColor="#FFF"/>
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/corners_bg3"
+                android:text="提交"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

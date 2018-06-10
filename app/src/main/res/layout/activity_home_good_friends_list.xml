@@ -37,7 +37,6 @@
             android:background="#EBEBEB"
             android:orientation="vertical"
              >
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -53,7 +52,7 @@
                     android:drawableLeft="@mipmap/icon_add_head"
                     android:drawablePadding="10dp"
                     android:text="新的朋友"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -68,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="C"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,6 +84,7 @@
                     android:button="@null"
                     android:drawableLeft="@mipmap/icon_default_head"
                     android:drawablePadding="10dp"
+                    android:textSize="15dp"
                     android:text="褚艳玲" />
             </LinearLayout>
 
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="N"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="X"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Y"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -220,7 +220,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Z"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout

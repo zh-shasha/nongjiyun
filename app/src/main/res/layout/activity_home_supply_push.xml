@@ -94,14 +94,12 @@
         </View>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:padding="10dp"
         android:textSize="15dp"
+        android:gravity="top"
         android:background="@null"
-        android:hint="详细描述
-
-
-"/>
+        android:hint="详细描述"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"

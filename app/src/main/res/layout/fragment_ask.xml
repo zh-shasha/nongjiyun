@@ -25,40 +25,44 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
                 android:orientation="vertical">
                 <Button
                     android:id="@+id/quick_ask_bt"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:background="@color/green"
-                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corners_bg3"
                     android:text="？快速提问"
                     android:textColor="#EBEBEB" />
             </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="7"
         android:orientation="vertical">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <com.example.administrator.myapplication.utils.ListViewForScrollView
-            android:id="@+id/quick_question_lv"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:dividerHeight="8dp">
-        </com.example.administrator.myapplication.utils.ListViewForScrollView>
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.example.administrator.myapplication.utils.ListViewForScrollView
+                    android:id="@+id/quick_question_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="5dp">
+                </com.example.administrator.myapplication.utils.ListViewForScrollView>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
-    </ScrollView>
+
 </LinearLayout>
-</LinearLayout>
+
     <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
 
 

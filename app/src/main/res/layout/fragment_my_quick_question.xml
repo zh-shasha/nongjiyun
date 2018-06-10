@@ -56,7 +56,7 @@
             android:layout_alignStart="@+id/text_tip"
             android:layout_below="@+id/text_tip"
             android:layout_marginTop="11dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/home_lv_iv1" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

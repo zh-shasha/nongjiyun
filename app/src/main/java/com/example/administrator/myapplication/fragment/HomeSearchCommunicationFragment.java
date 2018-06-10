@@ -41,11 +41,11 @@ public class HomeSearchCommunicationFragment extends Fragment {
 
         listView = (ListView) view.findViewById(R.id.exchange_lv);
         lists = new ArrayList<>();
-        lists.add(new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","看看",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"江苏省南京市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"  ","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"  ","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"  ","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"  ","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head, "赵浩","南京","推广人员","水稻插秧机。。。",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"江苏省南京市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看我的西瓜这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"  ","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","小麦熟了",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"江苏省淮安市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"镇江市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv2,"南通市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
         adapter = new HomeSearchCommAdapter(getActivity(), lists);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

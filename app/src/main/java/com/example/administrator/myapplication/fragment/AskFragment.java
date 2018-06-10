@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.AskDetail;
 import com.example.administrator.myapplication.activity.QuickQuestionSubmission;
 import com.example.administrator.myapplication.adapter.Ask_itemAdapter;
 import com.example.administrator.myapplication.moduels.Ask_item;
@@ -50,8 +51,8 @@ public class AskFragment extends Fragment {
 
                 lists = new ArrayList<>();
 
-                lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",null));
-                lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",null));
+                lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2", AskDetail.class));
+                lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",AskDetail.class));
                 lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",null));
                 lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",null));
                 lists.add(new Ask_item(R.mipmap.icon_default_head,"小明","江苏省","农技推广","粮经","小刀算法阿发",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"2018-06-05","已回答：2",null));

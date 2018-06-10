@@ -35,6 +35,11 @@ public class HomeWantToBuyFragment extends Fragment {
         list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","已过期","2018-06-11"));
         list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","8/kg","2018-06-11"));
         list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","已过期 ","2018-06-11"));
+        list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","   ","2018-06-11"));
+        list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","已过期","2018-06-11"));
+        list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","已过期","2018-06-11"));
+        list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","8/kg","2018-06-11"));
+        list.add(new HomeWantToBuyMenu("45%复合肥","名牌产品，种植水稻",R.mipmap.icon_address,"江苏省南京市栖霞区","已过期 ","2018-06-11"));
 
         adapter=new HomeWantToBuyAdapter(getActivity(),list);
         home_want_buy_lv.setAdapter(adapter);

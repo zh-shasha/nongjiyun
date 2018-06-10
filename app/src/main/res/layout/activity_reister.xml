@@ -11,11 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff2dc667">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ff2dc667"
-            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/reister_back_bt"
@@ -30,15 +25,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:text="注册"
                 android:textSize="20dp"
                 android:textColor="#FFF"
                 />
-        </RelativeLayout>
+
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
+        android:id="@+id/et_ly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -55,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:inputType="phone"
+            android:textSize="15dp"
             android:hint="请输入手机号" />
 
         <Button
@@ -72,14 +69,15 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#EBEBEB">
+        android:background="#EBEBEB"
+        android:layout_below="@id/et_ly">
 
     </View>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:background="#fff"
         android:orientation="horizontal">
         <EditText
@@ -90,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:background="@android:color/white"
+            android:textSize="15dp"
             android:hint="请输入验证码" />
     </LinearLayout>
 
@@ -102,6 +101,7 @@
              android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/corners_bg3"
+            android:textSize="15dp"
             android:text="下一步"
             android:textColor="#FFF"
             android:gravity="center"
