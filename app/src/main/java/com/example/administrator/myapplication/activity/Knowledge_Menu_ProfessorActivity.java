@@ -60,21 +60,21 @@ public class Knowledge_Menu_ProfessorActivity extends AppCompatActivity {
         gridView =(HomeMenuGridView) findViewById(R.id.knowledge_menu_professor_gv);
         list=new ArrayList<>();
 
-        Knowledge_Menu_Professor h1=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"水稻产业技术体系",Knowledge_Menu_Pro_RiceActivity.class);
-        Knowledge_Menu_Professor h2=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"小麦产业技术体系",Knowledge_Menu_Pro_WheatActivity.class);
-        Knowledge_Menu_Professor h3=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"特粮特经产业技术体系",Knowledge_Menu_Pro_TLTActivity.class);
-        Knowledge_Menu_Professor h4=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"蔬菜产业技术体系",Knowledge_Menu_Pro_VegActivity.class);
-        Knowledge_Menu_Professor h5=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"西甜瓜产业技术体系",Knowledge_Menu_Pro_WatActivity.class);
-        Knowledge_Menu_Professor h6=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"葡萄产业技术体系",null);
-        Knowledge_Menu_Professor h7=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"草莓产业技术体系",null);
-        Knowledge_Menu_Professor h8=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"花卉产业技术体系",null);
-        Knowledge_Menu_Professor h9=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"茶叶产业技术体系",null);
-        Knowledge_Menu_Professor h10=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"生猪产业技术体系",null);
-        Knowledge_Menu_Professor h11=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"肉羊产业技术体系",null);
-        Knowledge_Menu_Professor h12=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"肉鸡产业技术体系",null);
-        Knowledge_Menu_Professor h13=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"蛋鸡产业技术体系",null);
-        Knowledge_Menu_Professor h14=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"水禽产业技术体系",null);
-        Knowledge_Menu_Professor h15=new Knowledge_Menu_Professor(R.mipmap.ic_launcher,"奶牛产业技术体系",null);
+        Knowledge_Menu_Professor h1=new Knowledge_Menu_Professor(R.mipmap.shuidao,"水稻产业技术体系",Knowledge_Menu_Pro_RiceActivity.class);
+        Knowledge_Menu_Professor h2=new Knowledge_Menu_Professor(R.mipmap.xiaomai,"小麦产业技术体系",Knowledge_Menu_Pro_WheatActivity.class);
+        Knowledge_Menu_Professor h3=new Knowledge_Menu_Professor(R.mipmap.tejing,"特粮特经产业技术体系",Knowledge_Menu_Pro_TLTActivity.class);
+        Knowledge_Menu_Professor h4=new Knowledge_Menu_Professor(R.mipmap.shucai,"蔬菜产业技术体系",Knowledge_Menu_Pro_VegActivity.class);
+        Knowledge_Menu_Professor h5=new Knowledge_Menu_Professor(R.mipmap.xitiangau,"西甜瓜产业技术体系",Knowledge_Menu_Pro_WatActivity.class);
+        Knowledge_Menu_Professor h6=new Knowledge_Menu_Professor(R.mipmap.putao,"葡萄产业技术体系",null);
+        Knowledge_Menu_Professor h7=new Knowledge_Menu_Professor(R.mipmap.caomei,"草莓产业技术体系",null);
+        Knowledge_Menu_Professor h8=new Knowledge_Menu_Professor(R.mipmap.huahui,"花卉产业技术体系",null);
+        Knowledge_Menu_Professor h9=new Knowledge_Menu_Professor(R.mipmap.chaye,"茶叶产业技术体系",null);
+        Knowledge_Menu_Professor h10=new Knowledge_Menu_Professor(R.mipmap.shengzhu,"生猪产业技术体系",null);
+        Knowledge_Menu_Professor h11=new Knowledge_Menu_Professor(R.mipmap.rouyang,"肉羊产业技术体系",null);
+        Knowledge_Menu_Professor h12=new Knowledge_Menu_Professor(R.mipmap.roujichanye,"肉鸡产业技术体系",null);
+        Knowledge_Menu_Professor h13=new Knowledge_Menu_Professor(R.mipmap.danjichannye,"蛋鸡产业技术体系",null);
+        Knowledge_Menu_Professor h14=new Knowledge_Menu_Professor(R.mipmap.shuiqin,"水禽产业技术体系",null);
+        Knowledge_Menu_Professor h15=new Knowledge_Menu_Professor(R.mipmap.nainiu,"奶牛产业技术体系",null);
 
         list.add(h1);
         list.add(h2);

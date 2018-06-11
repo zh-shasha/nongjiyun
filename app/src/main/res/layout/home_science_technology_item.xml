@@ -22,6 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="17dp"
         android:layout_marginStart="17dp"
+        android:singleLine="true"
         android:layout_toEndOf="@+id/science_technology_lv_image"
         android:layout_toRightOf="@+id/science_technology_lv_image"
         android:text="标题" />

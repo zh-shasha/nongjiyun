@@ -42,10 +42,10 @@ public class Knowledge_Menu_ProfessorAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         RadioButton rb=new RadioButton(context);
 
-            rb.setText(list.get(position).getName());
             rb.setButtonDrawable(null);
             rb.setBackgroundColor(Color.WHITE);
-            rb.setCompoundDrawablesWithIntrinsicBounds(0,list.get(position).getImg(),0,0);
+            rb.setBackgroundResource(list.get(position).getImg());
+//            rb.setCompoundDrawablesWithIntrinsicBounds(0,list.get(position).getImg(),0,0);
             rb.setCompoundDrawablePadding(ScreenUtil.dip2px(context,5));
             rb.setGravity(Gravity.CENTER);
             rb.setOnClickListener(new View.OnClickListener() {

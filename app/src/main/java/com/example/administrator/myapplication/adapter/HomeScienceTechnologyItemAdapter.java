@@ -47,7 +47,7 @@ public class HomeScienceTechnologyItemAdapter extends BaseAdapter{
             convertView = LayoutInflater.from(context).inflate(R.layout.home_science_technology_pic_item, null, false);
 
             ImageView pic1 = convertView.findViewById(R.id.home_science_technology_pic_item_lv);
-            pic1.setImageResource(listMenu.getImage());
+            pic1.setBackgroundResource(listMenu.getImage());
 
 
         }

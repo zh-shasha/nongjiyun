@@ -39,16 +39,16 @@ public class Knowledge_Menu_AnimalActivity extends AppCompatActivity {
         gridView =(GridView)findViewById(R.id.knowledge_menu_animal_gv);
         list=new ArrayList<>();
 
-        Knowledge_Menu_Animal h1=new Knowledge_Menu_Animal(R.mipmap.pig,"猪",Knowledge_Menu_Animal_PigActivity.class);
-        Knowledge_Menu_Animal h2=new Knowledge_Menu_Animal(R.mipmap.sheep,"羊",Knowledge_Menu_Animal_SheepActivity.class);
-        Knowledge_Menu_Animal h3=new Knowledge_Menu_Animal(R.mipmap.eggchicken,"蛋鸡",Knowledge_Menu_Animal_EggActivity.class);
-        Knowledge_Menu_Animal h4=new Knowledge_Menu_Animal(R.mipmap.rouji,"肉鸡",Knowledge_Menu_Animal_ChickenActivity.class);
-        Knowledge_Menu_Animal h5=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"鸭",Knowledge_Menu_Animal_DuckActivity.class);
-        Knowledge_Menu_Animal h6=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"鹅",Knowledge_Menu_Animal_GooseActivity.class);
-        Knowledge_Menu_Animal h7=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"牛",Knowledge_Menu_Animal_CattleActivity.class);
-        Knowledge_Menu_Animal h8=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"鸽",Knowledge_Menu_Animal_DoveActivity.class);
-        Knowledge_Menu_Animal h9=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"兔",Knowledge_Menu_Animal_RabbitActivity.class);
-        Knowledge_Menu_Animal h10=new Knowledge_Menu_Animal(R.mipmap.ic_launcher,"其他",null);
+        Knowledge_Menu_Animal h1=new Knowledge_Menu_Animal(R.mipmap.pig_photo,Knowledge_Menu_Animal_PigActivity.class);
+        Knowledge_Menu_Animal h2=new Knowledge_Menu_Animal(R.mipmap.sheep1,Knowledge_Menu_Animal_SheepActivity.class);
+        Knowledge_Menu_Animal h3=new Knowledge_Menu_Animal(R.mipmap.eggchicken1,Knowledge_Menu_Animal_EggActivity.class);
+        Knowledge_Menu_Animal h4=new Knowledge_Menu_Animal(R.mipmap.rouji1,Knowledge_Menu_Animal_ChickenActivity.class);
+        Knowledge_Menu_Animal h5=new Knowledge_Menu_Animal(R.mipmap.duck1,Knowledge_Menu_Animal_DuckActivity.class);
+        Knowledge_Menu_Animal h6=new Knowledge_Menu_Animal(R.mipmap.e1,Knowledge_Menu_Animal_GooseActivity.class);
+        Knowledge_Menu_Animal h7=new Knowledge_Menu_Animal(R.mipmap.niu1,Knowledge_Menu_Animal_CattleActivity.class);
+        Knowledge_Menu_Animal h8=new Knowledge_Menu_Animal(R.mipmap.ge1,Knowledge_Menu_Animal_DoveActivity.class);
+        Knowledge_Menu_Animal h9=new Knowledge_Menu_Animal(R.mipmap.tu1,Knowledge_Menu_Animal_RabbitActivity.class);
+        Knowledge_Menu_Animal h10=new Knowledge_Menu_Animal(R.mipmap.more1,null);
 
         list.add(h1);
         list.add(h2);
