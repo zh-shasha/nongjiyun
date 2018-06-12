@@ -1,15 +1,33 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.administrator.myapplication.fragment.HomeWantToBuyFragment">
-
-<com.example.administrator.myapplication.utils.ListViewForScrollView
-    android:id="@+id/home_want_buy_lv"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-</com.example.administrator.myapplication.utils.ListViewForScrollView>
+    tools:context="com.example.administrator.myapplication.fragment.HomeSearchCommunicationFragment">
 
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.example.administrator.myapplication.utils.ListViewForScrollView
+                android:id="@+id/home_want_buy_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.example.administrator.myapplication.utils.ListViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab_want_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="left|bottom"
+        android:backgroundTint="@color/springgreen"
+        android:src="@mipmap/qiugou1"/>
+
+
+</FrameLayout>

@@ -34,8 +34,7 @@ public class HomeSupplyAndDemand extends AppCompatActivity {
         home_supply_demand_type_tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(HomeSupplyAndDemand.this,HomeSupplyPush.class);
-                startActivity(intent);
+                 finish();
             }
         });
         home_supply_demand_back_iv.setOnClickListener(new View.OnClickListener() {

@@ -5,6 +5,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.TabFragmentShouYeAdapter;
@@ -21,6 +23,7 @@ import java.util.List;
 public class HomeBrandFarmCapital extends AppCompatActivity {
     private TabLayout tabLayout_shouye;
     private ViewPager viewPager_shouye;
+    private ImageView home_brand_farm_back_iv;
     private List<String> strings = new ArrayList<String>();;
     private List<Fragment> fragments = new ArrayList<Fragment>();;
     @Override
@@ -31,8 +34,16 @@ public class HomeBrandFarmCapital extends AppCompatActivity {
         initView();
     }
     private void initView(){
+        home_brand_farm_back_iv=(ImageView)findViewById(R.id. home_brand_farm_back_iv);
+        home_brand_farm_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         tabLayout_shouye = (TabLayout)findViewById(R.id.tablayout_shouye);
         viewPager_shouye = (ViewPager)findViewById(R.id.viewpager_ShouYe);
+
         viewPager_shouye.setAdapter(new TabFragmentShouYeAdapter(fragments,strings,
                 getSupportFragmentManager(),this));
         tabLayout_shouye.setupWithViewPager(viewPager_shouye);

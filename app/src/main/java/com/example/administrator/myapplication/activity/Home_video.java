@@ -5,6 +5,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.TabFragmentShouYeAdapter;
@@ -21,8 +23,9 @@ import java.util.List;
 public class Home_video extends AppCompatActivity {
     private TabLayout tabLayout_shouye;
     private ViewPager viewPager_shouye;
-    private List<String> strings = new ArrayList<String>();;
-    private List<Fragment> fragments = new ArrayList<Fragment>();;
+    private List<String> strings = new ArrayList<String>();
+    private List<Fragment> fragments = new ArrayList<Fragment>();
+    private ImageView home_video_back_iv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,13 @@ public class Home_video extends AppCompatActivity {
         initView();
     }
     private void initView(){
+        home_video_back_iv=(ImageView)findViewById(R.id.home_video_back_iv);
+        home_video_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         tabLayout_shouye = (TabLayout)findViewById(R.id.tablayout_shouye);
         viewPager_shouye = (ViewPager)findViewById(R.id.viewpager_ShouYe);
         viewPager_shouye.setAdapter(new TabFragmentShouYeAdapter(fragments,strings,

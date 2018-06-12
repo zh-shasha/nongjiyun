@@ -16,7 +16,7 @@
             android:background="@color/springgreen"
             android:orientation="horizontal">
             <ImageView
-                android:id="@+id/agricultural_expert_back_iv"
+                android:id="@+id/home_detail_back_iv"
                 android:layout_width="18dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"
@@ -29,18 +29,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/home_notice_system_collection1"
                 android:layout_alignRight="@+id/home_notice_system_collection1"
-                android:layout_alignTop="@+id/agricultural_expert_back_iv"
+                android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:layout_marginEnd="115dp"
-                android:layout_marginRight="100dp"
-                android:paddingTop="10dp"
+                android:layout_marginEnd="89dp"
+                android:layout_marginRight="89dp"
+
                 android:text="详情"
                 android:textColor="#FFF"
                 android:textSize="20dp" />
             <RadioButton
             android:id="@+id/home_notice_system_collection1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
                 android:layout_marginLeft="240dp"
             android:drawableTop="@mipmap/btn_collection_normal"
                 android:button="@null"
@@ -52,8 +52,8 @@
             />
             <RadioButton
             android:id="@+id/home_notice_system_share1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
                 android:layout_marginLeft="300dp"
             android:src="@mipmap/icon_collection"
                 android:button="@null"

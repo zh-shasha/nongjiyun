@@ -89,8 +89,7 @@ public class HomeFragment extends Fragment {
     private TextView headline;
     private TextView trends;
     private TextView video_tv;
-   // private FirstWeatherListAdapter weatherListAdapter;
-   private TextView tv_date;
+    private TextView tv_date;
     private TextView tv_fengxiang;
     private TextView tv_city;
     private TextView tv_temperature;

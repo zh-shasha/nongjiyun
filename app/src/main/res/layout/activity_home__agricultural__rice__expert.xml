@@ -10,13 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/springgreen">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/springgreen"
-            android:orientation="horizontal">
+
             <ImageView
-                android:id="@+id/agricultural_expert_back_iv"
+                android:id="@+id/agricultural_expert_rice_back_iv"
                 android:layout_width="18dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"
@@ -26,12 +22,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="140dp"
+                android:layout_gravity="center"
+
                 android:text="农业专家"
                 android:textColor="#FFF"
                 android:textSize="20dp" />
-        </RelativeLayout>
+
     </android.support.v7.widget.Toolbar>
     <android.support.design.widget.TabLayout
         android:id="@+id/home_agricultural_rice_expert_tab"

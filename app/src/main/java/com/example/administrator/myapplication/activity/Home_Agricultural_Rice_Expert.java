@@ -1,14 +1,15 @@
 package com.example.administrator.myapplication.activity;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.Home_Agricultural_Rice_ExpertAdapter;
-import com.example.administrator.myapplication.adapter.TabAdapter;
 import com.example.administrator.myapplication.fragment.Home_Rice_ProvincialExpertFragment;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class Home_Agricultural_Rice_Expert extends AppCompatActivity {
     private ViewPager rice_expert_vp;
     private Home_Agricultural_Rice_ExpertAdapter adapter;
     private List<Fragment>fragmentList;
+    private ImageView agricultural_expert_rice_back_iv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,15 @@ public class Home_Agricultural_Rice_Expert extends AppCompatActivity {
     }
 
     private void init() {
+        agricultural_expert_rice_back_iv=(ImageView)findViewById(R.id.agricultural_expert_rice_back_iv);
+        agricultural_expert_rice_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent=new Intent(Home_Agricultural_Rice_Expert.this,agricultural_expert.class);
+//                startActivity(intent);
+                finish();
+            }
+        });
         expert_tab=(TabLayout)findViewById(R.id.home_agricultural_rice_expert_tab);
         rice_expert_vp=(ViewPager)findViewById(R.id.rice_vp);
         String[] tabTitle = new String[]{"省级专家", "地方专家","驻村专家"};

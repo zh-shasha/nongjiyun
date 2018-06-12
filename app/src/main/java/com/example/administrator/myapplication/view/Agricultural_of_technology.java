@@ -2,7 +2,6 @@ package com.example.administrator.myapplication.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
 import android.widget.GridView;
 
 import com.example.administrator.myapplication.adapter.HomeTechnologyGridviewAdapter;
@@ -29,17 +28,17 @@ public class Agricultural_of_technology extends AppCompatActivity {
         home_technology_gridviewList=new ArrayList<>();
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.rice,"水稻",Home_technology_gridview_rice.class));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.wheat,"小麦",Home_technology_gridview_Wheat.class));
-        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.tejing,"特粮特精",Home_technology_gridview_Specialdiet.class));
-        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.shucai,"蔬菜",null));
+        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.tejing_technology,"特粮特精",Home_technology_gridview_Specialdiet.class));
+        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.shucai_technology,"蔬菜",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.guoshu,"果树",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.zhibao,"植保",null));
-        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.shengzhu,"生猪",null));
+        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.shengzhu_technology,"生猪",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.jiaqin,"家禽",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.jiachu,"家畜",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.huanjingnengyuan,"环境能源",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.nongji,"农机装备",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.shuichan,"水产",null));
-        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.chaye,"茶叶",null));
+        home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.chaye_technology,"茶叶",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.huamu,"花木",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.sangcan,"蚕桑",null));
         home_technology_gridviewList.add(new Home_technology_gridview(R.mipmap.nongchanpinjiagong,"加工制备",null));

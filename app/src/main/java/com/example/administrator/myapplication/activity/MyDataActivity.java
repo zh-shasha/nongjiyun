@@ -22,6 +22,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -73,6 +74,7 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
     private LinearLayout line_mydata_sex;
     private LinearLayout line_mydata_kind;
     private LinearLayout line_mydata_address;
+    private ImageView mydata_back_bt;
 
 
     @Override
@@ -99,6 +101,8 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
         line_mydata_sex =(LinearLayout)findViewById(R.id.line_mydata_sex);
         line_mydata_kind=(LinearLayout)findViewById(R.id.line_mydata_kind);
         line_mydata_address=(LinearLayout)findViewById(R.id.line_mydata_address);
+        mydata_back_bt=(ImageView)findViewById(R.id.mydata_back_bt);
+
 
         SharedPreferences sp=getSharedPreferences("admin", MODE_PRIVATE);
         tv_nickname.setText(sp.getString("nickname",""));
@@ -129,6 +133,7 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
         line_mydata_sex.setOnClickListener(this);
         line_mydata_kind.setOnClickListener(this);
         line_mydata_address.setOnClickListener(this);
+        mydata_back_bt.setOnClickListener(this);
 
 
 //        line_mydata_id.setOnClickListener(new View.OnClickListener() {
@@ -252,6 +257,9 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.mydata_back_bt:
+                finish();
+                break;
             case R.id.line_mydata_id:
                 Intent intent=new Intent(MyDataActivity.this,MyDateChooseType.class);
                  startActivityForResult(intent,1);

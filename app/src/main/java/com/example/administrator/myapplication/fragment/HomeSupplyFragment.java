@@ -11,9 +11,11 @@ import android.widget.AdapterView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.activity.HomeSupplyDetail;
+import com.example.administrator.myapplication.activity.HomeSupplyPush;
 import com.example.administrator.myapplication.adapter.HomeSearchSupplyAdapter;
 import com.example.administrator.myapplication.moduels.HomeSearchSupplyMenu;
 import com.example.administrator.myapplication.utils.ListViewForScrollView;
+import com.melnykov.fab.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,7 @@ public class HomeSupplyFragment extends Fragment {
     private ListViewForScrollView home_supply_lv;
     private List<HomeSearchSupplyMenu> list;
     private HomeSearchSupplyAdapter adapter;
+    private FloatingActionButton fab_add_comment;
 
 
 
@@ -34,6 +37,14 @@ public class HomeSupplyFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_home_supply, container, false);
         home_supply_lv=(ListViewForScrollView) view.findViewById(R.id.home_supply_lv);
+        fab_add_comment=(FloatingActionButton)view.findViewById(R.id.fab_add_comment);
+         fab_add_comment.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent=new Intent(getActivity(),HomeSupplyPush.class);
+                 startActivity(intent);
+             }
+         });
         list=new ArrayList<>();
         list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv1,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",HomeSupplyDetail.class));
         list.add(new HomeSearchSupplyMenu(R.mipmap.home_lv_iv2,"标题","内容","已过期",R.mipmap.icon_address,"南京工业职业技术学院","2018-06-04",Home_Details.class));

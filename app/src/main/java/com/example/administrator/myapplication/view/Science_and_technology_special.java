@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
@@ -27,6 +28,7 @@ public class Science_and_technology_special extends AppCompatActivity {
     private TextView home_science_technology_more;
     private List<HomeScienceTechnologyItemHenu> piclist;
     private HomeScienceTechnologyItemAdapter adapter2;
+    private ImageView science_tech_back_iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class Science_and_technology_special extends AppCompatActivity {
         science_technology_lv=(ListViewForScrollView)findViewById(R.id.science_technology_lv);
         home_science_technology_more=(TextView)findViewById(R.id.home_science_technology_more);
         science_technology_pic_lv=(ListViewForScrollView)findViewById(R.id.science_technology_pic_lv);
-
+        science_tech_back_iv=(ImageView)findViewById(R.id.science_tech_back_iv);
 
     }
     private void initData() {
@@ -87,6 +89,11 @@ public class Science_and_technology_special extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        science_tech_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

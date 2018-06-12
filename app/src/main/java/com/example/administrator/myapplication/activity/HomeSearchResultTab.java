@@ -40,6 +40,7 @@ public class HomeSearchResultTab extends FragmentActivity {
         home_edit_tab_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 finish();
             }
         });

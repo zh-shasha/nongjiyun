@@ -1,12 +1,21 @@
 package com.example.administrator.myapplication.activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class HomeSessionList extends AppCompatActivity implements View.OnClickListener{
 private ImageView home_session_mail_iv;
@@ -22,23 +31,88 @@ private ImageView home_session_list_back_iv;
         home_session_add_iv.setOnClickListener(this);
         home_session_mail_iv.setOnClickListener(this);
     }
-
+    public void customScan(){
+        new IntentIntegrator(this)
+                .setOrientationLocked(false)
+                .setCaptureActivity(CustomScanActivity.class) // 设置自定义的activity是CustomActivity
+                .initiateScan(); // 初始化扫描
+    }
+    @Override
+// 通过 onActivityResult的方法获取 扫描回来的 值
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
+        if(intentResult != null) {
+            if(intentResult.getContents() == null) {
+                Toast.makeText(this,"内容为空",Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this,"扫描成功",Toast.LENGTH_LONG).show();
+                // ScanResult 为 获取到的字符串
+                String ScanResult = intentResult.getContents();
+            }
+        } else {
+            super.onActivityResult(requestCode,resultCode,data);
+        }
+    }
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.home_session_mail_iv:
-                Intent intent=new Intent(HomeSessionList.this,HomeGoodFriendsList.class);
+                Intent intent = new Intent(HomeSessionList.this, HomeGoodFriendsList.class);
                 startActivity(intent);
                 break;
             case R.id.home_session_add_iv:
-                Intent intent1=new Intent(HomeSessionList.this,HomeAddFriendsList.class);
-                startActivity(intent1);
+                final Dialog picture_dialog = new Dialog(this);
+                //去掉标题线
+                picture_dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
+                View picture_contentView = LayoutInflater.from(this).inflate(R.layout.dialog_add_friends, null);
+                picture_dialog.setContentView(picture_contentView);
+                RadioButton add = picture_contentView.findViewById(R.id.dialog_add_friends);
+                RadioButton sao = picture_contentView.findViewById(R.id.dialog_sao);
+                RadioButton myqr = picture_contentView.findViewById(R.id.dialog_my_qr);
+
+                add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent1 = new Intent(HomeSessionList.this, HomeAddFriendsList.class);
+                        startActivity(intent1);
+                        picture_dialog.dismiss();
+                    }
+                });
+                sao.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent1 = new Intent(HomeSessionList.this, CustomScanActivity.class);
+                        startActivity(intent1);
+                        picture_dialog.dismiss();
+                    }
+                });
+
+                myqr.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent1 = new Intent(HomeSessionList.this, MyQrCode.class);
+                        startActivity(intent1);
+                        picture_dialog.dismiss();
+                    }
+                });
+                //背景透明
+//                picture_dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                picture_dialog.show();
+                Window window = picture_dialog.getWindow();
+                WindowManager.LayoutParams lp = window.getAttributes();
+                lp.gravity = Gravity.CENTER; // 底部
+                lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+                lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+                window.setAttributes(lp);
+
+                window.setWindowAnimations(R.style.mystyle);  //添加动画
+                picture_dialog.setCanceledOnTouchOutside(true);
                 break;
             case R.id.home_session_list_back_iv:
                 finish();
                 break;
 
         }
-
     }
-}
+    }
+
