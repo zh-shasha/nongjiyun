@@ -31,6 +31,7 @@
                 android:layout_gravity="center"
                 android:paddingLeft="115dp"
                 android:text="推广日志"
+                android:textSize="20dp"
                 android:textColor="#FFF" />
             <TextView
                 android:id="@+id/log_push_tv"
@@ -38,6 +39,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:paddingLeft="60dp"
+                android:layout_gravity="center"
                 android:text="上报"
                 android:textColor="#FFF"/>
         </LinearLayout>

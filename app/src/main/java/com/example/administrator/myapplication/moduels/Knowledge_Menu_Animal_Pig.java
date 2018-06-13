@@ -6,14 +6,17 @@ public class Knowledge_Menu_Animal_Pig {
     private String date;
     private String readnum;
     private Class aClass;
+    private String neturl;
 
 
-    public Knowledge_Menu_Animal_Pig(int img, String title, String date, String readnum, Class aClass){
+    public Knowledge_Menu_Animal_Pig(int img, String title, String date, String readnum, Class aClass,String neturl){
         this.img=img;
         this.title=title;
         this.date=date;
         this.readnum=readnum;
         this.aClass=aClass;
+        this.neturl=neturl;
+
     }
 
     public int getImg() {
@@ -54,5 +57,13 @@ public class Knowledge_Menu_Animal_Pig {
 
     public void setaClass(Class aClass) {
         this.aClass = aClass;
+    }
+
+    public String getNeturl() {
+        return neturl;
+    }
+
+    public void setNeturl(String neturl) {
+        this.neturl = neturl;
     }
 }

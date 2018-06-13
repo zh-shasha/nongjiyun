@@ -27,7 +27,8 @@
         android:layout_margin="25dp"
         android:layout_gravity="left|bottom"
         android:backgroundTint="@color/springgreen"
-        android:src="@mipmap/qiugou1"/>
+        android:src="@mipmap/qiugou1"
+        />
 
 
 </FrameLayout>

@@ -51,7 +51,9 @@ dependencies {
     implementation 'com.jiechic.library:xUtils:2.6.14'
     implementation 'de.hdodenhof:circleimageview:2.0.0'
     //扫描二维码
-  //  implementation 'com.github.shenyuanqing.zxing:zxing-simplify:1.0.5'
+
+
+    //  implementation 'com.github.shenyuanqing.zxing:zxing-simplify:1.0.5'
     compile 'com.google.zxing:core:3.2.1'
     compile 'com.journeyapps:zxing-android-embedded:3.3.0'
 }

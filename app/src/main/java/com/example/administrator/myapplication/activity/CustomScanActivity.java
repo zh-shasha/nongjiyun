@@ -20,7 +20,8 @@ import static com.example.administrator.myapplication.R.layout;
 public class CustomScanActivity extends AppCompatActivity implements DecoratedBarcodeView.TorchListener{ // 实现相关接口
     // 添加一个按钮用来控制闪光灯，同时添加两个按钮表示其他功能，先用Toast表示
 
-    DecoratedBarcodeView mDBV=(DecoratedBarcodeView)findViewById(id.dbv_custom);
+    //DecoratedBarcodeView mDBV=(DecoratedBarcodeView)findViewById(id.dbv_custom);
+    private DecoratedBarcodeView mDBV;
     private CaptureManager captureManager;
     private boolean isLightOn = false;
 
@@ -58,7 +59,7 @@ public class CustomScanActivity extends AppCompatActivity implements DecoratedBa
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_custom_scan);
 
-
+        mDBV=(DecoratedBarcodeView)findViewById(id.dbv_custom);
         Button swichLight=(Button)findViewById(id.btn_switch);
         Button hint1Show=(Button)findViewById(id.btn_hint1);
         Button hint2Show=(Button)findViewById(id.btn_hint2);
