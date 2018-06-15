@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.fragment.Home_Directory_Library_Fragment;
 import com.example.administrator.myapplication.moduels.Home_TimeFarmingMenu;
 
 import java.util.List;
@@ -50,10 +49,14 @@ public class Home_Library_Adapter extends BaseAdapter {
             TextView title = convertView.findViewById(R.id.home_farming_item_title);
             TextView date = convertView.findViewById(R.id.home_farming_item_date);
             TextView read = convertView.findViewById(R.id.home_farming_item_reader);
+            TextView tv_top=convertView.findViewById(R.id.tv_top);
+            TextView tv_push=convertView.findViewById(R.id.tv_push);
             pic.setImageResource(LibraryMenus .getImage());
             title.setText(LibraryMenus.getTitle());
             date.setText(LibraryMenus.getDate());
             read.setText(LibraryMenus.getReader());
+            tv_push.setText(LibraryMenus.getTv_push());
+            tv_top.setText(LibraryMenus.getTv_top());
         }
         return convertView;
     }

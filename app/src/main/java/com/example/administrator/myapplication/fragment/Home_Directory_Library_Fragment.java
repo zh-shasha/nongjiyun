@@ -1,7 +1,6 @@
 package com.example.administrator.myapplication.fragment;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -45,14 +44,14 @@ public class Home_Directory_Library_Fragment extends Fragment {
     private void init() {
 
         LibraryMenu=new ArrayList<>();
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library1,"2017“双十品牌”：固城湖牌螃蟹","2017-2-23","342", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library2,"2017“双十品牌”：固城湖牌螃蟹","2017-2-23","234", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library3,"2017“双十品牌”：敖毅尚香牌黄桃","2017-2-23","232", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library1,"2017“双十品牌”：春祥牌蜂蜜","2017-2-23","234", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library2,"2017“双十品牌”：范得珍牌广东菜心、芥兰等","2017-2-23","5667", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library3,"2017“双十品牌”：武梅牌辣椒","2017-2-23","654", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library1,"2017“双十品牌”：金香溢牌大米","2017-2-23","775", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LibraryMenu.add(new Home_TimeFarmingMenu(R.mipmap.library2,"2017“双十品牌”：范得珍牌广东菜心、芥兰等","2017-2-23","6765", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
         adapter=new Home_Library_Adapter(getActivity(),LibraryMenu);
         library_lv.setAdapter(adapter);
 

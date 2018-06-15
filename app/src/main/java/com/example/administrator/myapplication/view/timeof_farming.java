@@ -39,12 +39,14 @@ public class timeof_farming extends AppCompatActivity {
 
     private void init() {
         timeofFarming=new ArrayList<>();
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi1,"设施葡萄优质高效栽培技术","2017-08-09","阅读数：678", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi2,"水稻精确定量设计栽培技术","2017-08-09","阅读数：876",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi1,"重点推进“四大工程” 江苏发布2018年水稻生产技术指导意见！","2017-08-09","阅读数：767", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi2,"【植保信息】2018年小麦赤霉病发生趋势与防治技术意见","2017-08-09","阅读数：887",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi1,"60张图片讲解葡萄临界期管理","2017-08-09","阅读数：907",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        timeofFarming.add(new Home_TimeFarmingMenu(R.mipmap.nongshi2,"实施“四个融入四个服务”工程 推动特粮特经产业绿色高质高效发展","2017-08-09","阅读数：786",Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.nongshi1,"置顶","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.nongshi1,"置顶","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.nongshi1,"置顶","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.nongshi1," ","专家发布",Home_Details.class,null));
+        timeofFarming.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
         adapter=new Home_Gridview_Timeof_Farming_Adapter(timeof_farming.this,timeofFarming);
         farming_lv.setAdapter(adapter);
     }

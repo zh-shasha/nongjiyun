@@ -9,16 +9,22 @@ public class Home_TimeFarmingMenu {
     private String date;
     private  String reader;
     private int image;
+
+    private String tv_top;
+    private String tv_push;
     private Class url;
     private String neturl;
 
-    public Home_TimeFarmingMenu(int image, String title, String date, String reader, Class url,String neturl) {
-        this.image=image;
-        this.title=title;
-        this.date=date;
-        this.reader=reader;
-        this.url=url;
-        this.neturl=neturl;
+    public Home_TimeFarmingMenu(String title, String date, String reader, int image, String tv_top, String tv_push, Class url,  String neturl) {
+        this.title = title;
+        this.date = date;
+        this.reader = reader;
+        this.image = image;
+        this.tv_top = tv_top;
+        this.tv_push = tv_push;
+        this.url = url;
+
+        this.neturl = neturl;
     }
 
     public String getTitle() {
@@ -52,6 +58,21 @@ public class Home_TimeFarmingMenu {
     public void setImage(int image) {
         this.image = image;
     }
+    public String getTv_top() {
+        return tv_top;
+    }
+
+    public void setTv_top(String tv_top) {
+        this.tv_top = tv_top;
+    }
+
+    public String getTv_push() {
+        return tv_push;
+    }
+
+    public void setTv_push(String tv_push) {
+        this.tv_push = tv_push;
+    }
 
     public Class getUrl() {
         return url;
@@ -68,4 +89,6 @@ public class Home_TimeFarmingMenu {
     public void setNeturl(String neturl) {
         this.neturl = neturl;
     }
+
+
 }

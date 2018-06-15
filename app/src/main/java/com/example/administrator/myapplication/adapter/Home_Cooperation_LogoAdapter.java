@@ -1,7 +1,6 @@
 package com.example.administrator.myapplication.adapter;
 
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,10 +51,14 @@ public class Home_Cooperation_LogoAdapter extends BaseAdapter{
             TextView title = convertView.findViewById(R.id.home_farming_item_title);
             TextView date = convertView.findViewById(R.id.home_farming_item_date);
             TextView read = convertView.findViewById(R.id.home_farming_item_reader);
+            TextView tv_top=convertView.findViewById(R.id.tv_top);
+            TextView tv_push=convertView.findViewById(R.id.tv_push);
             pic.setImageResource(LogoMenu.getImage());
             title.setText(LogoMenu.getTitle());
             date.setText(LogoMenu.getDate());
             read.setText(LogoMenu.getReader());
+            tv_top.setText(LogoMenu.getTv_top());
+            tv_push.setText(LogoMenu.getTv_push());
         }
         return convertView;
     }

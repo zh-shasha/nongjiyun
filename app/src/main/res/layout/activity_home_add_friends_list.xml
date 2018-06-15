@@ -46,12 +46,10 @@
         android:hint="搜索" />
 </LinearLayout>
 
-<ListView
-    android:id="@+id/home_add_friends_lv"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-     >
-</ListView>
+    <ListView
+        android:id="@+id/home_add_friends_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 
 </LinearLayout>

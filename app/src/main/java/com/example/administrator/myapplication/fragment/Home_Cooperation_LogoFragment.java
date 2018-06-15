@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -46,16 +45,14 @@ public class Home_Cooperation_LogoFragment extends Fragment {
     private void init() {
 
         LogoMenu=new ArrayList<>();
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo1,"【关注】农民专业合作社有望享有与其他市场主体平等的法律地位","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo2,"2017“双十品牌”：禧泽牌芦笋","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo1,"2017“双十品牌”：怡膳粮坊牌红豆薏米粉等系列营养粉","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo2,"2017“双十品牌”：大瑭牌鸡蛋","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo1,"2017“双十品牌”：徐穗牌糯米","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo2,"2017“双十品牌”：信峰凰牌孔雀系列产品","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo1,"2017“双十品牌”：吴侬牌茶叶","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo2,"2017“双十品牌”：吴侬牌茶叶","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        LogoMenu.add(new Home_TimeFarmingMenu(R.mipmap.hezuo1,"2017“双十品牌”：吴侬牌茶叶","2018-01-12","123", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
         logoAdapter=new Home_Cooperation_LogoAdapter(getActivity(),LogoMenu);
         home_cooperattion_logo_lv.setAdapter(logoAdapter);
         home_cooperattion_logo_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

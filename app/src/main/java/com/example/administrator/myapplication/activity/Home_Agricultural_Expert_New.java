@@ -1,8 +1,8 @@
 package com.example.administrator.myapplication.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -29,15 +29,14 @@ public class Home_Agricultural_Expert_New extends AppCompatActivity {
     private void init() {
         home_expert_new_lv=(ListView)findViewById(R.id.home_expert_new_lv);
         expert_suggestion=new ArrayList<>();
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
-        expert_suggestion.add(new Home_TimeFarmingMenu(R.mipmap.ic_launcher,"标题","时间","阅读量", Home_Details.class,"http://www.jsnjy.net.cn/newsDetail.html?newId=b6c897d0-2112-4571-8ebe-3e6299cbc0da"));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数:123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数:123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        expert_suggestion.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
 
         adapter=new Home_Expert_SuggestionAdapter(this,expert_suggestion);
         home_expert_new_lv.setAdapter(adapter);

@@ -29,8 +29,9 @@
             android:layout_marginLeft="5dp"
             android:background="@drawable/corners_bg"
             android:drawableLeft="@mipmap/icon_search_black"
-            android:text="请输入搜索内容                                "
             android:gravity="center_vertical"
+            android:text="请输入搜索内容请输入搜索内容请输入搜索内容请输入搜索内容请输入搜索内容"
+
 
             android:ellipsize="marquee"
             android:singleLine="true"

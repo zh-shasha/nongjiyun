@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+     >
 
     <ImageView
         android:id="@+id/home_farming_item_iv"
@@ -12,7 +15,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
+         android:layout_marginTop="15dp"
         app:srcCompat="@mipmap/home_lv_iv4" />
 
     <TextView
@@ -21,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home_farming_item_iv"
        android:layout_marginLeft="130dp"
-        android:text="TextView" />
+        android:text="textview" />
 
     <TextView
         android:id="@+id/home_farming_item_date"
@@ -46,13 +49,16 @@
         android:id="@+id/tv_push"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+
         android:layout_above="@+id/home_farming_item_title"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_toLeftOf="@+id/home_farming_item_reader"
-        android:layout_toStartOf="@+id/home_farming_item_reader"
-        android:textSize="10dp"
-        android:text="专家发布" />
+        android:layout_toLeftOf="@+id/tv_top"
+        android:layout_toStartOf="@+id/tv_top"
+        android:text="专家发布"
+        android:background="#EBEBEB"
+        android:textSize="10dp" />
 
     <TextView
         android:id="@+id/tv_top"
@@ -61,6 +67,7 @@
         android:layout_alignBottom="@+id/tv_push"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:textColor="@color/green"
         android:textSize="10dp"
         android:text="置顶" />
 </RelativeLayout>

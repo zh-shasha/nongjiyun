@@ -64,7 +64,7 @@ public class CustomScanActivity extends AppCompatActivity implements DecoratedBa
         Button hint1Show=(Button)findViewById(id.btn_hint1);
         Button hint2Show=(Button)findViewById(id.btn_hint2);
 
-       // ButterKnife.bind(this);
+       //ButterKnife.bind(this);
 
         mDBV.setTorchListener(this);
 
