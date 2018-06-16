@@ -147,9 +147,9 @@ public class HomeFragment extends Fragment {
 
         newMenus = new ArrayList<>();
         HomeNewMenu news1 = new HomeNewMenu(R.mipmap.home_lv_iv1, "集成推广水稻绿色水稻高品质高效技术模式", "2018-01-15", "阅读数：207",Home_Details.class);
-        HomeNewMenu news2 = new HomeNewMenu(R.mipmap.home_lv_iv2, "集成推广水稻绿色水稻高品质高效技术模式", "2018-04-19", "阅读数：17人",Home_Details.class);
-        HomeNewMenu news3 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-06-14", "阅读数：217人",Home_Details.class);
-        HomeNewMenu news4 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-05-22", "阅读数：517人",Home_Details.class);
+        HomeNewMenu news2 = new HomeNewMenu(R.mipmap.home_lv_iv2, "集成推广水稻绿色水稻高品质高效技术模式", "2018-04-19", "阅读数：17",Home_Details.class);
+        HomeNewMenu news3 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-06-14", "阅读数：217",Home_Details.class);
+        HomeNewMenu news4 = new HomeNewMenu(R.mipmap.home_lv_iv3, "集成推广水稻绿色水稻高品质高效技术模式", "2018-05-22", "阅读数：517",Home_Details.class);
         newMenus.add(news1);
         newMenus.add(news2);
         newMenus.add(news3);

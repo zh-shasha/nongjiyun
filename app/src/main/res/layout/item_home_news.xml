@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
+    android:layout_gravity="center_vertical"
     android:background="#fff">
     <ImageView
         android:id="@+id/home_iv_news_pic"
@@ -27,6 +28,8 @@
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/home_iv_news_pic"
         android:layout_toRightOf="@+id/home_iv_news_pic"
+        android:textColor="@color/black"
+        android:textSize="15dp"
         android:text="TextView" />
 
     <TextView
@@ -36,6 +39,7 @@
         android:layout_alignBottom="@+id/home_iv_news_pic"
         android:layout_alignLeft="@+id/home_iv_news_title"
         android:layout_alignStart="@+id/home_iv_news_title"
+        android:textSize="12dp"
         android:text="TextView" />
 
     <TextView
@@ -48,5 +52,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
+        android:textSize="12dp"
         android:text="TextView" />
 </RelativeLayout>

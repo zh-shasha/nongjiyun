@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context="com.example.administrator.myapplication.fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -64,7 +65,10 @@
        android:layout_height="wrap_content">
         <!--<com.scwang.smartrefresh.header.CircleHeader-->
             <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content" />-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!---->
+        <!--</com.scwang.smartrefresh.header.CircleHeader>-->
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -170,7 +174,7 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_gravity="center_vertical"
-                  android:layout_marginLeft="230dp"
+                  android:layout_marginLeft="240dp"
                   android:text="更多>>" />
           </LinearLayout>
         <View
@@ -208,7 +212,7 @@
                 android:layout_height="wrap_content"
                 android:text="更多>>"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="230dp"
+                android:layout_marginLeft="240dp"
 
                  />
         </LinearLayout>
@@ -275,7 +279,7 @@
                 android:layout_height="wrap_content"
                 android:text="更多>>"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="230dp"
+                android:layout_marginLeft="240dp"
                />
         </LinearLayout>
         <View
