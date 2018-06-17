@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class ForgetPassActivity extends AppCompatActivity {
     private Button bt_num;//获取验证码
     private Button bt_next;//下一步
     private TextView forgetpass_iv_next;
+    private ImageView forget_back_bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,13 @@ public class ForgetPassActivity extends AppCompatActivity {
         et_phone=(EditText)findViewById(R.id.forgetpass_et_phone);
         bt_num = (Button)findViewById(R.id.forgetpass_bt_yzm);
         et_num=(EditText)findViewById(R.id.forgetpass_et_yzm);
+        forget_back_bt=(ImageView)findViewById(R.id.forget_back_bt);
+        forget_back_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         forgetpass_iv_next.setOnClickListener(new View.OnClickListener() {
             @Override

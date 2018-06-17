@@ -2,17 +2,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="10dp"
-    android:background="@color/bar_grey"
+    android:background="@color/bar_grey_90"
     android:orientation="vertical">
-
-
-
          <RadioButton
              android:id="@+id/dialog_add_friends"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:button="@null"
-             android:drawableLeft="@mipmap/icon_add_head"
+             android:drawableLeft="@mipmap/icon_add_people"
              android:text="添加朋友"
              android:textColor="#FFF"
              android:padding="10dp"
@@ -28,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:button="@null"
-        android:drawableLeft="@mipmap/icon_add_head"
+        android:drawableLeft="@mipmap/btn_sweep"
         android:text="扫一扫"
         android:textColor="#FFF"
         android:padding="10dp"
@@ -45,7 +42,7 @@
         android:layout_height="wrap_content"
         android:button="@null"
         android:textColor="#FFF"
-        android:drawableLeft="@mipmap/icon_add_head"
+        android:drawableLeft="@mipmap/icon_code_white"
         android:text="我的二维码"
         android:padding="10dp"
         android:drawablePadding="10dp"

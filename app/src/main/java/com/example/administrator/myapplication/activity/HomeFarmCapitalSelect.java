@@ -22,6 +22,7 @@ public class HomeFarmCapitalSelect extends AppCompatActivity implements View.OnC
     private RadioButton phone_rb;
     private ViewPager pv_capital_select;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

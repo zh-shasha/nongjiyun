@@ -23,6 +23,7 @@
         android:layout_marginStart="7dp"
         android:layout_toEndOf="@+id/image1"
         android:layout_toRightOf="@+id/image1"
+        android:textSize="15dp"
         android:text="标题" />
 
     <TextView
@@ -32,7 +33,8 @@
         android:layout_alignLeft="@+id/texttitle"
         android:layout_alignStart="@+id/texttitle"
         android:layout_below="@+id/texttitle"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
         android:textSize="12dp"
         android:text="内容" />
 
@@ -57,6 +59,8 @@
         android:layout_marginLeft="5dp"
         android:layout_toEndOf="@+id/imageadress"
         android:layout_toRightOf="@+id/imageadress"
+        android:textSize="12dp"
+        android:textColor="@color/black"
         android:text="显示地点" />
 
     <TextView
@@ -79,7 +83,8 @@
         android:layout_alignRight="@+id/textdate"
         android:layout_alignTop="@+id/texttitle"
         android:background="@drawable/corners_bg4"
-        android:padding="5dp"
+        android:padding="3dp"
+        android:textSize="12dp"
         android:text="已过期"
         android:textColor="#FFF" />
 </RelativeLayout>

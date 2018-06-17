@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.myapplication.activity.HomeGoodFriendsList">
+    tools:context="com.example.administrator.myapplication.activity.MyDateChooseType">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/springgreen">
+
             <ImageView
-                android:id="@+id/home_add_back_iv"
+                android:id="@+id/agricultural_expert_back_iv"
                 android:layout_width="18dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"
@@ -22,34 +23,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="添加好友"
+
+                android:text="选择类型"
                 android:textColor="#FFF"
                 android:textSize="20dp" />
+
     </android.support.v7.widget.Toolbar>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:background="#EBEBEB"
-    android:orientation="horizontal">
-
-    <EditText
+    <TextView
+        android:id="@+id/tv_choose1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:padding="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/corners_bg"
-        android:drawableLeft="@mipmap/icon_search_black"
-        android:textSize="15dp"
-        android:drawablePadding="10dp"
-        android:hint="搜索" />
-</LinearLayout>
-
-    <ListView
-        android:id="@+id/home_add_friends_lv"
+        android:layout_height="40dp"
+        android:text="农情上报"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+         />
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
-
+        android:layout_height="1dp"
+        android:background="#EBEBEB">
+    </View>
+    <TextView
+        android:id="@+id/tv_choose2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="30dp"
+        android:text="入户情报"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB">
+    </View>
+    <TextView
+        android:id="@+id/tv_choose3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="30dp"
+        android:text="其他"
+        android:gravity="center_vertical"/>
 
 </LinearLayout>

@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context="com.example.administrator.myapplication.activity.MyQrCode">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff2dc667">
         <ImageView
-            android:id="@+id/reister_back_bt"
+            android:id="@+id/qr_back_bt"
             android:layout_width="18dp"
             android:layout_height="20dp"
             android:layout_alignParentLeft="true"
@@ -29,9 +30,12 @@
             android:textColor="#FFF"
             />
     </android.support.v7.widget.Toolbar>
+
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/iv_qr_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="100dp"
          android:layout_gravity="center"
         android:src="@mipmap/icon_512"/>

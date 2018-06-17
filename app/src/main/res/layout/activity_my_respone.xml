@@ -13,7 +13,7 @@
         android:background="#ff2dc667">
 
         <ImageView
-            android:id="@+id/reister_back_bt"
+            android:id="@+id/respone_back_bt"
             android:layout_width="18dp"
             android:layout_height="20dp"
             android:layout_alignParentLeft="true"
@@ -48,14 +48,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingLeft="10dp"
+                android:padding="10dp"
                 android:text="积分测试"
-                android:textSize="20dp" />
-
+                android:textSize="15dp" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#EBEBEB"></View>
+                android:background="#EBEBEB">
+            </View>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                     android:layout_toEndOf="@+id/image_head"
                     android:layout_toRightOf="@+id/image_head"
                     android:text="农技耘"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/text_time"
@@ -120,9 +120,9 @@
                 android:layout_centerHorizontal="true"
 
                 android:gravity="center_vertical"
-                android:paddingLeft="10dp"
+                android:padding="10dp"
                 android:text="测试定位"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -156,7 +156,7 @@
                     android:layout_toEndOf="@+id/image_head1"
                     android:layout_toRightOf="@+id/image_head1"
                     android:text="农技耘"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/text_time1"

@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:textSize="15dp"
                 android:text="农资精选"/>
             <TextView
@@ -45,6 +46,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="5dp"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="0dp"
@@ -63,12 +65,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="蜱虫林"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="来源：0514-86739571"/>
             </LinearLayout>
             <LinearLayout
@@ -87,11 +91,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="苯磺.异丙隆"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
         </LinearLayout>
@@ -115,11 +121,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="烯啶虫胺"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
             <LinearLayout
@@ -138,11 +146,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="醚菌酯"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
+                    android:textColor="@color/black"
                     android:text="来源：江苏东宝农化股份有限公司"/>
             </LinearLayout>
         </LinearLayout>
@@ -162,6 +172,7 @@
                 android:layout_weight="3"
                 android:textSize="15dp"
                 android:gravity="center_vertical"
+                android:textColor="@color/black"
                 android:text="企业推荐"/>
             <TextView
                 android:layout_width="0dp"

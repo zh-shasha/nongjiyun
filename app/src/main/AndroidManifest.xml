@@ -52,11 +52,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".activity.CustomScanActivity" />
         <activity android:name=".activity.AskDetail" />
         <activity android:name=".activity.HomeFarmCompanySelect" />
-        <activity android:name=".activity.HomeDemandPush" />
-        <activity android:name=".activity.HomeAddFriendsList" />
+        <activity android:name=".activity.HomeDemandPush"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.HomeAddFriendsList"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
         <activity android:name=".activity.HomeBrandFarmCapital" />
         <activity android:name=".activity.QuickQuestionSubmission" />
         <activity android:name=".activity.QuickQuestionRecordVideo" />
@@ -171,7 +174,8 @@
         <activity android:name=".activity.ExchangeDetail" />
         <activity android:name=".activity.HomeSupplyAndDemand" />
         <activity android:name=".activity.HomeSupplyDetail" />
-        <activity android:name=".activity.HomeSupplyPush" />
+        <activity android:name=".activity.HomeSupplyPush"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
         <activity android:name=".activity.HomeAddFriendsDetail" />
         <activity android:name=".activity.PhotoBrowserActivity"></activity>
     </application>

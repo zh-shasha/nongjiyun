@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="#ff2dc667">
         <ImageView
-            android:id="@+id/reister_back_bt"
+            android:id="@+id/log_back_bt"
             android:layout_width="18dp"
             android:layout_height="20dp"
             android:layout_alignParentLeft="true"
@@ -109,7 +109,8 @@
             android:text="类        型"
             android:layout_gravity="center_vertical"
             android:textSize="15dp"/>
-        <EditText
+        <TextView
+            android:id="@+id/please_log_tv"
             android:layout_width="0dp"
             android:layout_weight="5"
             android:textSize="15dp"

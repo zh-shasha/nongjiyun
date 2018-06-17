@@ -197,8 +197,8 @@
     </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        ></View>
+        android:layout_height="1dp">
+    </View>
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="match_parent"

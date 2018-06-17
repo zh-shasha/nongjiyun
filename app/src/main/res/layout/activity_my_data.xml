@@ -64,6 +64,7 @@
             android:layout_weight="2"
             android:paddingLeft="10dp"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="行业类别"/>
         <TextView
             android:gravity="right"
@@ -76,8 +77,9 @@
             android:text="可多选（点击课删除）"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="12dp"
+            android:layout_height="14dp"
+
             android:layout_gravity="center"
             android:layout_weight="0.5"
 
@@ -95,28 +97,29 @@
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
         <TextView
-            android:layout_weight="2"
+            android:layout_weight="6"
             android:layout_gravity="center"
             android:layout_width="0dp"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="头像"/>
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_weight="7"
+
             android:layout_gravity="center"
             android:id="@+id/iv_photo"
             android:src="@mipmap/icon_default_head"
             android:textSize="15dp"
+            android:layout_weight="1"
             android:background="#fff"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:layout_width="0dp"
-
-            android:layout_height="wrap_content"
+            android:layout_width="12dp"
+            android:layout_height="14dp"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:background="#fff"
             android:src="@mipmap/btn_into_normal" />
 
@@ -138,6 +141,7 @@
             android:paddingLeft="10dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="姓名"/>
 
         <TextView
@@ -153,11 +157,11 @@
         <ImageView
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center_vertical"
-            android:paddingRight="5dp"
+            android:paddingLeft="6dp"
             android:background="#fff"
-            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:layout_width="12dp"
+            android:layout_height="14dp" />
 
     </LinearLayout>
     <View
@@ -177,6 +181,7 @@
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:text="单位名称"/>
         <TextView
             android:gravity="right"
@@ -193,10 +198,10 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="0dp"
-
+            android:paddingLeft="12dp"
+            android:layout_width="12dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:layout_height="14dp" />
 
     </LinearLayout>
     <View
@@ -215,6 +220,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="身份"/>
         <TextView
@@ -232,9 +238,10 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="0dp"
+            android:layout_width="12dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:paddingLeft="8dp"
+            android:layout_height="14dp" />
 
     </LinearLayout>
     <View
@@ -253,6 +260,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="学历"/>
         <TextView
@@ -270,9 +278,10 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="0dp"
+            android:layout_width="12dp"
+            android:paddingLeft="12dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:layout_height="14dp" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -291,6 +300,7 @@
             android:paddingLeft="10dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="地址"/>
         <TextView
             android:gravity="right"
@@ -306,9 +316,10 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="0dp"
+            android:layout_width="12dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:paddingLeft="12dp"
+            android:layout_height="14dp" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -326,6 +337,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="性别"/>
         <TextView
@@ -343,8 +355,9 @@
             android:layout_gravity="center"
             android:background="#fff"
             android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="12dp"
+            android:paddingLeft="10dp"
+            android:layout_height="14dp" />
 
 
     </LinearLayout>
@@ -367,6 +380,7 @@
             android:paddingLeft="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/black"
             android:text="手机号码" />
 
         <TextView
@@ -376,7 +390,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#fff"
-             android:paddingLeft="132dp"
+             android:paddingLeft="100dp"
             android:textSize="15dp"
             android:text="18851825671"/>
 
@@ -397,6 +411,7 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:paddingLeft="10dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="邮箱"/>
 
@@ -414,9 +429,10 @@
             android:src="@mipmap/btn_into_normal"
             android:layout_gravity="center"
             android:background="#fff"
-            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_width="12dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:layout_height="14dp" />
     </LinearLayout>
 <LinearLayout
     android:layout_weight="6"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,8 +37,8 @@
         android:id="@+id/et_ly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
+
+
         android:background="#fff"
         android:orientation="horizontal">
 
@@ -69,15 +69,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#EBEBEB"
-        android:layout_below="@id/et_ly">
-
+        android:background="#EBEBEB">
     </View>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="90dp"
+
         android:background="#fff"
         android:orientation="horizontal">
         <EditText
@@ -106,4 +104,4 @@
             android:textColor="#FFF"
             android:gravity="center"
             android:src="@mipmap/next" />
-</RelativeLayout>
+</LinearLayout>

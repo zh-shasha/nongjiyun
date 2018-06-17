@@ -36,6 +36,7 @@ public class HomeFarmCompanySelect extends AppCompatActivity implements View.OnC
         phone_rb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 DialogHotline();
             }
 

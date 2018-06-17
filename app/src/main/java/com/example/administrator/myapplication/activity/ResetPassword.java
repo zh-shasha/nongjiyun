@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ public class ResetPassword extends AppCompatActivity {
     private EditText et_password;
     private EditText et_password_ok;
     private TextView reset_pass_iv_next;
+    private ImageView reister_back_bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class ResetPassword extends AppCompatActivity {
         et_password_ok=(EditText)findViewById(R.id.et_password_ok);
         et_phone=(EditText)findViewById(R.id.et_phone);
         reset_pass_iv_next=(TextView)findViewById(R.id.reset_pass_iv_next);
+        reister_back_bt=(ImageView)findViewById(R.id.reister_back_bt);
         Intent intent=getIntent();
         String phonenumber=intent.getStringExtra("phonenumber");
         et_phone.setText(phonenumber);
@@ -102,6 +105,13 @@ public class ResetPassword extends AppCompatActivity {
                 });
             }
             });
+
+        reister_back_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     }
 

@@ -47,7 +47,7 @@ public class HomeBrandFarmCapital extends AppCompatActivity {
         viewPager_shouye.setAdapter(new TabFragmentShouYeAdapter(fragments,strings,
                 getSupportFragmentManager(),this));
         tabLayout_shouye.setupWithViewPager(viewPager_shouye);
-        tabLayout_shouye.setTabTextColors(getResources().getColor(R.color.bar_grey_90)
+        tabLayout_shouye.setTabTextColors(getResources().getColor(R.color.bar_grey)
                 ,getResources().getColor(R.color.green));
     }
 

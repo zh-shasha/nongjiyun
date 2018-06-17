@@ -25,6 +25,8 @@ private ImageView home_session_list_back_iv;
         home_session_list_back_iv=(ImageView)findViewById(R.id.home_session_list_back_iv);
         home_session_add_iv.setOnClickListener(this);
         home_session_mail_iv.setOnClickListener(this);
+        home_session_list_back_iv.setOnClickListener(this);
+        home_session_mail_iv.setOnClickListener(this);
     }
     public void customScan(){
         new IntentIntegrator(this)
@@ -54,11 +56,12 @@ private ImageView home_session_list_back_iv;
             case R.id.home_session_mail_iv:
                 Intent intent = new Intent(HomeSessionList.this, HomeGoodFriendsList.class);
                 startActivity(intent);
+
                 break;
             case R.id.home_session_add_iv:
                 ConfirmPopWindow dialog=new ConfirmPopWindow(this);
                 dialog.showAtBottom(home_session_add_iv);
-                dialog.dismiss();
+
 //                final Dialog picture_dialog = new Dialog(this);
 //                //去掉标题线
 //                picture_dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);

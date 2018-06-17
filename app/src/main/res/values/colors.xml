@@ -7,5 +7,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="mediumaquamarine">#66cdaa</color>
     <color name="organge">#FFA500</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="red">#FF0000</color>
      <!--春绿色 -->
 </resources>

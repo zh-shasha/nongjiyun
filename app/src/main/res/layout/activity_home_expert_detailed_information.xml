@@ -29,7 +29,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:padding="5dp"
+
     android:layout_weight="10">
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,6 +57,7 @@
                 android:layout_marginTop="1dp"
                 android:layout_toEndOf="@+id/circleImageView"
                 android:layout_toRightOf="@+id/circleImageView"
+                android:textColor="@color/black"
                 android:text="李刚华" />
 
             <TextView
@@ -83,11 +84,15 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/textname"
                 android:layout_alignBottom="@+id/textname"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="70dp"
                 android:textColor="@android:color/holo_blue_bright"
                 android:layout_toEndOf="@+id/textaccount"
                 android:layout_toRightOf="@+id/textaccount"
+                android:background="@drawable/tv_stroke1"
+                android:textSize="12dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
                 android:text="省级专家" />
 
             <TextView
@@ -98,11 +103,14 @@
                 android:layout_alignBottom="@+id/textprovince"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="20dp"
-                android:background="@color/green"
+                android:background="@drawable/corners_bg4"
                 android:textColor="#FFF"
 
                 android:layout_toEndOf="@+id/textprovince"
                 android:layout_toRightOf="@+id/textprovince"
+                android:textSize="12dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
                 android:text="水稻" />
         </RelativeLayout>
 

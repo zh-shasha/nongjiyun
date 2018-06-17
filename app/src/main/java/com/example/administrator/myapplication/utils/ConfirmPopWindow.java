@@ -87,17 +87,17 @@ public class ConfirmPopWindow extends PopupWindow implements View.OnClickListene
             case R.id.dialog_add_friends:
                 Intent intent = new Intent(context, HomeAddFriendsList.class);
                 context.startActivity(intent);
-               dismiss();
+                dismiss();
                 break;
             case R.id.dialog_sao:
                 intent = new Intent(context, CustomScanActivity.class);
                 context.startActivity(intent);
+                dismiss();
                 break;
             case R.id.dialog_my_qr:
                 intent = new Intent(context, MyQrCode.class);
                 context.startActivity(intent);
-                break;
-            default:
+                dismiss();
                 break;
         }
     }
