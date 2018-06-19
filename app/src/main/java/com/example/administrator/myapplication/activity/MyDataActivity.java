@@ -382,11 +382,17 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
                 window.setWindowAnimations(R.style.mystyle);  //添加动画
                 dialog.setCanceledOnTouchOutside(true);
                 break;
+            case R.id.line_mydata_kind://行业类别
+                Intent it=new Intent(MyDataActivity.this, QuestionTypeActivity.class);
+                startActivity(it);
 
-            case R.id.line_mydata_kind:
-                Intent intent6=new Intent(MyDataActivity.this,MyDateIndustryTypeChoose.class);
-                startActivity(intent6);
                 break;
+
+
+//            case R.id.line_mydata_kind:
+//                Intent intent6=new Intent(MyDataActivity.this,MyDateIndustryTypeChoose.class);
+//                startActivity(intent6);
+//                break;
             case R.id.mydata_save_tv:
 
               //  String phone=tv_phone.getText().toString();

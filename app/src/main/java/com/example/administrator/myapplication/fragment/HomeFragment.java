@@ -302,6 +302,7 @@ public class HomeFragment extends Fragment {
                 refreshlayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
             }
         });
+        refreshLayout.setEnableLoadMore(false);//禁止上划
     }
     private void initView(View view) {
         refreshLayout = view.findViewById(R.id.refreshLayout);

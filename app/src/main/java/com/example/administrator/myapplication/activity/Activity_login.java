@@ -147,7 +147,7 @@ public class Activity_login extends AppCompatActivity   {
 
                 }
                 else if (pass.length() < 6 || pass.length() > 15) {
-                    Toast.makeText(Activity_login.this, "密码长度不能小于6或者大于15", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Activity_login.this, "密码长度不能小于6或者大于20", Toast.LENGTH_SHORT).show();
                 }
                 String msg = "用户名：" + name + ",密码：" + pass;
 //                JSONObject js_request = new JSONObject();//服务器需要传参的json对象
@@ -159,7 +159,7 @@ public class Activity_login extends AppCompatActivity   {
 //                }
 
                 //下面开始请求后台地址
-                RequestParams params = new RequestParams("http://47.100.175.180/nonjiyun/sign");
+                RequestParams params = new RequestParams(" https://www.fock.xyz/api/user/login");
 //                params.setAsJsonContent(true);
 //                params.setBodyContent(js_request.toString());
                 params.addBodyParameter("", "{\"account\": \"" + name + "\",\"password\": \"" + pass + "\"}");

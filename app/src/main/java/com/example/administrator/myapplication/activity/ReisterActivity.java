@@ -32,8 +32,8 @@ public class ReisterActivity extends AppCompatActivity {
     private EditText et_phone;//手机号码
     private EditText et_num;//验证码
     private Button bt_num;//获取验证码
-    private Button bt_next;//下一步
-    private TextView reister_iv_next;
+
+    private TextView reister_iv_next;//下一步
 
 
 
@@ -50,21 +50,84 @@ public class ReisterActivity extends AppCompatActivity {
         reister_iv_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 SharedPreferences sharedPreferences=getSharedPreferences("message",MODE_PRIVATE);
-                String code=sharedPreferences.getString("data","");
-                String phonenumber=et_phone.getText().toString();
+                String code=sharedPreferences.getString("code","");
+                final String phonenumber=et_phone.getText().toString();
                 String message=et_num.getText().toString();
-                if (et_phone.length()==0&&et_num.length()==0){
-                    Toast.makeText(ReisterActivity.this,"请输入手机号",Toast.LENGTH_SHORT).show();
-                }else if (code.equals(message)){
-                    Toast.makeText(ReisterActivity.this,"验证成功",Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(ReisterActivity.this,RegisterInfoActivity.class);
-                    intent.putExtra("phonenumber",phonenumber);
-                    startActivity(intent);
-                    finish();
-                }else if (!code.equals(message)){
-                    Toast.makeText(ReisterActivity.this,"验证码错误",Toast.LENGTH_SHORT).show();
+                JSONObject js_request = new JSONObject();
+
+                try {
+                    js_request.put("phone", phonenumber);
+                    js_request.put("code",message);
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
+                //下面开始请求后台地址
+                RequestParams params = new RequestParams("https://www.fock.xyz/api/user/validateCode");
+                params.setAsJsonContent(true);
+                params.setBodyContent(js_request.toString());
+                x.http().post(params, new Callback.CommonCallback<String>() {
+                    @Override
+                    public void onCancelled(CancelledException arg0) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable arg0, boolean arg1) {
+                        // TODO Auto-generated method stub
+                        Log.e("错误", arg0.toString());
+                    }
+
+                    @Override
+                    public void onFinished() {
+                        // TODO Auto-generated method stub
+
+                    }
+
+                    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
+                    @Override
+                    public void onSuccess(String arg0) {
+
+                        System.out.println(arg0);
+                        Toast.makeText(ReisterActivity.this,arg0,Toast.LENGTH_SHORT).show();
+                        try {
+                            //服务器返回的是一个json封装的字符串，将其转换为json对象
+                            JSONObject jsonObject =  new JSONObject(arg0);
+                            int code=jsonObject.getInt("code");
+                              String data=jsonObject.getString("data");
+
+                            //   JSONObject object =  jsonObject.getJSONObject("agr0");
+
+//                            if (et_phone.length()==0&&et_num.length()==0){
+//                                Toast.makeText(ReisterActivity.this,"请输入手机号",Toast.LENGTH_SHORT).show();
+//                            }else if (data=="验证码正确"){
+//                                Toast.makeText(ReisterActivity.this,"验证成功",Toast.LENGTH_SHORT).show();
+//                                Intent intent=new Intent(ReisterActivity.this,RegisterInfoActivity.class);
+//                                intent.putExtra("phonenumber",phonenumber);
+//                                startActivity(intent);
+//                                finish();
+//                            }else if (data=="验证码错误"){
+//                                Toast.makeText(ReisterActivity.this,"验证码错误",Toast.LENGTH_SHORT).show();
+//                            }
+                            if(code==0){
+                                Toast.makeText(ReisterActivity.this,"验证成功",Toast.LENGTH_SHORT).show();
+                                Intent intent=new Intent(ReisterActivity.this,RegisterInfoActivity.class);
+                                intent.putExtra("phonenumber",phonenumber);
+                                startActivity(intent);
+                            }else if (code!=0){
+                                Toast.makeText(ReisterActivity.this,"验证失败",Toast.LENGTH_SHORT).show();
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    }
+
+                });
+
 
 
 
@@ -122,10 +185,10 @@ public class ReisterActivity extends AppCompatActivity {
 
 
                 //下面开始请求后台地址
-                RequestParams params = new RequestParams("http://47.100.175.180/nonjiyun/getMobileMessage/"+phone);
+                RequestParams params = new RequestParams("https://www.fock.xyz/api/user/sendCode/"+phone);
                 params.setAsJsonContent(true);
                 params.setBodyContent(js_request.toString());
-                x.http().get(params, new Callback.CommonCallback<String>() {
+                x.http().post(params, new Callback.CommonCallback<String>() {
                     @Override
                     public void onCancelled(CancelledException arg0) {
 
@@ -157,7 +220,7 @@ public class ReisterActivity extends AppCompatActivity {
                             SharedPreferences.Editor editor = getSharedPreferences("message", MODE_PRIVATE).edit();
                             editor.putString("msg", msg.getMsg());
                             editor.putString("data",msg.getData());
-                            editor.putString("status",msg.getStatus());
+                            editor.putString("code",msg.getStatus());
                             editor.apply();
 
 

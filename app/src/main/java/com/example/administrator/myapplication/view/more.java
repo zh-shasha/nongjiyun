@@ -23,9 +23,11 @@ import java.util.List;
 public class more extends AppCompatActivity {
     private List<HashMap<String, Object>> dataSourceList = new ArrayList<HashMap<String, Object>>();
     private GridViewAdapter adapter;
-    private GridView gridView2;
     private List<HomeMoreMenu> strList;
     private ImageView home_grid_more_btn_back;
+    private GridView gridView2;
+    private List<String >strings;
+    private List<Integer>maps;
 
 
     @Override
@@ -33,7 +35,24 @@ public class more extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_more);
-
+        strings=new ArrayList<>();
+        maps=new ArrayList<>();
+        strings.add("专业合作");
+        strings.add("应时农事");
+        strings.add("农业科技");
+        strings.add("农业专家");
+        strings.add("农业政策");
+        strings.add("科技专项");
+        strings.add("市场行情");
+        strings.add("生活服务");
+        maps.add(R.mipmap.zhuanyehezuo);
+        maps.add(R.mipmap.yongshinongshi);
+        maps.add(R.mipmap.nongyekeji);
+        maps.add(R.mipmap.nongyezhuanjia);
+        maps.add(R.mipmap.nongyezhengce);
+        maps.add(R.mipmap.kejizhuanxiang);
+        maps.add(R.mipmap.shichanghangqing);
+        maps.add(R.mipmap.shenghuofuwu);
         initView();
         initData();
 
@@ -45,8 +64,8 @@ public class more extends AppCompatActivity {
         MyDragGridView mDragGridView = (MyDragGridView) findViewById(R.id.dragGridView);
         for (int i = 0; i < 8; i++) {
             HashMap<String, Object> itemHashMap = new HashMap<String, Object>();
-            itemHashMap.put("item_image",R.mipmap.ic_launcher);
-            itemHashMap.put("item_text", "拖 " + Integer.toString(i));
+            itemHashMap.put("item_image",maps.get(i));
+            itemHashMap.put("item_text", strings.get(i));
             dataSourceList.add(itemHashMap);
         }
 

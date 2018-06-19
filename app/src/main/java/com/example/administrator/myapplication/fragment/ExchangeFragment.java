@@ -62,10 +62,10 @@ public class ExchangeFragment extends Fragment {
         listView = (ListView) view.findViewById(R.id.exchange_lv);
         lists = new ArrayList<>();
 
-        lists.add(new Exchange_item(R.mipmap.icon_default_head, "阿狸","南京","推广人员","看看",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.img3,"江苏省南京市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
-        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.home_lv_iv1,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,null));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head, "张伟","南京","推广人员","端午佳节，农民朋友们继续忙着栽插水稻",R.mipmap.ex9,R.mipmap.ex9,R.mipmap.ex9,"江苏省南京市","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment, ExchangeDetail.class));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"李新军","南京市栖霞区","普通用户","水蜜桃",R.mipmap.ex4,R.mipmap.ex4,R.mipmap.ex4,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,ExchangeDetail.class));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵丽","南京市栖霞区","普通用户","小园子圈里的植物生长发育很好，祝福朋友们节日安康！",R.mipmap.ex10,R.mipmap.ex10,R.mipmap.ex10,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,ExchangeDetail.class));
+        lists.add(new Exchange_item(R.mipmap.icon_default_head,"赵志远","南京市栖霞区","普通用户","看看这是怎么回事",R.mipmap.ex11,R.mipmap.ex11,R.mipmap.ex11,"江苏省南京市栖霞区仙林大学城","2018-06-12",R.mipmap.icon_good,R.mipmap.icon_comment,ExchangeDetail.class));
 
 
 

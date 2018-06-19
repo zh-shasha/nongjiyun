@@ -45,14 +45,14 @@ public class Home_Cooperation_LogoFragment extends Fragment {
     private void init() {
 
         LogoMenu=new ArrayList<>();
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LogoMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：敖毅尚香牌黄桃","2018-06-06","阅读数：123",R.mipmap.coor1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：春祥牌蜂蜜","2018-06-06","阅读数：123",R.mipmap.coor2," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：武梅牌辣椒","2018-06-06","阅读数：123",R.mipmap.coor3," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：锣鼓牌葡萄","2018-06-06","阅读数：123",R.mipmap.coor4," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：敖毅尚香牌黄桃","2018-06-06","阅读数：123",R.mipmap.coor1," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：春祥牌蜂蜜","2018-06-06","阅读数：123",R.mipmap.coor2," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：武梅牌辣椒","2018-06-06","阅读数：123",R.mipmap.coor3," ","专家发布",Home_Details.class,null));
+        LogoMenu.add(new Home_TimeFarmingMenu("2017“双十品牌”：锣鼓牌葡萄","2018-06-06","阅读数：123",R.mipmap.coor4," ","专家发布",Home_Details.class,null));
         logoAdapter=new Home_Cooperation_LogoAdapter(getActivity(),LogoMenu);
         home_cooperattion_logo_lv.setAdapter(logoAdapter);
         home_cooperattion_logo_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

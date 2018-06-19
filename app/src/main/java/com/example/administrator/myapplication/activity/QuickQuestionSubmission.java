@@ -1,7 +1,12 @@
 package com.example.administrator.myapplication.activity;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +15,9 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.utils.LocationUtil;
+
+import java.io.IOException;
 
 public class QuickQuestionSubmission extends AppCompatActivity {
     private RadioButton quick_question_photo_rb;
@@ -17,7 +25,11 @@ public class QuickQuestionSubmission extends AppCompatActivity {
     private ImageView agricultural_expert_back_iv;
     private TextView tv_receive;
     private LinearLayout ly_question_choose;
+    private String str_location;
+    private TextView push_address;
+    private static final int REQUEST_PERMISSION_LOCATION = 255;
 
+    @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +37,55 @@ public class QuickQuestionSubmission extends AppCompatActivity {
         setContentView(R.layout.activity_quick_question_submission);
         initView();
         initOnclick();
+
+
+        push_address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                issuelocation();
+            }
+//
+
+        });
+//
+//
     }
+
+    private void issuelocation() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission
+                (this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION}, 1);}
+        else {
+            LocationUtil.initLocation(this);
+            System.out.println("22222");
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        str_location= LocationUtil.getAddress(LocationUtil.location,getApplicationContext());
+                        //位置信息-----一个字符串
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                System.out.println("3333");
+                                push_address.setText(str_location);
+                            }
+                        });
+
+
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+
+                }
+            }).start();
+        }
+    }
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -65,6 +125,7 @@ public class QuickQuestionSubmission extends AppCompatActivity {
         ly_question_choose = (LinearLayout) findViewById(R.id.ly_question_choose);
         quick_question_photo_rb=(RadioButton)findViewById(R.id.quick_question_photo_rb);
         quick_question_video_rb=(RadioButton)findViewById(R.id.quick_question_video_rb);
+        push_address = (TextView)findViewById(R.id.push_address);
     }
     private void initOnclick() {
         ly_question_choose.setOnClickListener(new View.OnClickListener() {
@@ -82,4 +143,5 @@ public class QuickQuestionSubmission extends AppCompatActivity {
             }
         });
     }
-}
+        }
+

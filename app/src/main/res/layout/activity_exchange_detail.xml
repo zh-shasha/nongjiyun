@@ -68,7 +68,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:src="@mipmap/icon_default_head" />
+            android:src="@mipmap/ex8" />
 
         <TextView
             android:id="@+id/item_exchange_tv_name"
@@ -99,7 +99,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/item_exchange_tv_article"
             android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
             android:text="普通农户"
+
             android:textSize="12sp" />
 
         <TextView
@@ -126,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
+                android:src="@mipmap/ex8"
                 android:scaleType="centerCrop" />
 
             <ImageView
@@ -176,8 +180,9 @@
 
         <ImageView
             android:id="@+id/item_exchange_iv_zan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+             android:layout_marginTop="6dp"
             android:layout_below="@+id/fragment_coll_ask_view"
             android:layout_toLeftOf="@+id/item_exchange_tv_id"
             android:layout_toStartOf="@+id/item_exchange_tv_id"
@@ -185,8 +190,8 @@
 
         <ImageView
             android:id="@+id/item_exchange_iv_review"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
             android:layout_alignBottom="@+id/item_exchange_tv_date"
             android:layout_alignEnd="@+id/fragment_coll_ask_view"
             android:layout_alignRight="@+id/fragment_coll_ask_view"
@@ -439,7 +444,8 @@
                android:id="@+id/text_city4"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:layout_below="@+id/text_name"
+               android:layout_below="@+id/text_name4"
+
                android:layout_toEndOf="@+id/image_respose_head4"
                android:layout_toRightOf="@+id/image_respose_head4"
                android:text="扬州市 镇江区 蒋王街道" />
@@ -493,7 +499,7 @@
             android:drawableLeft="@mipmap/icon_good"
             android:button="@null"
             android:drawablePadding="10dp"
-            android:padding="10dp"
+             android:padding="10dp"
             android:text="点赞2" />
         <RadioButton
             android:layout_width="0dp"
@@ -502,12 +508,12 @@
             android:drawableLeft="@mipmap/icon_collection"
             android:button="@null"
             android:drawablePadding="10dp"
-            android:padding="10dp"
+             android:padding="10dp"
             android:text="收藏1" />
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="评论"
             android:padding="10dp"
             android:gravity="center"

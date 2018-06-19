@@ -33,9 +33,9 @@ public class Knowledge_Menu_Animal_PigActivity extends AppCompatActivity {
         listView = (ListViewForScrollView) findViewById(R.id.knowledge_menu_animal_pig_lv);
         list = new ArrayList<>();
         Knowledge_Menu_Animal_Pig h1 = new Knowledge_Menu_Animal_Pig(R.mipmap.suzhongzhu,"苏钟猪", "2018-05-01", "阅读数：248", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=ee67e65d-d498-485c-9e98-eced9c009c69");
-        Knowledge_Menu_Animal_Pig h2 = new Knowledge_Menu_Animal_Pig(R.mipmap.sushanzhu, "苏山猪", "2017-03-30", "阅读数：4263", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=265c4e27-e459-41d9-b26f-844f3a1dcc9f");
-        Knowledge_Menu_Animal_Pig h3 = new Knowledge_Menu_Animal_Pig(R.mipmap.xinhuaizhu, "新淮猪", "2018-05-01", "阅读数：248", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=0569dfc3-a570-4c15-bf5a-230cbe8dcae4\n");
-        Knowledge_Menu_Animal_Pig h4 = new Knowledge_Menu_Animal_Pig(R.mipmap.laohuaizhu, "老淮猪", "2017-03-30", "阅读数：4263", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=a048e77d-f235-46bb-9c93-87f45c396114");
+        Knowledge_Menu_Animal_Pig h2 = new Knowledge_Menu_Animal_Pig(R.mipmap.suzhongzhu, "苏山猪", "2017-03-30", "阅读数：4263", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=265c4e27-e459-41d9-b26f-844f3a1dcc9f");
+        Knowledge_Menu_Animal_Pig h3 = new Knowledge_Menu_Animal_Pig(R.mipmap.suzhongzhu, "新淮猪", "2018-05-01", "阅读数：248", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=0569dfc3-a570-4c15-bf5a-230cbe8dcae4\n");
+        Knowledge_Menu_Animal_Pig h4 = new Knowledge_Menu_Animal_Pig(R.mipmap.suzhongzhu, "老淮猪", "2017-03-30", "阅读数：4263", Home_Details.class,"http://njy.jsnjy.net.cn/web/share/new.action?newId=a048e77d-f235-46bb-9c93-87f45c396114");
         list.add(h1);
         list.add(h2);
         list.add(h3);

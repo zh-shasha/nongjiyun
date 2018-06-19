@@ -56,13 +56,13 @@
     </View>
     <com.example.administrator.myapplication.moduels.MyDragGridView
         android:id="@+id/dragGridView"
-        android:listSelector="@android:color/transparent"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:cacheColorHint="@android:color/transparent"
+
         android:verticalSpacing="1dp"
         android:horizontalSpacing="1dp"
-        android:stretchMode="columnWidth"
+         android:background="#FFF"
         android:gravity="center"
         android:numColumns="4" >
     </com.example.administrator.myapplication.moduels.MyDragGridView>

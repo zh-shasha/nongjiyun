@@ -2,20 +2,18 @@ package com.example.administrator.myapplication.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.utils.TelNumMatch;
 import com.example.administrator.myapplication.view.RefuseToastView;
-import com.google.gson.Gson;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,7 +23,7 @@ import org.xutils.x;
 
 public class RegisterInfoActivity extends AppCompatActivity {
     private  EditText reister_info_username,reister_info_phone,reister_info_password, reister_info_password_conf;
-    private ImageView reister_info_con_bt;
+    private  TextView reister_info_con_bt;
     private TextView register_info_person_choose_tv2;
     private TextView register_info_person_choose_tv1;
     private TextView  register_info_local_choose_tv1;
@@ -55,7 +53,7 @@ public class RegisterInfoActivity extends AppCompatActivity {
         register_info_local_choose_tv1=(TextView)findViewById(R.id.register_info_local_choose_tv1);
         register_info_local_choose_tv2=(TextView)findViewById(R.id.register_info_local_choose_tv2);
         register_info_local_choose_tv3=(TextView)findViewById(R.id.register_info_local_choose_tv3);
-        reister_info_con_bt=(ImageView)findViewById(R.id.reister_info_con_bt);
+        reister_info_con_bt=(TextView)findViewById(R.id.reister_info_con_bt);
     }
 
     @Override
@@ -157,7 +155,7 @@ public class RegisterInfoActivity extends AppCompatActivity {
                     //view布局
                     View refuseView = LayoutInflater.from(RegisterInfoActivity.this.getApplicationContext()).inflate(R.layout.refuse_toast_view, null, false);
                     TextView text = (TextView) refuseView.findViewById(R.id.refuse_toastMessage);
-                    text.setText("密码长度不能小于6或者大于15");
+                    text.setText("密码长度不能小于6或者大于20");
                     //给增加动画效果
                     RefuseToastView refuseToastView = (RefuseToastView) refuseView.findViewById(R.id.refuse_View);
                     refuseToastView.startAnim();
@@ -185,11 +183,14 @@ public class RegisterInfoActivity extends AppCompatActivity {
             js_request.put("city",city);
             js_request.put("distrit",dis);
 
+
+
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         //下面开始请求后台地址
-        RequestParams params = new RequestParams("http://47.100.175.180/nonjiyun/user_insert");
+        RequestParams params = new RequestParams(" https://www.fock.xyz/api/user/register");
         params.setAsJsonContent(true);
         params.setBodyContent(js_request.toString());
         x.http().post(params,new Callback.CommonCallback<String>() {

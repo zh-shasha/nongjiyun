@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.myapplication.fragment.HomeQuotations1Fragment">
 
-    <com.example.administrator.myapplication.utils.ListViewForScrollView
+    <ListView
         android:id="@+id/quotations_lv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </com.example.administrator.myapplication.utils.ListViewForScrollView>
+    </ListView>
 </FrameLayout>

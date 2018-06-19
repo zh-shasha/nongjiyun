@@ -21,6 +21,10 @@ public class MyLogIntypeChoose extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_log_intype_choose);
         initView();
+        agricultural_expert_back_iv.setOnClickListener(this);
+        tv_choose1.setOnClickListener(this);
+        tv_choose2.setOnClickListener(this);
+        tv_choose3.setOnClickListener(this);
     }
 
     @Override

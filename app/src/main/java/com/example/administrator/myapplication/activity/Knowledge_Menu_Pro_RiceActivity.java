@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.Knowledge_Menu_Pro_Rice_DirAdapter;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     //首席专家
-
+    private ImageView agricultural_expert_rice_back_iv;
     private List<Knowledge_Menu_Pro_Rice_Main> list;
     private Knowledge_Menu_Pro_Rice_MainAdapter adapter;
     private MyListView listView;
@@ -41,7 +42,13 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge__menu__pro__rice);
-
+        agricultural_expert_rice_back_iv=(ImageView)findViewById(R.id.agricultural_expert_rice_back_iv);
+        agricultural_expert_rice_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         initFirst();
         initSecond();
         initThird();
@@ -102,12 +109,12 @@ public class Knowledge_Menu_Pro_RiceActivity extends AppCompatActivity {
         myListView= (MyListView)findViewById(R.id.knowledge_menu_pro_dir_rice_lv);
 
         ls=new ArrayList<>();
-        Knowledge_Menu_Pro_Rice_Dir h1 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
-        Knowledge_Menu_Pro_Rice_Dir h2 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"杨洪建","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","花生",null);
-        Knowledge_Menu_Pro_Rice_Dir h3 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"徐晓杰","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","中药材",null);
-        Knowledge_Menu_Pro_Rice_Dir h4 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"谢成林","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
-        Knowledge_Menu_Pro_Rice_Dir h5 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"李刚华","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","玉米",null);
-        Knowledge_Menu_Pro_Rice_Dir h6 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.ic_launcher,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
+        Knowledge_Menu_Pro_Rice_Dir h1 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.head1,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
+        Knowledge_Menu_Pro_Rice_Dir h2 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.head1,"杨洪建","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","花生",null);
+        Knowledge_Menu_Pro_Rice_Dir h3 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.icon_default_head,"徐晓杰","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","中药材",null);
+        Knowledge_Menu_Pro_Rice_Dir h4 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.icon_default_head,"谢成林","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
+        Knowledge_Menu_Pro_Rice_Dir h5 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.head1,"李刚华","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","玉米",null);
+        Knowledge_Menu_Pro_Rice_Dir h6 = new Knowledge_Menu_Pro_Rice_Dir(R.mipmap.head1,"周宏","江苏现代农业（水稻）产业技术体系产业经济研究团队","基地主任","集成创新",null);
 
         ls.add(h1);
         ls.add(h2);

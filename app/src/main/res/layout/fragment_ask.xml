@@ -25,9 +25,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
                 android:padding="10dp"
+                android:background="#EBEBEB"
                 android:orientation="vertical">
                 <Button
                     android:id="@+id/quick_ask_bt"
@@ -36,12 +37,11 @@
                     android:layout_gravity="center"
                     android:background="@drawable/corners_bg3"
                     android:text="？快速提问"
-                    android:textColor="#EBEBEB" />
+                    android:textColor="#FFF" />
             </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"

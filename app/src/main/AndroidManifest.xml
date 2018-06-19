@@ -43,6 +43,11 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 获取当前地理位置要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 仅网络定位的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:name=".utils.App"
@@ -52,7 +57,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+         <activity android:name=".activity.QuestionTypeActivity"></activity>
+         <activity android:name=".activity.MyLogIntypeChoose"></activity>
         <activity android:name=".activity.CustomScanActivity" />
         <activity android:name=".activity.AskDetail" />
         <activity android:name=".activity.HomeFarmCompanySelect" />

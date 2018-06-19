@@ -37,7 +37,7 @@
             android:id="@+id/exchange_lv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:dividerHeight="8dp">
+            android:dividerHeight="5dp">
         </ListView>
     <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
 
