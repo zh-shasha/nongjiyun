@@ -19,6 +19,7 @@
             android:layout_centerVertical="true"
             android:src="@mipmap/btn_back_normal" />
         <TextView
+            android:id="@+id/text_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -86,10 +87,10 @@
                 android:layout_alignBottom="@+id/textname"
                 android:layout_marginLeft="25dp"
                 android:layout_marginStart="70dp"
-                android:textColor="@android:color/holo_blue_bright"
+                android:textColor="@color/green"
                 android:layout_toEndOf="@+id/textaccount"
                 android:layout_toRightOf="@+id/textaccount"
-                android:background="@drawable/tv_stroke1"
+                android:background="@drawable/tv_stroke3"
                 android:textSize="12dp"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
@@ -163,6 +164,7 @@
                 android:layout_height="10dp"
                 android:layout_width="match_parent"
                 android:background="#EBEBEB"
+                android:layout_marginTop="5dp"
                 >
             </View>
             <LinearLayout
@@ -184,8 +186,10 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="10dp"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/btn_into_normal" />
             </LinearLayout>

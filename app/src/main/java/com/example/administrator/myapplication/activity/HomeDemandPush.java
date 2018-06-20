@@ -15,6 +15,7 @@ public class HomeDemandPush extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_demand_push);
         home_demand_back_iv=(ImageView)findViewById(R.id.home_demand_back_iv);
+        home_demand_back_iv.setOnClickListener(this);
 
     }
 

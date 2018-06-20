@@ -1,6 +1,7 @@
 package com.example.administrator.myapplication.activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,18 +9,22 @@ import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
 
 public class HomeExpertDetailedInformation extends AppCompatActivity {
     private LinearLayout expert_detail_ly;
     private ImageView agricultural_expert_detail_back_iv;
+    private TextView tv_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_expert_detailed_information);
         expert_detail_ly=(LinearLayout)findViewById(R.id.expert_detail_ly);
+        tv_name=findViewById(R.id.text_name);
         agricultural_expert_detail_back_iv=(ImageView)findViewById(R.id.agricultural_expert_detail_back_iv);
+
         agricultural_expert_detail_back_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +35,6 @@ public class HomeExpertDetailedInformation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Dialogdetail();
-
             }
 
             private void Dialogdetail() {
@@ -49,5 +53,9 @@ public class HomeExpertDetailedInformation extends AppCompatActivity {
             }
         });
 
+        //接收返回值
+        Intent intent=getIntent();
+        String date=intent.getStringExtra("name");
+        tv_name.setText(date);
     }
 }

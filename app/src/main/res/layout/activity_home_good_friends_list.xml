@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@color/springgreen">
             <ImageView
-                android:id="@+id/agricultural_expert_back_iv"
+                android:id="@+id/home_add_back_iv"
                 android:layout_width="18dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"

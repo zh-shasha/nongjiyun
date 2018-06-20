@@ -47,11 +47,11 @@ public class Home_Directory_Library_Fragment extends Fragment {
         LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
         LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
         LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
-        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
-        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1," ","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
+        LibraryMenu.add(new Home_TimeFarmingMenu("联合品牌","2018-06-06","阅读数：123",R.mipmap.home_lv_iv1,"置顶","专家发布",Home_Details.class,null));
         adapter=new Home_Library_Adapter(getActivity(),LibraryMenu);
         library_lv.setAdapter(adapter);
 

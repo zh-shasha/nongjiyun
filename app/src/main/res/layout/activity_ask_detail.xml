@@ -86,7 +86,11 @@
             android:layout_alignEnd="@+id/item_exchange_tv_article"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/item_exchange_tv_article"
-            android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+            android:background="@drawable/tv_stroke1"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
             android:text="粮经"
             android:gravity="center"
             android:textSize="12sp" />
@@ -171,10 +175,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/item_exchange_tv_id"
-            android:layout_marginLeft="7dp"
-            android:layout_marginStart="7dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
             android:layout_toEndOf="@+id/exchange_tv_content_address"
             android:layout_toRightOf="@+id/exchange_tv_content_address"
+            android:background="@drawable/tv_stroke1"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
             android:textSize="12dp"
             android:text="农技推广人员" />
 
@@ -260,6 +269,12 @@
                android:layout_alignParentEnd="true"
                android:layout_alignParentRight="true"
                android:layout_alignParentTop="true"
+               android:background="@drawable/tv_stroke1"
+               android:paddingLeft="5dp"
+               android:paddingTop="2dp"
+               android:paddingBottom="2dp"
+               android:paddingRight="5dp"
+               android:textSize="12sp"
                android:text="农业工作人员" />
 
            <RadioButton
@@ -338,6 +353,12 @@
                android:layout_alignParentEnd="true"
                android:layout_alignParentRight="true"
                android:layout_alignParentTop="true"
+               android:background="@drawable/tv_stroke1"
+               android:paddingLeft="5dp"
+               android:paddingTop="2dp"
+               android:paddingBottom="2dp"
+               android:paddingRight="5dp"
+               android:textSize="12sp"
                android:text="农业工作人员" />
 
            <RadioButton

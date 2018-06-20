@@ -40,11 +40,15 @@ public class QuickQuestionChooseType extends AppCompatActivity implements View.O
         tv_shuichan.setOnClickListener(this);
         tv_nongji.setOnClickListener(this);
         tv_qita.setOnClickListener(this);
+        agricultural_expert_back_iv.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.agricultural_expert_back_iv:
+                finish();
+                break;
             case R.id.tv_liangjing:
                 Intent intent=getIntent();
                 intent.putExtra("liangjing","粮经");

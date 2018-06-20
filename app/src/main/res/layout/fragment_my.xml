@@ -58,7 +58,7 @@
        android:layout_height="wrap_content"
        android:orientation="horizontal">
       <RadioButton
-          android:paddingTop="20dp"
+          android:padding="10dp"
           android:background="@android:color/white"
           android:id="@+id/qiandao_my_rb"
           android:layout_weight="1"
@@ -74,7 +74,7 @@
            android:layout_width="1dp"
            android:layout_height="match_parent"/>
        <RadioButton
-           android:paddingTop="20dp"
+           android:padding="10dp"
            android:background="@android:color/white"
            android:id="@+id/jifen_my_rb"
            android:layout_weight="1"
@@ -90,7 +90,7 @@
            android:layout_width="1dp"
            android:layout_height="match_parent"/>
        <RadioButton
-           android:paddingTop="20dp"
+           android:padding="10dp"
            android:background="@android:color/white"
            android:id="@+id/shop_my_rb"
            android:layout_weight="1"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/ask_my_rb"
             android:layout_weight="1"
@@ -128,7 +128,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="21dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/answer_my_rb"
             android:layout_weight="1"
@@ -144,7 +144,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/exchange_my_rb"
             android:layout_weight="1"
@@ -160,7 +160,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="22dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/collection_my_rb"
             android:layout_weight="1"
@@ -179,7 +179,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:paddingTop="22dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/focus_my_rb"
             android:layout_weight="1"
@@ -195,7 +195,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/gongqiu_my_rb"
             android:layout_weight="1"
@@ -211,7 +211,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="9dp"
             android:background="@android:color/white"
             android:id="@+id/peixun_my_rb"
             android:layout_weight="1"
@@ -227,7 +227,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/push_my_rb"
             android:layout_weight="1"
@@ -250,29 +250,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/setting_my_rb"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/icon_personal_05"
+
             android:button="@null"
             android:gravity="center"
             android:drawablePadding="15dp"
-            android:layout_gravity="center_vertical"
+
             android:text="系统设置"/>
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
 
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/advice_my_rb"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+
             android:layout_weight="1"
             android:button="@null"
             android:drawablePadding="15dp"
@@ -283,7 +284,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="9dp"
             android:background="@android:color/white"
             android:id="@+id/share_my_rb"
             android:layout_weight="1"
@@ -293,13 +294,13 @@
             android:button="@null"
             android:gravity="center"
             android:drawablePadding="15dp"
-            android:layout_gravity="center_vertical"
+
             android:text="分享农技耘"/>
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:paddingTop="20dp"
+            android:padding="10dp"
             android:background="@android:color/white"
             android:id="@+id/ewm_my_rb"
             android:layout_weight="1"
@@ -309,7 +310,7 @@
             android:button="@null"
             android:gravity="center"
             android:drawablePadding="15dp"
-            android:layout_gravity="center_vertical"
+
             android:text="我的二维码"/>
     </LinearLayout>
 

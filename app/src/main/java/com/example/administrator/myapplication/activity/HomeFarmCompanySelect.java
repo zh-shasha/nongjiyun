@@ -26,6 +26,7 @@ public class HomeFarmCompanySelect extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_farm_company_select);
         home_farm_company_select_back_iv=(ImageView)findViewById(R.id.home_farm_company_select_back_iv);
+        home_farm_company_select_back_iv.setOnClickListener(this);
         phone_rb=(RadioButton)findViewById(R.id.phone_rb);
         pv_company=(ViewPager) findViewById(R.id.pv_company);
         initHotLine();

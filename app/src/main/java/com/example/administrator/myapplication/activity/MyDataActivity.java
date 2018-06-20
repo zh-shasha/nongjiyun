@@ -333,7 +333,7 @@ public class MyDataActivity extends AppCompatActivity implements View.OnClickLis
                 picture_dialog.show();
                 Window windows = picture_dialog.getWindow();
                 WindowManager.LayoutParams lps = windows.getAttributes();
-                lps.gravity = Gravity.CENTER; // 居中位置
+                lps.gravity = Gravity.BOTTOM; // 底部位置
                 lps.width = WindowManager.LayoutParams.MATCH_PARENT;
                 lps.height = WindowManager.LayoutParams.WRAP_CONTENT;
                 windows.setAttributes(lps);

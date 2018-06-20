@@ -6,6 +6,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingBottom="10dp"
+    android:background="#FFF"
      >
 
     <ImageView
@@ -54,15 +55,14 @@
         android:id="@+id/tv_push"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
-        android:layout_above="@+id/home_farming_item_title"
+        android:layout_alignParentTop="true"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_toLeftOf="@+id/tv_top"
         android:layout_toStartOf="@+id/tv_top"
-        android:text="专家发布"
         android:background="#EBEBEB"
+        android:padding="1dp"
+        android:text="专家发布"
         android:textSize="10dp" />
 
     <TextView
@@ -73,6 +73,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:textColor="@color/green"
+        android:background="@drawable/tv_stroke3"
+        android:padding="1dp"
         android:textSize="10dp"
         android:text="置顶" />
 </RelativeLayout>

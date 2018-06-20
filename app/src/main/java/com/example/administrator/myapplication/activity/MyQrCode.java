@@ -25,7 +25,7 @@ public class MyQrCode extends AppCompatActivity {
             iv_qr_code= (ImageView) findViewById(R.id.iv_qr_code);
             Date date = new Date(System.currentTimeMillis());
             String content="移动1611-周沙沙"+simpleDateFormat.format(date);
-            Bitmap bitmap = ZXingUtils.createQRImage(content, 200, 200);
+            Bitmap bitmap = ZXingUtils.createQRImage(content, 300, 300);
             iv_qr_code.setImageBitmap(bitmap);
 
             qr_back_bt.setOnClickListener(new View.OnClickListener() {

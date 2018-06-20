@@ -31,7 +31,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:padding="1dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
             android:textColor="#FFF"
             android:background="@drawable/corners_bg3"
             android:text="粮经" />

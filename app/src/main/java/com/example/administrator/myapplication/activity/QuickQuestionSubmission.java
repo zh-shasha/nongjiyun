@@ -142,6 +142,13 @@ public class QuickQuestionSubmission extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        agricultural_expert_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
         }
 

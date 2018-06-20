@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 
 import com.example.administrator.myapplication.MainActivity;
 import com.example.administrator.myapplication.R;
@@ -28,7 +29,13 @@ public class Knowledge_Menu_AnimalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge_menu__animal);
-
+        ImageView agricultural_expert_back_iv=(ImageView)findViewById(R.id.agricultural_expert_back_iv);
+        agricultural_expert_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         initData();
 

@@ -42,7 +42,7 @@ public class CustomTextView extends android.support.v7.widget.AppCompatTextView 
 
     private void initView(Context context, AttributeSet attrs) {
         paint1 = new Paint();
-        paint1.setColor(getResources().getColor(android.R.color.holo_blue_dark));
+        paint1.setColor(getResources().getColor(R.color.organge));
         paint1.setStyle(Paint.Style.FILL);
 
     }

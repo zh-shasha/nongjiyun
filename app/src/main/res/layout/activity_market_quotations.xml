@@ -48,14 +48,13 @@
             android:drawablePadding="10dp"
             android:button="@null"/>
 
-        <RadioButton
+        <com.example.administrator.myapplication.utils.CustomTextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:button="@null"
             android:paddingLeft="110dp"
             android:paddingRight="20dp"
-
             android:layout_gravity="center_vertical"
             android:drawableRight="@mipmap/btn_into_normal"
             android:textColor="@color/organge"

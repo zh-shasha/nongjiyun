@@ -41,7 +41,7 @@ public class Home_Rice_ProvincialExpertFragment extends Fragment {
 
     private void init() {
         provincialMenu=new ArrayList<>();
-        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻", HomeExpertDetailedInformation.class));
+        provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"李刚华","单位：扬州市农业","问题：39","省级专家","水稻", HomeExpertDetailedInformation.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",Home_Details.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",HomeExpertDetailedInformation.class));
         provincialMenu.add(new Home_Rice_Expert_Menu(R.mipmap.head1,"谢成玲","单位：扬州市农业","问题：39","省级专家","水稻",null));
@@ -58,6 +58,7 @@ public class Home_Rice_ProvincialExpertFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getActivity(),provincialMenu.get(position).getUrl());
+                intent.putExtra("name",provincialMenu.get(position).getName());
                 startActivity(intent);
             }
         });

@@ -12,7 +12,6 @@ import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.Home_cooperation_TabAdapter;
 import com.example.administrator.myapplication.fragment.Home_Cooperation_LogoFragment;
 import com.example.administrator.myapplication.fragment.Home_Directory_Library_Fragment;
-import com.example.administrator.myapplication.fragment.Home_Notice_System_Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +59,7 @@ public class Professional_cooperation extends AppCompatActivity {
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(new Home_Cooperation_LogoFragment());
         fragments.add(new Home_Directory_Library_Fragment());
-        fragments.add(new Home_Notice_System_Fragment());
+        fragments.add(new Home_Cooperation_LogoFragment());
         fragments.add(new Home_Directory_Library_Fragment());
         adapter = new Home_cooperation_TabAdapter(getSupportFragmentManager(), fragments, tabTitle);
         //给ViewPager设置适配器

@@ -40,7 +40,7 @@ public class HomeSearchAnswerFragment extends Fragment {
         lists = new ArrayList<>();
 
 
-        lists.add(new HomeSearchTabAnswerMenu(R.mipmap.icon_default_head, "王尧","南京市 市辖","粮经","南梗46和南梗稻5055插秧需要多少基本苗和基本肥？",R.mipmap.img4,R.mipmap.home_lv_iv2,R.mipmap.home_lv_iv3,"江苏省南京市","2018-06-12","家庭农场","已回答：3", ExchangeDetail.class));
+        lists.add(new HomeSearchTabAnswerMenu(R.mipmap.icon_default_head, "王尧","南京市 市辖","粮经","南梗46和南梗稻5055插秧需要多少基本苗和基本肥？",R.mipmap.ex8,R.mipmap.ex8,R.mipmap.ex8,"江苏省南京市","2018-06-12","家庭农场","已回答：3", ExchangeDetail.class));
 
 
         adapter = new HomeSearchAnswerAdapter(getActivity(), lists);

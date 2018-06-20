@@ -43,8 +43,10 @@
         android:layout_alignEnd="@+id/item_exchange_tv_article"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/item_exchange_tv_article"
-        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:background="@drawable/tv_stroke1"
         android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
         android:paddingRight="5dp"
         android:text="普通农户"
         android:textSize="12sp" />
@@ -132,8 +134,10 @@
         android:layout_alignBottom="@+id/item_exchange_tv_id"
         android:layout_toLeftOf="@+id/item_exchange_tv_id"
         android:layout_toStartOf="@+id/item_exchange_tv_id"
-        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:background="@drawable/tv_stroke1"
         android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
         android:paddingRight="5dp"
 
         android:textSize="12sp"

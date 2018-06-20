@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.administrator.myapplication.R;
@@ -30,6 +31,13 @@ public class Market_quotations extends AppCompatActivity {
 
         initdate();
         initView();
+        ImageView agricultural_expert_back_iv=findViewById(R.id.agricultural_expert_back_iv);
+        agricultural_expert_back_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     private void initView(){
         tabLayout_shouye = (TabLayout)findViewById(R.id.tablayout_shouye);
@@ -39,7 +47,7 @@ public class Market_quotations extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Market_quotations.this, Home_Details.class);
-                intent.putExtra("view","http://www.agronet.com.cn/News/1219221.html");
+                intent.putExtra("view","http://njy.jsnjy.net.cn/web/share/new.action?newId=c74ab9c4-91b7-4725-8e79-9f1a442d11ab\n");
                 startActivity(intent);
             }
         });
