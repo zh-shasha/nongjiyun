@@ -3,6 +3,7 @@ package com.example.administrator.myapplication.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 
 import com.example.administrator.myapplication.R;
 
@@ -16,8 +17,12 @@ public class Boot_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     //   this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-          setContentView(R.layout.activity_boot_page);
+        //定义全屏参数
+        int flag= WindowManager.LayoutParams.FLAG_FULLSCREEN;
+        //设置当前窗体为全屏显示
+        getWindow().setFlags(flag, flag);
+
+        setContentView(R.layout.activity_boot_page);
 //        if (getSupportActionBar() != null){
 //            getSupportActionBar().hide();
 //        }

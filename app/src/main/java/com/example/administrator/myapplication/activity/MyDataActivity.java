@@ -30,7 +30,6 @@ import android.widget.Toast;
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.utils.PhotoUtils;
 import com.example.administrator.myapplication.utils.ToastUtils;
-import com.scwang.smartrefresh.header.material.CircleImageView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -47,7 +46,7 @@ import java.io.File;
 public class MyDataActivity extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG = "MyDataActivity";
     @ViewInject(R.id.iv_photo)
-    private CircleImageView iv_photo;
+    private de.hdodenhof.circleimageview.CircleImageView iv_photo;
     private static final int CODE_GALLERY_REQUEST = 0xa0;
     private static final int CODE_CAMERA_REQUEST = 0xa1;
     private static final int CODE_RESULT_REQUEST = 0xa2;

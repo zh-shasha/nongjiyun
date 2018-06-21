@@ -105,15 +105,13 @@
             android:layout_height="wrap_content"
             android:text="头像"/>
         <de.hdodenhof.circleimageview.CircleImageView
-
             android:layout_gravity="center"
             android:id="@+id/iv_photo"
             android:src="@mipmap/icon_default_head"
             android:textSize="15dp"
-            android:layout_weight="1"
             android:background="#fff"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
 
         <ImageView
             android:layout_width="12dp"

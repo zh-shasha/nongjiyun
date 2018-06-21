@@ -48,7 +48,17 @@
     <!-- 仅网络定位的权限 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 定位 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS">
+    </uses-permission>
     <application
         android:name=".utils.App"
         android:allowBackup="true"
@@ -57,6 +67,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="njykey"
+            android:value="fca4dfa7f980784551aa63997e687b38" >
+        </meta-data>
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <activity android:name=".activity.PhotoViewActivity"></activity>
          <activity android:name=".activity.QuestionTypeActivity"></activity>
          <activity android:name=".activity.MyLogIntypeChoose"></activity>
         <activity android:name=".activity.CustomScanActivity" />

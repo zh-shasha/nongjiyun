@@ -56,10 +56,8 @@
     </View>
     <com.example.administrator.myapplication.moduels.MyDragGridView
         android:id="@+id/dragGridView"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:verticalSpacing="1dp"
         android:horizontalSpacing="1dp"
          android:background="#FFF"
