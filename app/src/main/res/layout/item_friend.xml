@@ -15,7 +15,10 @@
         android:textSize="@dimen/textSize" />
 
     <LinearLayout
-        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

@@ -118,7 +118,6 @@
         android:id="@+id/item_exchange_tv_date"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginTop="2dp"
         android:layout_alignStart="@+id/item_exchange_iv"
         android:layout_below="@+id/exchange_tv_content_address"
         android:text="2018-05-04-12：07"
@@ -151,6 +150,7 @@
         android:layout_alignEnd="@+id/fragment_coll_ask_view"
         android:layout_alignRight="@+id/fragment_coll_ask_view"
         android:textSize="12dp"
+        android:gravity="center_vertical"
         android:text="已回答：3" />
 
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context="com.example.administrator.myapplication.activity.ExchangeDetail">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -421,6 +422,12 @@
                android:layout_alignParentEnd="true"
                android:layout_alignParentRight="true"
                android:layout_alignParentTop="true"
+               android:background="@drawable/tv_stroke1"
+               android:paddingLeft="5dp"
+               android:paddingTop="2dp"
+               android:paddingBottom="2dp"
+               android:paddingRight="5dp"
+               android:textSize="12sp"
                android:text="农业工作人员" />
        </RelativeLayout>
        <View
@@ -489,6 +496,12 @@
                android:layout_alignParentEnd="true"
                android:layout_alignParentRight="true"
                android:layout_alignParentTop="true"
+               android:background="@drawable/tv_stroke1"
+               android:paddingLeft="5dp"
+               android:paddingTop="2dp"
+               android:paddingBottom="2dp"
+               android:paddingRight="5dp"
+               android:textSize="12sp"
                android:text="农业工作人员" />
        </RelativeLayout>
 

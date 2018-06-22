@@ -114,7 +114,8 @@ public class AskDetail extends AppCompatActivity implements View.OnClickListener
                         result = Utils.getLocationStr(loc, 1);
                         strMsg = result.split(",");
                         Toast.makeText(AskDetail.this, "定位成功", Toast.LENGTH_LONG).show();
-                        textView.setText("地址：" + strMsg[0] + "\n" + "经    度：" + strMsg[1] + "\n" + "纬    度：" + strMsg[1]);
+                    //    textView.setText("地址：" + strMsg[0] + "\n" + "经    度：" + strMsg[1] + "\n" + "纬    度：" + strMsg[1]);
+                        textView.setText(strMsg[0]);
                     } catch (Exception e) {
                         Toast.makeText(AskDetail.this, "定位失败", Toast.LENGTH_LONG).show();
                     }

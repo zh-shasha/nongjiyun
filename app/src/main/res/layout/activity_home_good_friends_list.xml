@@ -35,17 +35,15 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:padding="10dp"
-            android:background="@mipmap/icon_add_head"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_marginLeft="5dp"
-            android:padding="5dp"
-            android:text="新的朋友"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@mipmap/icon_add_head"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:textSize="18dp"
+            android:text="新的朋友"/>
     </LinearLayout>
     <View
         android:background="#ebebeb"

@@ -1,33 +1,38 @@
 package com.example.administrator.myapplication.activity;
 
-import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
 import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.utils.LocationUtil;
+import com.example.administrator.myapplication.utils.Utils;
 
-import java.io.IOException;
+public class QuickQuestionSubmission extends AppCompatActivity implements AMapLocationListener {
+    private AMapLocationClient locationClient = null;
+    private AMapLocationClientOption locationOption = null;
+    private String[] strMsg;
 
-public class QuickQuestionSubmission extends AppCompatActivity {
     private RadioButton quick_question_photo_rb;
     private RadioButton quick_question_video_rb;
     private ImageView agricultural_expert_back_iv;
     private TextView tv_receive;
     private LinearLayout ly_question_choose;
-    private String str_location;
     private TextView push_address;
-    private static final int REQUEST_PERMISSION_LOCATION = 255;
+
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
@@ -39,10 +44,11 @@ public class QuickQuestionSubmission extends AppCompatActivity {
         initOnclick();
 
 
+
         push_address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                issuelocation();
+                Location();
             }
 //
 
@@ -51,41 +57,24 @@ public class QuickQuestionSubmission extends AppCompatActivity {
 //
     }
 
-    private void issuelocation() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission
-                (this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION}, 1);}
-        else {
-            LocationUtil.initLocation(this);
-            System.out.println("22222");
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        str_location= LocationUtil.getAddress(LocationUtil.location,getApplicationContext());
-                        //位置信息-----一个字符串
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                System.out.println("3333");
-                                push_address.setText(str_location);
-                            }
-                        });
-
-
-                    }catch (IOException e){
-                        e.printStackTrace();
-                    }
-
-                }
-            }).start();
+    private void Location() {
+        // TODO Auto-generated method stub
+        try {
+            locationClient = new AMapLocationClient(this);
+            locationOption = new AMapLocationClientOption();
+            // 设置定位模式为低功耗模式
+            locationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Battery_Saving);
+            // 设置定位监听
+            locationClient.setLocationListener(this);
+            locationOption.setOnceLocation(true);//设置为单次定位
+            locationClient.setLocationOption(locationOption);// 设置定位参数
+            // 启动定位
+            locationClient.startLocation();
+            mHandler.sendEmptyMessage(Utils.MSG_LOCATION_START);
+        } catch (Exception e) {
+            Toast.makeText(QuickQuestionSubmission.this, "定位失败", Toast.LENGTH_LONG).show();
         }
     }
-
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -150,5 +139,38 @@ public class QuickQuestionSubmission extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onLocationChanged(AMapLocation loc) {
+        if (null != loc) {
+            Message msg = mHandler.obtainMessage();
+            msg.obj = loc;
+            msg.what = Utils.MSG_LOCATION_FINISH;
+            mHandler.sendMessage(msg);
         }
+    }
+    Handler mHandler =new Handler() {
+        public void dispatchMessage(android.os.Message msg) {
+            switch (msg.what) {
+                //定位完成
+                case Utils.MSG_LOCATION_FINISH:
+                    String result = "";
+                    try {
+                        AMapLocation loc = (AMapLocation) msg.obj;
+                        result = Utils.getLocationStr(loc, 1);
+                        strMsg = result.split(",");
+                        Toast.makeText(QuickQuestionSubmission.this, "定位成功", Toast.LENGTH_LONG).show();
+                        //    textView.setText("地址：" + strMsg[0] + "\n" + "经    度：" + strMsg[1] + "\n" + "纬    度：" + strMsg[1]);
+                        push_address.setText(strMsg[0]);
+                    } catch (Exception e) {
+                        Toast.makeText(QuickQuestionSubmission.this, "定位失败", Toast.LENGTH_LONG).show();
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    };
+}
 

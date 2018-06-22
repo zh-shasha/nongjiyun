@@ -35,7 +35,7 @@ private ImageView home_session_list_back_iv;
                 .initiateScan(); // 初始化扫描
     }
     @Override
-// 通过 onActivityResult的方法获取 扫描回来的 值
+// 通过 onActivityResult的方法获取 扫描回来的值
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if(intentResult != null) {
@@ -56,57 +56,10 @@ private ImageView home_session_list_back_iv;
             case R.id.home_session_mail_iv:
                 Intent intent = new Intent(HomeSessionList.this, HomeGoodFriendsList.class);
                 startActivity(intent);
-
                 break;
             case R.id.home_session_add_iv:
                 ConfirmPopWindow dialog=new ConfirmPopWindow(this);
                 dialog.showAtBottom(home_session_add_iv);
-
-//                final Dialog picture_dialog = new Dialog(this);
-//                //去掉标题线
-//                picture_dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
-//                View picture_contentView = LayoutInflater.from(this).inflate(R.layout.dialog_add_friends, null);
-//                picture_dialog.setContentView(picture_contentView);
-//                RadioButton add = picture_contentView.findViewById(R.id.dialog_add_friends);
-//                RadioButton sao = picture_contentView.findViewById(R.id.dialog_sao);
-//                RadioButton myqr = picture_contentView.findViewById(R.id.dialog_my_qr);
-//
-//                add.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Intent intent1 = new Intent(HomeSessionList.this, HomeAddFriendsList.class);
-//                        startActivity(intent1);
-//                        picture_dialog.dismiss();
-//                    }
-//                });
-//                sao.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Intent intent1 = new Intent(HomeSessionList.this, CustomScanActivity.class);
-//                        startActivity(intent1);
-//                        picture_dialog.dismiss();
-//                    }
-//                });
-//
-//                myqr.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Intent intent1 = new Intent(HomeSessionList.this, MyQrCode.class);
-//                        startActivity(intent1);
-//                        picture_dialog.dismiss();
-//                    }
-//                });
-//                //背景透明
-////                picture_dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-//                picture_dialog.show();
-//                Window window = picture_dialog.getWindow();
-//                WindowManager.LayoutParams lp = window.getAttributes();
-//                lp.gravity = Gravity.CENTER; // 底部
-//                lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
-//                lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-//                window.setAttributes(lp);
-//                window.setWindowAnimations(R.style.mystyle);  //添加动画
-//                picture_dialog.setCanceledOnTouchOutside(true);
                 break;
             case R.id.home_session_list_back_iv:
                 finish();

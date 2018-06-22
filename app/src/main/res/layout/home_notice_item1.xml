@@ -24,6 +24,7 @@
         android:layout_marginStart="7dp"
         android:layout_toEndOf="@+id/home_iv_system_notice"
         android:layout_toRightOf="@+id/home_iv_system_notice"
+        android:textColor="@color/black"
         android:text="农技耘" />
 
     <TextView

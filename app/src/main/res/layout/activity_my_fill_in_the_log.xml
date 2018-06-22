@@ -58,6 +58,7 @@
           android:layout_weight="1.5"
           android:layout_height="wrap_content"
           android:text="标        题"
+          android:textColor="@color/black"
           android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
@@ -82,6 +83,7 @@
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="上  报  人"
+            android:textColor="@color/black"
             android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
@@ -107,6 +109,7 @@
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="类        型"
+            android:textColor="@color/black"
             android:layout_gravity="center_vertical"
             android:textSize="15dp"/>
         <TextView
@@ -140,6 +143,7 @@
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="拜访农民"
+            android:textColor="@color/black"
             android:textSize="15dp"
             />
         <EditText
@@ -165,6 +169,7 @@
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="识  别  码"
+            android:textColor="@color/black"
             android:textSize="15dp"/>
         <EditText
             android:layout_width="0dp"
@@ -189,8 +194,10 @@
             android:layout_weight="1.5"
             android:layout_height="wrap_content"
             android:text="上报地址"
+            android:textColor="@color/black"
             android:textSize="15dp"/>
         <EditText
+            android:id="@+id/et_push_adress"
             android:layout_width="0dp"
             android:layout_weight="6"
             android:textSize="15dp"
@@ -212,6 +219,7 @@
             android:layout_width="0dp"
             android:layout_weight="1.5"
             android:textSize="15dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="备        注"
             />

@@ -68,7 +68,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="njykey"
+            android:name="com.amap.api.v2.apikey"
             android:value="fca4dfa7f980784551aa63997e687b38" >
         </meta-data>
         <!-- 定位需要的服务 -->
