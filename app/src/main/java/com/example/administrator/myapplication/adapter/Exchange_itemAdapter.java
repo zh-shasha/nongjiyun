@@ -54,8 +54,6 @@ private String str_location;
             ImageView zan_img = convertView.findViewById(R.id.item_exchange_iv_zan);
             ImageView review_img = convertView.findViewById(R.id.item_exchange_iv_review);
 
-
-
             head_img.setImageResource(list.get(position).getHead_img());
             name.setText(list.get(position).getName());
             local.setText(list.get(position).getLocal());

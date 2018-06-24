@@ -19,12 +19,23 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.utils.GlideLoader;
 import com.example.administrator.myapplication.utils.Utils;
+import com.jaiky.imagespickers.ImageConfig;
+import com.jaiky.imagespickers.ImageSelector;
+import com.jaiky.imagespickers.ImageSelectorActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class QuickQuestionSubmission extends AppCompatActivity implements AMapLocationListener {
     private AMapLocationClient locationClient = null;
     private AMapLocationClientOption locationOption = null;
     private String[] strMsg;
+    //图片上传
+    private ArrayList<String> path = new ArrayList<>();
+    public static final int REQUEST_CODE = 123;
+    private ImageConfig imageConfig;
 
     private RadioButton quick_question_photo_rb;
     private RadioButton quick_question_video_rb;
@@ -32,6 +43,7 @@ public class QuickQuestionSubmission extends AppCompatActivity implements AMapLo
     private TextView tv_receive;
     private LinearLayout ly_question_choose;
     private TextView push_address;
+    private LinearLayout llContainer;
 
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -104,7 +116,17 @@ public class QuickQuestionSubmission extends AppCompatActivity implements AMapLo
                 String qita=data.getStringExtra("qita");
                 tv_receive.setText(qita);
                 break;
+        }
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+            List<String> pathList = data.getStringArrayListExtra(ImageSelectorActivity.EXTRA_RESULT);
 
+//            tv1.setText("");
+//            for (String path : pathList) {
+//                tv1.append(path);
+//                tv1.append("\n");
+//            }
+            path.clear();
+            path.addAll(pathList);
         }
     }
 
@@ -115,6 +137,7 @@ public class QuickQuestionSubmission extends AppCompatActivity implements AMapLo
         quick_question_photo_rb=(RadioButton)findViewById(R.id.quick_question_photo_rb);
         quick_question_video_rb=(RadioButton)findViewById(R.id.quick_question_video_rb);
         push_address = (TextView)findViewById(R.id.push_address);
+        llContainer=findViewById(R.id.llContainer);
     }
     private void initOnclick() {
         ly_question_choose.setOnClickListener(new View.OnClickListener() {
@@ -138,7 +161,35 @@ public class QuickQuestionSubmission extends AppCompatActivity implements AMapLo
                 finish();
             }
         });
+        quick_question_photo_rb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imageConfig = new ImageConfig.Builder(
+                        new GlideLoader())
+                        .steepToolBarColor(getResources().getColor(R.color.green))
+                        .titleBgColor(getResources().getColor(R.color.green))
+                        .titleSubmitTextColor(getResources().getColor(R.color.white))
+                        .titleTextColor(getResources().getColor(R.color.white))
+                        // 开启多选   （默认为多选）
+                        .mutiSelect()
+                        // 多选时的最大数量   （默认 9 张）
+                        .mutiSelectMaxSize(9)
+                        //设置图片显示容器，参数：、（容器，每行显示数量，是否可删除）
+                        .setContainer(llContainer, 3, true)
+                        // 已选择的图片路径
+                        .pathList(path)
+                        // 拍照后存放的图片路径（默认 /temp/picture）
+                        .filePath("/temp")
+                        // 开启拍照功能 （默认关闭）
+                        .showCamera()
+                        .requestCode(REQUEST_CODE)
+                        .build();
+                ImageSelector.open(QuickQuestionSubmission.this, imageConfig);
+            }
+        });
     }
+
+
 
     @Override
     public void onLocationChanged(AMapLocation loc) {

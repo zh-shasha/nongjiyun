@@ -118,25 +118,27 @@
             android:layout_height="1dp"
             android:background="#EBEBEB">
         </View>
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_expert_01"
+            android:button="@null"
+            android:text="专家介绍" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB">
+        </View>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:drawablePadding="8dp"
-                android:layout_gravity="center_vertical"
-                android:drawableLeft="@mipmap/icon_expert_01"
-                android:button="@null"
-                android:text="专家介绍" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#EBEBEB">
-            </View>
 
             <TextView
                 android:id="@+id/textView6"
@@ -169,6 +171,7 @@
                 android:layout_marginLeft="24dp"
                 android:gravity="center_vertical"
                 android:text="专业方向：水稻生理生态，水稻高产高效栽培" />
+        </LinearLayout>
             <View
                 android:layout_height="10dp"
                 android:layout_width="match_parent"
@@ -195,10 +198,8 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-
                     android:layout_gravity="center"
                     android:paddingLeft="25dp"
-
                     android:layout_height="wrap_content"
                     android:src="@mipmap/btn_into_normal" />
             </LinearLayout>
@@ -224,7 +225,7 @@
                     android:text="专家答疑"/>
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="更多 >>"/>
@@ -238,7 +239,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </com.example.administrator.myapplication.utils.ListViewForScrollView>
-        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -259,7 +260,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -278,7 +279,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -297,7 +298,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -316,7 +317,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -335,7 +336,7 @@
             android:background="#EBEBEB">
         </View>
         <LinearLayout
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

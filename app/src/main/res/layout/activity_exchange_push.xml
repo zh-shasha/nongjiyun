@@ -27,97 +27,117 @@
                 android:textColor="#FFF"
                 android:textSize="20dp" />
 
-
     </android.support.v7.widget.Toolbar>
-    <EditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:padding="10dp"
-        android:gravity="left"
-        android:background="#FFF"
-        android:textSize="15dp"
-        android:hint="请详细描述您遇到的问题。例如：植物类型？生长期？发病部位等信息，以方便专家解答"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="#EBEBEB">
-
-    </View>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-         android:gravity="center_vertical"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_address"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="7"
-            android:layout_height="wrap_content"
-            android:text="定位所在位置"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="上传图片或15秒微视频（最多9张图片）
-发布的信息可在列表中长按删除或撤销"/>
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioGroup
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp"
+                android:gravity="left"
+                android:background="#FFF"
+                android:textSize="15dp"
+                android:hint="请详细描述您遇到的问题。例如：植物类型？生长期？发病部位等信息，以方便专家解答"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EBEBEB">
+
+            </View>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
-                <RadioButton
-                    android:id="@+id/quick_question_photo_rb"
-                    android:layout_width="wrap_content"
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/selector_photo"
-                    android:gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:text="图片"
-                    android:button="@null"/>
-                <RadioButton
-                    android:id="@+id/quick_question_video_rb"
-                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_address"/>
+                <TextView
+                    android:id="@+id/tv_adress"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/selector_video"
-                    android:layout_marginLeft="30dp"
-                    android:text="视频"
-                    android:gravity="center"
-                    android:button="@null"/>
-            </RadioGroup>
+                    android:text="定位所在位置"/>
+            </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/corners_bg3"
-                android:text="提交"
-                android:textColor="#FFF" />
-        </LinearLayout>
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="上传图片或15秒微视频（最多9张图片）
+发布的信息可在列表中长按删除或撤销"/>
+                <LinearLayout
+                    android:id="@+id/llContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/quick_question_photo_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/selector_photo"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
 
-    </LinearLayout>
+                            android:text="图片"
+                            android:button="@null"/>
+                        <RadioButton
+                            android:id="@+id/quick_question_video_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/selector_video"
+                            android:layout_marginLeft="30dp"
+                            android:text="视频"
+
+                            android:gravity="center"
+                            android:button="@null"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/corners_bg3"
+                        android:text="提交"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

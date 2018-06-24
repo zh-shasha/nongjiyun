@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:padding="10dp"
+            android:padding="9dp"
             android:background="@android:color/white"
             android:id="@+id/ask_my_rb"
             android:layout_weight="1"
@@ -160,7 +160,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:padding="10dp"
+            android:padding="11dp"
             android:background="@android:color/white"
             android:id="@+id/collection_my_rb"
             android:layout_weight="1"
@@ -179,7 +179,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
-            android:padding="10dp"
+            android:padding="11dp"
             android:background="@android:color/white"
             android:id="@+id/focus_my_rb"
             android:layout_weight="1"
@@ -188,7 +188,7 @@
             android:drawableTop="@mipmap/icon_guanzhu"
             android:button="@null"
             android:layout_gravity="center_vertical"
-            android:drawablePadding="15dp"
+            android:drawablePadding="16dp"
             android:gravity="center"
             android:text="我的关注"/>
         <View
@@ -211,7 +211,8 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:padding="9dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:background="@android:color/white"
             android:id="@+id/peixun_my_rb"
             android:layout_weight="1"
@@ -300,7 +301,10 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
         <RadioButton
-            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:background="@android:color/white"
             android:id="@+id/ewm_my_rb"
             android:layout_weight="1"
@@ -310,14 +314,14 @@
             android:button="@null"
             android:gravity="center"
             android:drawablePadding="15dp"
-
             android:text="我的二维码"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_weight="111"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></LinearLayout>
+        android:layout_height="wrap_content">
+    </LinearLayout>
 
 
 
